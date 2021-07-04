@@ -6,30 +6,30 @@
     background-color: #18181b;
     padding:10px 0;
 }
-.navbar__main {
+.navbar-main {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
 }
-.navbar__logo {
-    width:60px;
+.navbar-logo {
+    width:100px;
     margin: 0 20px;
 }
-.navbar__list--desktop {
+.navbar-list {
     list-style: none;
     display: flex;
     margin: 0;
 }
-.navbar__list--desktop li {
+.navbar-list li {
     margin: 0 20px;
     font-size: 1.2rem;
 }
-.navbar__list--desktop li a {
+.navbar-list li a {
     color: #aeaeb7;
 }
-.navbar__list--desktop li::after
+.navbar-list li::after
 {
     content:'';
     display: block;
@@ -37,43 +37,35 @@
     height:0.25rem;
     margin-top:0.25rem;
     border-radius:0.1875rem;
-    background:#18babd;
+    background:#e64861;
     transform: scaleX(0);
     transition: 0.17s;
 }
-.navbar__list--desktop li:hover a{
+.navbar-list li:hover a{
     transition: 0.17s;
 }
-.navbar__list--desktop li:hover a{
-    color:#18babd;
+.navbar-list li:hover a{
+    color:#e64861;
 }
-.navbar__list--desktop li:hover:after{
+.navbar-list li:hover:after{
     transform: scaleX(1);
 }
-.navbar__list--mobile{
-    display: none;
-}
-.navbar__mobile--icon{
-    display: none;
-}
+
 @media screen and (max-width:650px) {
-    .navbar__list--desktop {
-        display: none;
-    }
-    .navbar__mobile--icon {
+    .navbar {
        color: #aeaeb7;
        display: inline;
        font-size: 2.5rem;
        cursor: pointer;
        margin: 0 5px; 
     }
-    .navbar__list--mobile {
+    .navbar-list {
         display:block;
         margin: 0;
         padding: 0;
         height: 0;
         list-style: none;
-        position: absolute;
+        position: relative;
         top:100%;
         left:0;
         font-size: 1.2rem;
@@ -82,11 +74,10 @@
         transition: 0.2s;
         width: 100%;
         overflow: hidden;
+        height: 275px;
     }
-    .navbar__list--mobileShow{
-     height: 180px;
-    }
-    .navbar__list--mobile li a{
+  
+    .navbar-list li a{
      display:flex;
      color: #aeaeb7;
      justify-content: center;
@@ -95,7 +86,7 @@
 
     }
  
-    .navbar__list--mobile li a:hover{
+    .navbar-list li a:hover{
         background: #242429;
     }
 } 

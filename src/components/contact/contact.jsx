@@ -1,6 +1,5 @@
 import React,{useState} from 'react';
 import './contact.css';
-import Fade from 'react-reveal/Fade';
 
 const Contact = () => {
   const [username,Setusername] = useState("");
@@ -35,8 +34,8 @@ const Contact = () => {
     e.preventDefault();
   };
     return (
-        <Fade bottom><div className='contact' id='contact'>
-         <h1 className='section__heading'>Contact</h1>
+        <div className='contact' id='contact'>
+         <h1 className='section-heading'>Contact</h1>
           <form 
           name="contact" 
           className='contact__form' 
@@ -61,7 +60,7 @@ const Contact = () => {
               
        </form>
 
-      </div></Fade>
+      </div>
     )
 }
 

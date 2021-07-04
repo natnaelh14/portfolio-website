@@ -32,8 +32,8 @@ margin: 150px auto;
     display: inline-block
 }
 .contact__message--success {
-    border:1px solid #18babd;
-    color: #18babd;
+    border:1px solid #e64861;
+    color: #e64861;
 }
 .contact__message--error {
     border:1px solid #ff4d4d;
@@ -46,9 +46,9 @@ textarea.contact__input {
 }
 .contact__button {
     background: transparent;
-    border:2px solid #18babd;
+    border:2px solid #e64861;
     border-radius: 4px;
-    color:#18babd;
+    color:#e64861;
     padding: 15px 30px;
     font-size: 1.2rem;
     cursor: pointer;

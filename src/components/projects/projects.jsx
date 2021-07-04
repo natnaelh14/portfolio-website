@@ -24,6 +24,7 @@ function Projects() {
           desc="A fitness blogging website for fitness instructor Siddharth Sharma.  
              I have added Intersection Observer api and animations for better user experience."
           langs={["Php", "Mysql", "Javascript"]}
+          liveLink="https://instagram-clone-4ed61.web.app/"
           githubLink="https://github.com/tanishgupta-git/Fitwithsid"
         />
 
