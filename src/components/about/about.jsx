@@ -15,12 +15,15 @@ const About = () => {
       <br />
       <div className="about-subSection">
         <ul>
-          <li className="about-subSectionitem">React</li>
+          <li className="about-subSectionitem">HTML/CSS</li>
+          <li className="about-subSectionitem">jQuery</li>
+          <li className="about-subSectionitem">JavaScript</li>
+          <li className="about-subSectionitem">React/Redux</li>
           <li className="about-subSectionitem">Node.js</li>
           <li className="about-subSectionitem">MongoDb</li>
           <li className="about-subSectionitem">Express</li>
           <li className="about-subSectionitem">Redux</li>
-          <li className="about-subSectionitem">Django</li>
+          
         </ul>
       </div>
     </div>

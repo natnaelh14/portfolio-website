@@ -64,7 +64,6 @@
    .intro-desc {
        box-sizing: border-box;
        width: 100%;
-       order: 1;
    }
 }
 @media screen and (max-width :600px) {
