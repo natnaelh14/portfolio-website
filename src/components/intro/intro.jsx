@@ -1,5 +1,6 @@
 import React from "react";
 import "./intro.css";
+import HeroImage from "./hero-image.png";
 
 function Intro() {
   return (
@@ -11,6 +12,9 @@ function Intro() {
         <a href="#about" className="intro-aboutLink">
           More About Me
         </a>
+      </div>
+      <div className="intro-image">
+        <img className="hero-image" src={HeroImage} alt="hero-image" />
       </div>
     </div>
   );
