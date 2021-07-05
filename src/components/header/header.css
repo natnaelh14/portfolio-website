@@ -50,22 +50,30 @@
 .navbar-list li:hover:after{
     transform: scaleX(1);
 }
-
+.navbar-list-mobile{
+    display: none;
+}
+.navbar-mobile-icon{
+    display: none;
+}
 @media screen and (max-width:650px) {
-    .navbar {
+    .navbar-list {
+        display: none;
+    }
+    .navbar-mobile-icon {
        color: #aeaeb7;
        display: inline;
        font-size: 2.5rem;
        cursor: pointer;
        margin: 0 5px; 
     }
-    .navbar-list {
+    .navbar-list-mobile {
         display:block;
         margin: 0;
         padding: 0;
         height: 0;
         list-style: none;
-        position: relative;
+        position: absolute;
         top:100%;
         left:0;
         font-size: 1.2rem;
@@ -74,10 +82,11 @@
         transition: 0.2s;
         width: 100%;
         overflow: hidden;
-        height: 275px;
     }
-  
-    .navbar-list li a{
+    .navbar-list-mobileShow{
+     height: 180px;
+    }
+    .navbar-list-mobile li a{
      display:flex;
      color: #aeaeb7;
      justify-content: center;
@@ -86,7 +95,7 @@
 
     }
  
-    .navbar-list li a:hover{
+    .navbar-list-mobile li a:hover{
         background: #242429;
     }
 } 
