@@ -1,9 +1,9 @@
 .navbar {
     position: sticky;
     top:0;
-    box-shadow: 0 2px 2px rgba(0,0,0,0.10);
+    box-shadow: 0 2px 2px rgba(247, 235, 235, 0.1);
     z-index: 10000;
-    background-color: #18181b;
+    background-image: linear-gradient(#503f42, #221719);
     padding:10px 0;
 }
 .navbar-main {
@@ -15,21 +15,22 @@
 }
 .navbar-logo {
     width:100px;
+    height: 100px;
     margin: 0 20px;
 }
-.navbar-list {
+.navbar-list-desktop {
     list-style: none;
     display: flex;
     margin: 0;
 }
-.navbar-list li {
+.navbar-list-desktop li {
     margin: 0 20px;
     font-size: 1.2rem;
 }
-.navbar-list li a {
+.navbar-list-desktop li a {
     color: #aeaeb7;
 }
-.navbar-list li::after
+.navbar-list-desktop li::after
 {
     content:'';
     display: block;
@@ -41,13 +42,13 @@
     transform: scaleX(0);
     transition: 0.17s;
 }
-.navbar-list li:hover a{
+.navbar-list-desktop li:hover a{
     transition: 0.17s;
 }
-.navbar-list li:hover a{
+.navbar-list-desktop li:hover a{
     color:#e64861;
 }
-.navbar-list li:hover:after{
+.navbar-list-desktop li:hover:after{
     transform: scaleX(1);
 }
 .navbar-list-mobile{
@@ -57,7 +58,7 @@
     display: none;
 }
 @media screen and (max-width:650px) {
-    .navbar-list {
+    .navbar-list-desktop {
         display: none;
     }
     .navbar-mobile-icon {
@@ -84,7 +85,7 @@
         overflow: hidden;
     }
     .navbar-list-mobileShow{
-     height: 180px;
+     height: 240px;
     }
     .navbar-list-mobile li a{
      display:flex;
