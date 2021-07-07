@@ -7,8 +7,10 @@ const About = () => {
       <h1 className="section-heading">About</h1>
       <div className="about-section">
         <div className="about-text">
-          Hi, I am Natnael Haile. I am a web developer. I am passionate about
-          technology.
+          I am a Nurse turned Developer. I am passionate about technology. I am
+          highly motivated to keep improving my skills and really enjoy
+          exchanging knowledge and experiences with other team members. I like
+          to bring amazing ideas to life using these tools.
         </div>
       </div>
       <br />
@@ -23,7 +25,6 @@ const About = () => {
           <li className="about-subSectionitem">MongoDb</li>
           <li className="about-subSectionitem">Express</li>
           <li className="about-subSectionitem">Redux</li>
-          
         </ul>
       </div>
     </div>
