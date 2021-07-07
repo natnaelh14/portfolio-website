@@ -22,7 +22,7 @@ function Projects() {
 
         {/* Quiz App */}
         <Project
-          desc="Quiz App - an IQ quiz application with time limit that lets users store scores in a localstorage"
+          desc="Quiz App - an IQ quiz application that lets users store scores in a local storage"
           langs={["HTML5/CSS3", "Bootstrap", "jQuery", "Javascript"]}
           liveLink="https://natnaelh14.github.io/quiz-app/"
           githubLink="https://github.com/natnaelh14/quiz-app"

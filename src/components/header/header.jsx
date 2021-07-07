@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./header.css";
 import { HiMenuAlt3, HiOutlineX } from "react-icons/hi";
 import LogoImage from "./logo.png";
+import Resume from "./resume.pdf";
 
 const Header = () => {
   const [showNav, SetshowNav] = useState(false);
@@ -17,7 +18,7 @@ const Header = () => {
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#resume">Resume</a>
+            <a href={Resume}>Resume</a>
           </li>
           <li>
             <a href="#footer">Contact</a>
@@ -43,7 +44,7 @@ const Header = () => {
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#resume">Resume</a>
+            <a href={Resume}>Resume</a>
           </li>
           <li>
             <a href="#footer">Contact</a>
