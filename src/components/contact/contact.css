@@ -1,7 +1,21 @@
 form {
     max-width: 500px;
     margin: 0 auto;
+    border: 3px solid #69474c;
+    box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.8);
+    padding:100px;
+
   }
+
+
+.contact-heading {
+  font-size: 4rem;
+  margin: 10px 0;
+  color: #6c6c7a;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
   
   /* h1 { */
     /* font-weight: 100;

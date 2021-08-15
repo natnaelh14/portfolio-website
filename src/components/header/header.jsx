@@ -21,7 +21,7 @@ const Header = () => {
             <a href={Resume}>Resume</a>
           </li>
           <li>
-            <a href="#footer">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
         <span
@@ -47,7 +47,7 @@ const Header = () => {
             <a href={Resume}>Resume</a>
           </li>
           <li>
-            <a href="#footer">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>
