@@ -1,6 +1,7 @@
 .projects {
     /* width: 80%; */
     /* max-width: 1200px; */
+    /* display: flex; */
     margin: 10%;
     /* padding:50px; */
     border: 1px solid red;
@@ -14,9 +15,9 @@
 .projects_wrapper {
     border: 1px solid pink;
     /* display: flex; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* justify-content: center; */
-    flex: 1 1 0;
+    /* flex: 1 1; */
     
 
     /* align-items: center; */

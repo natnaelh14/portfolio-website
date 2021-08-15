@@ -14,7 +14,7 @@ const Project = ({ title, desc, langs, liveLink, githubLink, imageLink }) => {
       <br/>
       <div className="project-langs">
         {langs.map(lang => (
-          <Tooltip label={lang} aria-label="A tooltip" fontSize="sm" color="white" bg="red">
+          <Tooltip label={lang} aria-label="A tooltip" fontSize="md" color="white" >
             <span className="project-lang"><Icon icon={lang} height = '40px' /></span>
           </Tooltip>
         ))}

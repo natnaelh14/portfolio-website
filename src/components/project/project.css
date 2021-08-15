@@ -2,20 +2,26 @@
   /* color: white; */
   /* width: 100%; */
   /* box-sizing: border-box; */
-  margin: 25px;
-  /* padding: 20px; */
+  margin: 50px;
+  padding: 20px;
   display: flex;
   /* justify-content: center; */
   flex-direction: column;
-  width: 30%;
+  width: 500px;
   justify-content: space-around;
   /* width: 40%; */
+  border: 3px solid #e64861;
 }
 
 .project-title {
   display: flex;
   justify-content: center;
+
+}
+
+.project-title h2 {
   color: #aeaeb7;
+  font-size: 2rem;
 }
 
 .project a {
