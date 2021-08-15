@@ -2,6 +2,7 @@ import React from "react";
 import "./project.css";
 import { FaLink, FaGithub } from "react-icons/fa";
 import { Icon } from '@iconify/react';
+import { Tooltip } from "@chakra-ui/react"
 
 const Project = ({ title, desc, langs, liveLink, githubLink, imageLink }) => {
   return (
@@ -9,11 +10,13 @@ const Project = ({ title, desc, langs, liveLink, githubLink, imageLink }) => {
       <div className="project-title">
         <h2>{title}</h2>
       </div>
-      <a href={liveLink}><img className="project-image" src={imageLink} style={{ width: "300px", height: "250px" }} alt=""/></a>
+      <a href={liveLink}><img className="project-image" src={imageLink} style={{ width: "300px", height: "250px" }} alt="project-image"/></a>
       <br/>
       <div className="project-langs">
         {langs.map(lang => (
-        <span className="project-lang"><Icon icon={lang} size = '30px' /></span>
+          <Tooltip label={lang} aria-label="A tooltip" fontSize="sm" color="white" bg="red">
+            <span className="project-lang"><Icon icon={lang} height = '40px' /></span>
+          </Tooltip>
         ))}
       </div>
       <div className="project-links">
