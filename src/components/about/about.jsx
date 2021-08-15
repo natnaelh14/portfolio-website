@@ -3,7 +3,7 @@ import "./about.css";
 
 const About = () => {
   return (
-    <div className="about" id="about">
+    <div className="about" id="about" >
       <h1 className="section-heading">About</h1>
       <div className="about-section">
         <div className="about-text">
@@ -18,13 +18,13 @@ const About = () => {
       <div className="about-subSection">
         <ul>
           <li className="about-subSectionitem">HTML5/CSS3</li>
+          <li className="about-subSectionitem">Git</li>
           <li className="about-subSectionitem">jQuery</li>
           <li className="about-subSectionitem">JavaScript</li>
           <li className="about-subSectionitem">React/Redux</li>
           <li className="about-subSectionitem">Node.js</li>
           <li className="about-subSectionitem">Express</li>
           <li className="about-subSectionitem">MySQL</li>
-          <li className="about-subSectionitem">PostgreSQL</li>
           <li className="about-subSectionitem">MongoDb</li>
           <li className="about-subSectionitem">Heroku</li>
         </ul>
