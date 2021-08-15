@@ -1,7 +1,7 @@
 .projects {
-    width: 90%;
+    width: 80%;
     /* max-width: 1200px; */
-    margin: 10% auto;
+    margin: 20% auto;
     padding:50px;
     border: 1px solid red;
 }
@@ -15,7 +15,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex: 50%;
+    /* flex: 40%; */
 
     /* align-items: center; */
 }
