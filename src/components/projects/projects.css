@@ -15,7 +15,9 @@
 .projects_wrapper {
     border: 1px solid pink;
     /* display: flex; */
-    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
     /* justify-content: center; */
     /* flex: 1 1; */
     
