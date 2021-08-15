@@ -24,7 +24,7 @@ function Projects() {
   }
 
   return (
-    <div className="projects" >
+    <div className="projects" id="projects">
       <h1 className="section-heading">Projects</h1>
       <div className="projects_wrapper">
         {/* Get Money Smart  */}

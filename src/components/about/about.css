@@ -2,8 +2,10 @@
     width: 90%;
     margin: 150px auto;
     max-width: 1200px;
-    border: 1px solid red;
+    padding-top: 100px;
 }
+
+
 .about-section {
     display: flex;
     justify-content: center;
@@ -18,11 +20,12 @@
 
 .about-text{
     font-size: 1.2rem;
-    line-height: 1.5rem;
+    /* line-height: 1.5rem; */
     color: #93939f;
     width:100%;
     max-width:700px;
     text-align:justify;
+    line-height: 2;
 }
 
 .about-subSection {
