@@ -5,9 +5,8 @@ import { FaLink, FaGithub } from "react-icons/fa";
 const Project = ({ desc, langs, liveLink, githubLink, imageLink }) => {
   return (
     <div className="project">
-      <div className="project-basicInfo" style={{ background: `url(${imageLink})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', filter: 'grayscale(2)' }}>
-      </div>
-      <br />
+      <img className="project-image" src={imageLink} style={{ width: "300px", height: "250px" }} alt=""/>
+
       <div className="project-langs">
         {langs.map((lang) => (
           <span key={Math.random()} className="project-lang">

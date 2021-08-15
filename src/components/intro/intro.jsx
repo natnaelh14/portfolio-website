@@ -8,7 +8,7 @@ function Intro() {
       <div className="intro-desc">
         <p className="intro-msg">Hello, my name is</p>
         <h1 className="intro-head">Natnael Haile.</h1>
-        <h1 className="intro-text">I am a Full-Stack web developer.</h1>
+        <h1 className="intro-text">I am a Full-Stack Web Developer.</h1>
         <a href="#about" className="intro-aboutLink">
           More About Me
         </a>
