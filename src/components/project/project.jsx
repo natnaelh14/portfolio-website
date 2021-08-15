@@ -13,7 +13,7 @@ const Project = ({ title, desc, langs, liveLink, githubLink, imageLink }) => {
       <br/>
       <div className="project-langs">
         {langs.map(lang => (
-        <span><Icon icon={lang} /></span>
+        <span className="project-lang"><Icon icon={lang} /></span>
         ))}
       </div>
       <div className="project-links">

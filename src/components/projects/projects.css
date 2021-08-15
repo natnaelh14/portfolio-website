@@ -1,9 +1,10 @@
 .projects {
-    width: 80%;
+    /* width: 80%; */
     /* max-width: 1200px; */
-    margin: 20% auto;
-    padding:50px;
+    margin: 10%;
+    /* padding:50px; */
     border: 1px solid red;
+
 }
 
 .projects h1 {
@@ -12,10 +13,11 @@
 
 .projects_wrapper {
     border: 1px solid pink;
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
-    justify-content: center;
-    /* flex: 40%; */
+    /* justify-content: center; */
+    flex: 40%;
+    
 
     /* align-items: center; */
 }

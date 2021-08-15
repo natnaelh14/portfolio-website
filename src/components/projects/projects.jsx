@@ -43,7 +43,7 @@ function Projects() {
           <Project
             title="Empty Pantry"
             desc="An application that lets users find recipes using ingredients they have on hand"
-            langs={["vscode-icons:file-type-html"]}
+            langs={["vscode-icons:file-type-html", "logos:javascript", "vscode-icons:file-type-reactjs"]}
             liveLink="https://natnaelh14.github.io/empty-pantry/"
             githubLink="https://github.com/natnaelh14/empty-pantry"
             imageLink={EmptyPantry}
@@ -54,7 +54,7 @@ function Projects() {
           <Project
             title="E-Commerce Back-End"
             desc="An application that provides employee management system."
-            langs={["vscode-icons:file-type-html"]}
+            langs={["vscode-icons:file-type-html", "logos:javascript", "vscode-icons:file-type-reactjs"]}
             liveLink=""
             githubLink="https://github.com/natnaelh14/e-commerce-back-end"
             imageLink={eCommerce}
@@ -65,7 +65,7 @@ function Projects() {
           <Project
             title="E-Commerce Back-End"
             desc="An application that provides employee management system."
-            langs={["vscode-icons:file-type-html"]}
+            langs={["vscode-icons:file-type-html", "logos:javascript", "vscode-icons:file-type-reactjs"]}
             liveLink=""
             githubLink="https://github.com/natnaelh14/e-commerce-back-end"
             imageLink={eCommerce}
@@ -76,7 +76,7 @@ function Projects() {
           <Project
             title="Get Money Smart"
             desc="An application that simulates the functionality of a mobile bank for educational purposes."
-            langs={["vscode-icons:file-type-html"]}
+            langs={["vscode-icons:file-type-html", "logos:javascript", "vscode-icons:file-type-reactjs"]}
             liveLink="https://polar-river-76787.herokuapp.com/"
             githubLink="https://github.com/mlward639/Get_Money_Smart"
             imageLink={smartMoney}
@@ -87,7 +87,7 @@ function Projects() {
           <Project
             title="Get Money Smart"
             desc="An application that simulates the functionality of a mobile bank for educational purposes."
-            langs={["vscode-icons:file-type-html"]}
+            langs={["vscode-icons:file-type-html", "logos:javascript", "vscode-icons:file-type-reactjs"]}
             liveLink="https://polar-river-76787.herokuapp.com/"
             githubLink="https://github.com/mlward639/Get_Money_Smart"
             imageLink={smartMoney}

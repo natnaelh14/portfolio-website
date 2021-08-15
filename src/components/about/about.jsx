@@ -17,7 +17,10 @@ const About = () => {
       <br />
       <div className="about-subSection">
         <ul>
-          <li className="about-subSectionitem">HTML5/CSS3</li>
+          <li className="about-subSectionitem">HTML5</li>
+          <li className="about-subSectionitem">CSS3</li>
+          <li className="about-subSectionitem">Bootstrap</li>
+          <li className="about-subSectionitem">Bulma</li>
           <li className="about-subSectionitem">Git</li>
           <li className="about-subSectionitem">jQuery</li>
           <li className="about-subSectionitem">JavaScript</li>
@@ -27,6 +30,10 @@ const About = () => {
           <li className="about-subSectionitem">MySQL</li>
           <li className="about-subSectionitem">MongoDb</li>
           <li className="about-subSectionitem">Heroku</li>
+          <li className="about-subSectionitem">Unit Testing</li>
+          <li className="about-subSectionitem">Progressive Web Applications</li>
+          
+          
         </ul>
       </div>
     </div>

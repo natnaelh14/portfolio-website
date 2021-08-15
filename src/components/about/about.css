@@ -33,8 +33,8 @@
 .about-subSection ul {
     list-style: none;
     display: grid;
-    grid-template-columns: auto auto;
-    width: 330px;
+    grid-template-columns: auto auto auto;
+    /* width: 330px; */
     margin: 0;
     padding: 0;
 }

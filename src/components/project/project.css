@@ -7,9 +7,8 @@
   display: flex;
   /* justify-content: center; */
   flex-direction: column;
-  width: 40%;
+  width: 30%;
   justify-content: space-around;
-  border-bottom: 1px solid yellow;
   /* width: 40%; */
 }
 
@@ -65,6 +64,7 @@
 .project-desc {
   font-size: 1rem;
   /* line-height: 1.5rem; */
+  padding: 10px;
   color: #aeaeb7;
   background-color: #292929;
 
