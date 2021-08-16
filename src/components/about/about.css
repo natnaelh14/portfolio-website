@@ -14,7 +14,7 @@
 .section-heading {
     font-size: 4rem;
     margin: 10px 0;
-    color: #6c6c7a;
+    color: rgb(3 183 133);
     display: flex;
     justify-content: center;
 }
@@ -76,16 +76,23 @@
 }
 
 @media screen and (max-width:1000px) {
-    .about-section {
+    .about-text {
+        font-size: 1.3rem;
+    }
+    .about-subSectionitem {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    /* .about-section {
         flex-direction: column;
     }
     .about-sectionImage {
         width: 60%;
         margin: 30px 0;
-    }
+    } */
 }
 
-@media screen and (max-width:600px) {
+/* @media screen and (max-width:600px) {
     .section-heading {
         font-size: 3.5rem;
     }
@@ -105,4 +112,4 @@
     .about-quoteAuthor {
         font-size: 1rem;
     }
-}
+} */

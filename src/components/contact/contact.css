@@ -11,10 +11,11 @@ form {
 .contact-heading {
   font-size: 4rem;
   margin: 10px 0;
-  color: #6c6c7a;
+  color: rgb(3 183 133);
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
+  padding-top: 100px;
 }
   
   /* h1 { */
@@ -133,3 +134,11 @@ form {
     padding: 10px 20px;
     border-radius: 4px;
   }
+
+
+/*   
+  @media screen and (max-width: 1000px) {
+    /* form {
+        padding:50px;
+      } */
+  /* } */ 

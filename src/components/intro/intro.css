@@ -14,7 +14,7 @@
     border-radius: 50%;
 }
 .intro-msg {
-    color: #e64861;
+    color: rgb(147 147 158);
     font-size: 1.7rem;
     word-spacing: 0.3em;
     margin: 10px 0;
@@ -31,7 +31,7 @@
     color :white;
 }
 .intro-head {
-    color:#aeaeb7;
+    color:rgb(3 183 133);
     font-size: 3rem;
     margin:10px 0;
     font-weight: 600;
@@ -40,7 +40,7 @@
 .intro-text {
     margin: 0;
     font-size: 1.7rem;
-    color:#93939f;
+    color:rgb(3 183 133);
     font-weight: 600;
 }
 .intro-aboutLink {
