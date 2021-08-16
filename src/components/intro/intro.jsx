@@ -5,6 +5,9 @@ import HeroImage from "./hero-image.png";
 function Intro() {
   return (
     <div className="intro">
+      <div className="intro-image-mobile">
+        <img className="hero-image-mobile" src={HeroImage} alt="hero-image" />
+      </div>
       <div className="intro-desc">
         <p className="intro-msg">Hello, my name is</p>
         <h1 className="intro-head">Natnael Haile.</h1>

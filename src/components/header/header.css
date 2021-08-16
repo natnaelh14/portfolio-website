@@ -99,4 +99,9 @@
     .navbar-list-mobile li a:hover{
         background: #242429;
     }
+    .navbar-list-mobileShow:checked{
+        display: none;
+    }
+    
+
 } 

@@ -15,12 +15,12 @@ const Contact = () => {
       <Fade bottom duration={1000} distance="40px">
         <form onSubmit={handleSubmit((data) => console.log(data))}>
           <label>Full Name</label>
-          <input {...register("test", { required: true })} />
+          <input {...register("test", { required: true })} id="full-name" name="full-name" type="text" />
           <label>E-mail Address</label>
-          <input {...register("test", { required: true })} />
+          <input {...register("test", { required: true })} id="email" name="email" type="text" />
           <label>Message</label>
-          <Test />
-          <input type="submit" />
+          <textarea {...register("test", { required: true })} id="message" name="message" type="message" />
+          <button type="submit">SUBMIT</button>
         </form>
       </Fade>
     </FormProvider>

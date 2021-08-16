@@ -4,7 +4,9 @@ form {
     border: 3px solid #69474c;
     box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.8);
     padding:100px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
 
@@ -58,13 +60,25 @@ form {
     display: block;
     margin-bottom: 13px;
     margin-top: 20px;
-    color: white;
-    font-size: 14px;
+    color: #aeaeb7;
+    font-size: 1.2rem;
     font-weight: 200;
   }
-  
-  button[type="submit"],
-  input[type="submit"] {
+ 
+  textarea[id="message"] {
+    height: 100px;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid white;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    
+  }
+
+  button[type="submit"] {
     background: #da7282;
     color: white;
     text-transform: uppercase;
@@ -76,14 +90,11 @@ form {
     letter-spacing: 10px;
   }
   
-  button[type="submit"]:hover,
-  input[type="submit"]:hover {
+  button[type="submit"]:hover {
     background: #e64861;
   }
   
-  button[type="submit"]:active,
-  input[type="button"]:active,
-  input[type="submit"]:active {
+  button[type="submit"]:active {
     transition: 0.3s all;
     transform: translateY(3px);
     border: 1px solid transparent;
@@ -98,9 +109,7 @@ form {
     transition: 0.3s all;
   }
   
-  button[type="submit"],
-  input[type="button"],
-  input[type="submit"] {
+  button[type="submit"] {
     -webkit-appearance: none;
   }
   
@@ -109,7 +118,7 @@ form {
     margin: 0 auto;
   }
   
-  button[type="button"] {
+  /* button[type="button"] {
     display: block;
     appearance: none;
     background: #333;
@@ -118,12 +127,12 @@ form {
     text-transform: uppercase;
     padding: 10px 20px;
     border-radius: 4px;
-  }
+  } */
   
   hr {
     margin-top: 30px;
   }
-  
+/*   
   button {
     display: block;
     appearance: none;
@@ -133,7 +142,7 @@ form {
     text-transform: uppercase;
     padding: 10px 20px;
     border-radius: 4px;
-  }
+  } */
 
 
 /*   

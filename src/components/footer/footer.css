@@ -59,8 +59,4 @@ color: #aeaeb7;
   transform: translateY(-5px);
 }
 
-@media screen and (max-width: 1000px) {
-  /* .footer {
-      padding-left: 50px;
-    } */
-}
+
