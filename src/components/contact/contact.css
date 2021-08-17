@@ -145,9 +145,10 @@ form {
   } */
 
 
-/*   
   @media screen and (max-width: 1000px) {
-    /* form {
-        padding:50px;
-      } */
-  /* } */ 
+    form {
+        margin:50px;
+        padding:25px;
+
+      } 
+  } 
