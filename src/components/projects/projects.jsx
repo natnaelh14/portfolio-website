@@ -12,15 +12,35 @@ import { Fade } from 'react-reveal';
 
 function Projects() {
   const skillLangs = {
-  html: "vscode-icons:file-type-html",
-  css: "vscode-icons:file-type-html",
-  javascript: "logos:javascript",
-  react: "vscode-icons:file-type-reactjs",
-  node: "logos:nodejs-icon",
-  npm: "vscode-icons:file-type-npm",
-  mysql: "vscode-icons:file-type-sql",
-  mongoDB: "vscode-icons:file-type-mongo",
-  git: "logos:git-icon",
+  html: {
+    name: "vscode-icons:file-type-html",
+    label: 'HTML',
+  },
+  css: {
+    name: "vscode-icons:file-type-html",
+    label: 'CSS',
+  },
+
+  javascript: {
+    name: "logos:javascript",
+    label: "JavaScript"
+  },
+  react: {
+    name: "vscode-icons:file-type-reactjs",
+    label: 'React'
+  },
+  node: {
+    name: "logos:nodejs-icon",
+    label: 'Node'
+  },
+  mysql: {
+    name: "vscode-icons:file-type-sql",
+    label: "MySQL"
+  },
+  mongodb: {
+    name: "vscode-icons:file-type-mongo",
+    label: "Mongodb"
+  }
   }
 
   return (
@@ -32,7 +52,7 @@ function Projects() {
           <Project
             title="Get Money Smart"
             desc="An application that simulates the functionality of a mobile bank for educational purposes."
-            langs={["vscode-icons:file-type-html", "logos:javascript", "vscode-icons:file-type-reactjs"]}
+            langs={[skillLangs.html, skillLangs.react, skillLangs.mysql, skillLangs.mongodb]}
             liveLink="https://polar-river-76787.herokuapp.com/"
             githubLink="https://github.com/mlward639/Get_Money_Smart"
             imageLink={smartMoney}
@@ -43,7 +63,7 @@ function Projects() {
           <Project
             title="Empty Pantry"
             desc="An application that lets users find recipes using ingredients they have on hand"
-            langs={["vscode-icons:file-type-html", "logos:javascript", "vscode-icons:file-type-reactjs"]}
+            langs={[skillLangs.html, skillLangs.react, skillLangs.mysql, skillLangs.mongodb]}
             liveLink="https://natnaelh14.github.io/empty-pantry/"
             githubLink="https://github.com/natnaelh14/empty-pantry"
             imageLink={EmptyPantry}
@@ -54,7 +74,7 @@ function Projects() {
           <Project
             title="E-Commerce Back-End"
             desc="An application that provides employee management system."
-            langs={["vscode-icons:file-type-html", "logos:javascript", "vscode-icons:file-type-reactjs"]}
+            langs={[skillLangs.html, skillLangs.react, skillLangs.mysql, skillLangs.mongodb]}
             liveLink=""
             githubLink="https://github.com/natnaelh14/e-commerce-back-end"
             imageLink={eCommerce}
@@ -65,7 +85,7 @@ function Projects() {
           <Project
             title="E-Commerce Back-End"
             desc="An application that provides employee management system."
-            langs={["vscode-icons:file-type-html", "logos:javascript", "vscode-icons:file-type-reactjs"]}
+            langs={[skillLangs.html, skillLangs.react, skillLangs.mysql, skillLangs.mongodb]}
             liveLink=""
             githubLink="https://github.com/natnaelh14/e-commerce-back-end"
             imageLink={eCommerce}
@@ -76,7 +96,7 @@ function Projects() {
           <Project
             title="Get Money Smart"
             desc="An application that simulates the functionality of a mobile bank for educational purposes."
-            langs={["vscode-icons:file-type-html", "logos:javascript", "vscode-icons:file-type-reactjs"]}
+            langs={[skillLangs.html, skillLangs.react, skillLangs.mysql, skillLangs.mongodb]}
             liveLink="https://polar-river-76787.herokuapp.com/"
             githubLink="https://github.com/mlward639/Get_Money_Smart"
             imageLink={smartMoney}
@@ -87,7 +107,7 @@ function Projects() {
           <Project
             title="Get Money Smart"
             desc="An application that simulates the functionality of a mobile bank for educational purposes."
-            langs={["vscode-icons:file-type-html", "logos:javascript", "vscode-icons:file-type-reactjs"]}
+            langs={[skillLangs.html, skillLangs.react, skillLangs.mysql, skillLangs.mongodb]}
             liveLink="https://polar-river-76787.herokuapp.com/"
             githubLink="https://github.com/mlward639/Get_Money_Smart"
             imageLink={smartMoney}
