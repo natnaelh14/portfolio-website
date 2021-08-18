@@ -13,8 +13,8 @@ const Project = ({ title, desc, langs, liveLink, githubLink, imageLink }) => {
       <a href={liveLink}><img className="project-image" src={imageLink} style={{ width: "300px", height: "250px" }} alt="project-image"/></a>
       <br/>
       <div className="project-langs">
-        {langs.map(lang => (
-          <Tooltip label={lang.label} aria-label="A tooltip" fontSize="md" color="white" >
+        {langs.map((lang, index) => (
+          <Tooltip key={index} label={lang.label} aria-label="A tooltip" fontSize="md" color="white" >
             <span className="project-lang"><Icon icon={lang.name} height = '40px' /></span>
           </Tooltip>
         ))}
