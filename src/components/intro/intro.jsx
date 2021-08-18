@@ -6,7 +6,7 @@ function Intro() {
   return (
     <div className="intro">
       <div className="intro-image-mobile">
-        <img className="hero-image-mobile" src={HeroImage} alt="hero-image" />
+        <img className="hero-image-mobile" src={HeroImage} alt='hero' />
       </div>
       <div className="intro-desc">
         <p className="intro-msg">Hello, my name is</p>
@@ -17,7 +17,7 @@ function Intro() {
         </a>
       </div>
       <div className="intro-image">
-        <img className="hero-image" src={HeroImage} alt="hero-image" />
+        <img className="hero-image" src={HeroImage} alt='hero' />
       </div>
     </div>
   );
