@@ -12,6 +12,7 @@
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "emailjs-com": "^3.2.0",
     "express": "^4.17.1",
     "framer-motion": "^4.1.17",
     "nodemailer": "^6.6.3",
@@ -24,12 +25,11 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "node .",
-    "now-build": "react-scripts build && mv build dist",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-
   "eslintConfig": {
     "extends": [
       "react-app",

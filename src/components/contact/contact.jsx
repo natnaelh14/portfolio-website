@@ -1,47 +1,63 @@
 import { React, Component } from "react";
-import axios from "axios";
 import { Fade } from "react-reveal";
+import emailjs from 'emailjs-com';
 import "./contact.css";
 
 export default class Contact extends Component {
   state = {
     name: "",
-    message: "",
     email: "",
+    subject: '',
+    message: "",
     sent: false,
     buttonText: "Submit",
   };
+
   formSubmit = (e) => {
     e.preventDefault();
-
     this.setState({
       buttonText: "...sending",
     });
 
-    let data = {
-      name: this.state.name,
-      email: this.state.email,
+    let templateParams = {
+      from_name: this.state.name,
+      from_email: this.state.email,
+      to_name: 'Natnael Haile',
+      subject: this.state.subject,
       message: this.state.message,
-    };
+     }
 
-    axios
-      .post("API_URI", data)
-      .then((res) => {
-        this.setState({ sent: true }, this.resetForm());
-      })
-      .catch(() => {
-        console.log("Message not sent");
-      });
+    emailjs.send(
+      'service_nasoi6g',
+      'template_18f6zsf',
+       templateParams,
+      'user_eZV3e0rLSAkwzx3Pvay2V'
+     )
+    console.log(templateParams)
+    this.resetForm()
+    // axios
+    //   .post("API_URL", data)
+    //   .then((res) => {
+    //     this.setState({ sent: true }, this.resetForm());
+    //   })
+    //   .catch(() => {
+    //     console.log("Message not sent");
+    //   });
   };
 
   resetForm = () => {
     this.setState({
       name: "",
       message: "",
+      subject: '',
       email: "",
       buttonText: "Message Sent",
     });
   };
+
+  handleChange = (param, e) => {
+    this.setState({ [param]: e.target.value })
+  }
 
   render() {
     return (
@@ -53,21 +69,36 @@ export default class Contact extends Component {
           <form onSubmit={(e) => this.formSubmit(e)}>
             <label>Full Name</label>
             <input
-              onChange={(e) => this.setState({ name: e.target.value })}
+              onChange={this.handleChange.bind(this, 'name')}
+              value={this.state.name}
+              autoComplete="off"
               id="full-name"
               name="full-name"
               type="text"
             />
             <label>E-mail Address</label>
             <input
-              onChange={(e) => this.setState({ email: e.target.value })}
+              onChange={this.handleChange.bind(this, 'email')}
+              value={this.state.email}
+              autoComplete="off"
               id="email"
               name="email"
               type="email"
             />
+            <label>Subject</label>
+            <input
+              onChange={this.handleChange.bind(this, 'subject')}
+              value={this.state.subject}
+              autoComplete="off"
+              id="subject"
+              name="subject"
+              type="text"
+            />
             <label>Message</label>
             <textarea
-              onChange={(e) => this.setState({ message: e.target.value })}
+              onChange={this.handleChange.bind(this, 'message')}
+              value={this.state.message}
+              autoComplete="off"
               id="message"
               name="message"
               type="message"
