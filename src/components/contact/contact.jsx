@@ -1,4 +1,5 @@
 import { React, Component } from "react";
+import axios from "axios";
 import { Fade } from "react-reveal";
 import "./contact.css";
 
@@ -8,6 +9,38 @@ export default class Contact extends Component {
     message: "",
     email: "",
     sent: false,
+    buttonText: "Submit",
+  };
+  formSubmit = (e) => {
+    e.preventDefault();
+
+    this.setState({
+      buttonText: "...sending",
+    });
+
+    let data = {
+      name: this.state.name,
+      email: this.state.email,
+      message: this.state.message,
+    };
+
+    axios
+      .post("API_URI", data)
+      .then((res) => {
+        this.setState({ sent: true }, this.resetForm());
+      })
+      .catch(() => {
+        console.log("Message not sent");
+      });
+  };
+
+  resetForm = () => {
+    this.setState({
+      name: "",
+      message: "",
+      email: "",
+      buttonText: "Message Sent",
+    });
   };
 
   render() {
@@ -27,19 +60,19 @@ export default class Contact extends Component {
             />
             <label>E-mail Address</label>
             <input
-              onChange={(e) => this.setState({ name: e.target.value })}
+              onChange={(e) => this.setState({ email: e.target.value })}
               id="email"
               name="email"
-              type="text"
+              type="email"
             />
             <label>Message</label>
             <textarea
-              onChange={(e) => this.setState({ name: e.target.value })}
+              onChange={(e) => this.setState({ message: e.target.value })}
               id="message"
               name="message"
               type="message"
             />
-            <button type="submit">SUBMIT</button>
+            <button type="submit">{this.state.buttonText}</button>
           </form>
         </Fade>
       </div>

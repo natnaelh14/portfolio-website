@@ -1,4 +1,3 @@
-//https://medium.com/hackernoon/setting-up-a-serverless-contact-form-in-react-using-nodemailer-and-express-19df9fdb20ed
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -30,22 +29,22 @@ var smtpTransport = nodemailer.createTransport({
   service: 'Gmail',
   port: 465,
   auth: {
-    user: 'USERNAME',
-    pass: 'PASSWORD'
+    user: 'haile.natnael@gmail.com',
+    pass: 'Lambadina#22'
   }
 });
 
 var mailOptions = {
   from: data.email,
-  to: 'ENTER_YOUR_EMAIL',
-  subject: 'ENTER_YOUR_SUBJECT',
+  to: 'haile.natnael@gmail.com',
+  subject: 'Message from Portfolio Website',
   html: `<p>${data.name}</p>
           <p>${data.email}</p>
           <p>${data.message}</p>`
 };
 
 smtpTransport.sendMail(mailOptions,
-(error, response) => {
+(error, res) => {
   if(error) {
     res.send(error)
   }else {
