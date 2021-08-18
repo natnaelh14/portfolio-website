@@ -1,15 +1,7 @@
 .projects {
-    /* width: auto; */
-    /* max-width: 1200px; */
-    /* justify-content: center; */
     margin: 10%;
-    /* padding:50px; */
     padding-top: 100px;
 
-}
-
-.projects h1 {
-    /* text-align: center; */
 }
 
 .section-heading {
@@ -17,16 +9,9 @@
 }
 
 .projects_wrapper {
-    /* display: flex; */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* justify-content: center; */
-    /* flex: 1 1; */
-    /* align-items: center; */
 }
-
-
-
 
 @media screen and (max-width:1000px) {
     .projects_wrapper {

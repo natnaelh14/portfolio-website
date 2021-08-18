@@ -3,7 +3,6 @@
     margin: 150px auto;
     max-width: 1200px;
     padding-top: 100px;
-    /* border: 1px solid yellow; */
 }
 
 
@@ -23,11 +22,7 @@
     font-size: 1.7rem;
     color:#93939f;
     font-weight: 200;
-    /* font-size: 1.2rem; */
-    /* line-height: 1.5rem; */
-    /* color: #93939f; */
     width:100%;
-    /* max-width:700px; */
     text-align:justify;
     line-height: 2;
 }
@@ -41,7 +36,6 @@
     list-style: none;
     display: grid;
     grid-template-columns: auto auto auto;
-    /* width: 330px; */
     margin: 0;
     padding: 20px;
 }
@@ -49,8 +43,6 @@
     position: relative;
     padding: 0 25px;
     margin-bottom:10px;
-    /* color: #93939f;
-    font-size: 1.2rem; */
     font-size: 1.7rem;
     color:#93939f;
     font-weight: 200;
@@ -83,33 +75,4 @@
         font-size: 1.3rem;
         text-align: center;
     }
-    /* .about-section {
-        flex-direction: column;
-    }
-    .about-sectionImage {
-        width: 60%;
-        margin: 30px 0;
-    } */
 }
-
-/* @media screen and (max-width:600px) {
-    .section-heading {
-        font-size: 3.5rem;
-    }
-    .about {
-        margin: 100px auto;
-    }
-    .about-text {
-        margin-top: 30px;
-    }
-    .about-button {
-        margin: 10px 0;
-        font-size: 1rem;
-    }
-    .about-quote{
-        font-size: 1.2rem;
-    } 
-    .about-quoteAuthor {
-        font-size: 1rem;
-    }
-} */

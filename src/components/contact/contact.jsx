@@ -35,14 +35,6 @@ export default class Contact extends Component {
      )
     console.log(templateParams)
     this.resetForm()
-    // axios
-    //   .post("API_URL", data)
-    //   .then((res) => {
-    //     this.setState({ sent: true }, this.resetForm());
-    //   })
-    //   .catch(() => {
-    //     console.log("Message not sent");
-    //   });
   };
 
   resetForm = () => {

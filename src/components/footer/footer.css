@@ -17,10 +17,6 @@ color: #aeaeb7;
   transition: 0.17s;
 }
 
-/* #email-address:hover:after{
-  transform: scaleX(1);
-} */
-
 .footer h1 {
   padding-bottom: 10px;
   border-bottom: 1px solid #da7282;

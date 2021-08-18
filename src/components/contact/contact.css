@@ -20,29 +20,6 @@ form {
   padding-top: 100px;
 }
   
-  /* h1 { */
-    /* font-weight: 100;
-    color: white;
-    text-align: center; */
-    /* padding-bottom: 10px;
-    border-bottom: 1px solid #da7282; */
-  /* } */
-  
-  /* .form {
-    background: #ffffff;
-    max-width: 400px;
-    margin: 0 auto;
-  } */
-  
-  /* p {
-    color: #bf1650;
-  } */
-  
-  /* p::before {
-    display: inline;
-    content: "⚠ ";
-  } */
-  
   input {
     display: block;
     box-sizing: border-box;
@@ -118,32 +95,9 @@ form {
     margin: 0 auto;
   }
   
-  /* button[type="button"] {
-    display: block;
-    appearance: none;
-    background: #333;
-    color: rgb(211, 208, 208);
-    border: none;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    border-radius: 4px;
-  } */
-  
   hr {
     margin-top: 30px;
   }
-/*   
-  button {
-    display: block;
-    appearance: none;
-    margin-top: 40px;
-    border: 1px solid #333;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    border-radius: 4px;
-  } */
-
 
   @media screen and (max-width: 1000px) {
     form {

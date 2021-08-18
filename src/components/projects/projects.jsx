@@ -6,10 +6,6 @@ import EmptyPantry from "./empty-pantry.png";
 import eCommerce from "./e-commerce.png";
 import { Fade } from 'react-reveal';
 
-
-
-
-
 function Projects() {
   const skillLangs = {
   html: {
