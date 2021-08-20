@@ -3,7 +3,7 @@ form {
     margin: 0 auto;
     border: 3px solid #69474c;
     box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.8);
-    padding:100px;
+    padding:50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,7 +57,7 @@ form {
 
   button[type="submit"] {
     background: #da7282;
-    color: white;
+    color: #ffffff;
     text-transform: uppercase;
     border: none;
     margin-top: 40px;

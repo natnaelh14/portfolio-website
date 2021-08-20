@@ -4,6 +4,9 @@ import Project from "../project/project";
 import smartMoney from "./get-money.png";
 import EmptyPantry from "./empty-pantry.png";
 import eCommerce from "./e-commerce.png";
+import techBlog from "./tech-blog.png";
+import weather from './weather-app.png';
+import quiz from './quiz-app.png';
 import { Fade } from 'react-reveal';
 
 function Projects() {
@@ -13,7 +16,7 @@ function Projects() {
     label: 'HTML',
   },
   css: {
-    name: "vscode-icons:file-type-html",
+    name: "vscode-icons:file-type-css",
     label: 'CSS',
   },
 
@@ -48,7 +51,7 @@ function Projects() {
           <Project
             title="Get Money Smart"
             desc="An application that simulates the functionality of a mobile bank for educational purposes."
-            langs={[skillLangs.html, skillLangs.react, skillLangs.mysql, skillLangs.mongodb]}
+            langs={[skillLangs.node, skillLangs.css, skillLangs.mysql, skillLangs.javascript]}
             liveLink="https://polar-river-76787.herokuapp.com/"
             githubLink="https://github.com/mlward639/Get_Money_Smart"
             imageLink={smartMoney}
@@ -59,7 +62,7 @@ function Projects() {
           <Project
             title="Empty Pantry"
             desc="An application that lets users find recipes using ingredients they have on hand"
-            langs={[skillLangs.html, skillLangs.react, skillLangs.mysql, skillLangs.mongodb]}
+            langs={[skillLangs.html, skillLangs.css, skillLangs.javascript]}
             liveLink="https://natnaelh14.github.io/empty-pantry/"
             githubLink="https://github.com/natnaelh14/empty-pantry"
             imageLink={EmptyPantry}
@@ -70,43 +73,43 @@ function Projects() {
           <Project
             title="E-Commerce Back-End"
             desc="An application that provides employee management system."
-            langs={[skillLangs.html, skillLangs.react, skillLangs.mysql, skillLangs.mongodb]}
+            langs={[skillLangs.node, skillLangs.mysql]}
             liveLink=""
             githubLink="https://github.com/natnaelh14/e-commerce-back-end"
             imageLink={eCommerce}
           />
         </Fade>
-        {/* E-Commerce Back-End */}
+        {/* Tech Blog */}
         <Fade bottom duration={1000} distance="40px">
           <Project
-            title="E-Commerce Back-End"
-            desc="An application that provides employee management system."
-            langs={[skillLangs.html, skillLangs.react, skillLangs.mysql, skillLangs.mongodb]}
-            liveLink=""
-            githubLink="https://github.com/natnaelh14/e-commerce-back-end"
-            imageLink={eCommerce}
+            title="Tech Blog"
+            desc=" A blog site that allows users to post and comment with ability to have individual accounts."
+            langs={[skillLangs.css, skillLangs.javascript, skillLangs.mysql, skillLangs.node]}
+            liveLink="http://tech-blognh.herokuapp.com/login"
+            githubLink="https://github.com/natnaelh14/tech-blog"
+            imageLink={techBlog}
           />
         </Fade>
-        {/* Get Money Smart  */}
+        {/* Weather App  */}
         <Fade bottom duration={1000} distance="40px">
           <Project
-            title="Get Money Smart"
-            desc="An application that simulates the functionality of a mobile bank for educational purposes."
-            langs={[skillLangs.html, skillLangs.react, skillLangs.mysql, skillLangs.mongodb]}
-            liveLink="https://polar-river-76787.herokuapp.com/"
-            githubLink="https://github.com/mlward639/Get_Money_Smart"
-            imageLink={smartMoney}
+            title="Weather App"
+            desc=" A weather app that provides current weather and 5 days forecast using user's input (city name). "
+            langs={[skillLangs.html, skillLangs.css, skillLangs.javascript]}
+            liveLink="https://natnaelh14.github.io/weather-app/"
+            githubLink="https://github.com/natnaelh14/weather-app"
+            imageLink={weather}
           />
         </Fade>
-        {/* Get Money Smart  */}
+        {/* Quiz App  */}
         <Fade bottom duration={1000} distance="40px">
           <Project
-            title="Get Money Smart"
-            desc="An application that simulates the functionality of a mobile bank for educational purposes."
-            langs={[skillLangs.html, skillLangs.react, skillLangs.mysql, skillLangs.mongodb]}
-            liveLink="https://polar-river-76787.herokuapp.com/"
-            githubLink="https://github.com/mlward639/Get_Money_Smart"
-            imageLink={smartMoney}
+            title="Quiz App"
+            desc="A timed quiz app that utilizes local storage to save user's previous tests."
+            langs={[skillLangs.html, skillLangs.css, skillLangs.javascript]}
+            liveLink="https://natnaelh14.github.io/quiz-app/"
+            githubLink="https://github.com/natnaelh14/quiz-app"
+            imageLink={quiz}
           />
         </Fade>
       </div>

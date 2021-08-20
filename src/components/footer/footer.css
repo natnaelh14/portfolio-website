@@ -55,4 +55,11 @@ color: #aeaeb7;
   transform: translateY(-5px);
 }
 
-
+@media (max-width: 660px){
+	.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #aeaeb7;
+  }
+}

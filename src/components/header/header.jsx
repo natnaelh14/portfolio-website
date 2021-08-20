@@ -9,7 +9,9 @@ const Header = () => {
   return (
     <nav className="navbar navbar-background ">
       <div className="navbar-main">
-        <img className="navbar-logo" src={LogoImage} alt="logo" />
+        <a href="#about">
+          <img className="navbar-logo" src={LogoImage} alt="logo" href='#intro' />
+        </a>
         <ul className="navbar-list-desktop">
           <li>
             <a href="#about">About</a>

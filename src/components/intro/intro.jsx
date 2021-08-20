@@ -4,7 +4,7 @@ import HeroImage from "./hero-image.png";
 
 function Intro() {
   return (
-    <div className="intro">
+    <div className="intro" id="about">
       <div className="intro-image-mobile">
         <img className="hero-image-mobile" src={HeroImage} alt='hero' />
       </div>

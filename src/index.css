@@ -22,3 +22,9 @@ a {
   color:white;
   text-decoration: none;
 }
+
+@media (max-width: 300px){
+	body {
+		margin-right: -60px !important;
+	}
+}

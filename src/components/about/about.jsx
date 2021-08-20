@@ -31,10 +31,11 @@ const About = () => {
             <li className="about-subSectionitem">Express</li>
             <li className="about-subSectionitem">MySQL</li>
             <li className="about-subSectionitem">MongoDb</li>
+            <li className="about-subSectionitem">GraphQL</li>
             <li className="about-subSectionitem">Heroku</li>
             <li className="about-subSectionitem">Jest</li>
             <li className="about-subSectionitem">PWA</li>
-            <li className="about-subSectionitem">Agile software development</li>
+            <li className="about-subSectionitem">Agile development</li>
            </ul>
         </div>
       </Fade>
