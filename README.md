@@ -2,7 +2,7 @@
 ![alt text](https://img.shields.io/github/last-commit/natnael14/-portfolio-website)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
-A personal portfolio website built with React. I used React and Vanilla CSS for styling. I included all my pertinent projects and contact information about me. I appreciate any feedback.
+A personal portfolio website built with React. The navbar section has relative links to different sections of the page and resume link. I included  pertinent description about my qualifications in about section. In projects section, I listed six projects I have worked on and provided descriptions and links. The contact form has emailjs intergration with error handling. I appreciate any feedback.
 ## Table of Contents
 * [Installation](#Installation)
 * [Usage](#Usage)
@@ -15,7 +15,7 @@ A personal portfolio website built with React. I used React and Vanilla CSS for 
 
 To run necessary dependencies, run the following command:
 
-* npm i
+* npm install
 ## Usage
 ![alt text](/screenshot-01.png)
 ![alt text](/screenshot-02.png)
