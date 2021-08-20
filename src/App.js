@@ -7,6 +7,8 @@ import Intro from './components/intro/intro';
 import Projects from './components/projects/projects';
 import Contact from './components/contact/contact';
 
+const App = 12
+
 function App() {
   return (
     <>
