@@ -1,12 +1,12 @@
 import React from "react";
 import "./projects.css";
 import Project from "../project/project";
-import smartMoney from "./get-money.png";
-import EmptyPantry from "./empty-pantry.png";
-import eCommerce from "./e-commerce.png";
-import techBlog from "./tech-blog.png";
-import weather from './weather-app.png';
-import quiz from './quiz-app.png';
+import smartMoney from "./img/get-money.png";
+import EmptyPantry from "./img/empty-pantry.png";
+import eCommerce from "./img/e-commerce.png";
+import techBlog from "./img/tech-blog.png";
+import weather from './img/weather-app.png';
+import quiz from './img/quiz-app.png';
 import { Fade } from 'react-reveal';
 
 function Projects() {
