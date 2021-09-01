@@ -56,6 +56,10 @@ function Projects() {
       name: "vscode-icons:file-type-handlebars2",
       label: "Handlebars"
     },
+    jquery: {
+      name: 'logos:jquery',
+      label: 'jQuery'
+    },
   };
 
   return (

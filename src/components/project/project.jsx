@@ -3,6 +3,7 @@ import "./project.css";
 import { FaLink, FaGithub } from "react-icons/fa";
 import { Icon } from '@iconify/react';
 import { Tooltip } from "@chakra-ui/react"
+import ModalButton from "./Modal/ModalButton.jsx";
 
 const Project = ({ title, desc, langs, liveLink, githubLink, imageLink }) => {
   return (
@@ -15,7 +16,7 @@ const Project = ({ title, desc, langs, liveLink, githubLink, imageLink }) => {
       <div className="project-langs">
         {langs.map((lang, index) => (
           <Tooltip key={index} label={lang.label} aria-label="A tooltip" fontSize="md" color="white" >
-            <span className="project-lang"><Icon icon={lang.name} height = '40px' /></span>
+            <span className="project-lang"><Icon icon={lang.name} height = '40px' width = '40px'/></span>
           </Tooltip>
         ))}
       </div>
@@ -31,6 +32,7 @@ const Project = ({ title, desc, langs, liveLink, githubLink, imageLink }) => {
       </div>
       <div className="project-detail">
         <p className="project-desc">{desc}</p>
+        {/* <ModelButton /> */}
       </div>
     </div>
   );
