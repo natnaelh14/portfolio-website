@@ -3,7 +3,6 @@ import "./project.css";
 import { FaLink, FaGithub } from "react-icons/fa";
 import { Icon } from '@iconify/react';
 import { Tooltip } from "@chakra-ui/react"
-import ShowMore from "./ShowMore";
 
 const Project = ({ title, desc, langs, liveLink, githubLink, imageLink }) => {
   return (
@@ -32,7 +31,6 @@ const Project = ({ title, desc, langs, liveLink, githubLink, imageLink }) => {
       </div>
       <div className="project-detail">
         <p className="project-desc">{desc}</p>
-        <ShowMore />
       </div>
     </div>
   );

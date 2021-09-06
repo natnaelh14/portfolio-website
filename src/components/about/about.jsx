@@ -12,7 +12,7 @@ const About = () => {
             I am a Nurse turned Developer. I have always been passionate about
             technology. I graduated from Georgia Tech's Full Stack Coding
             Bootcamp in August 2021 and I'm glad I made the decision to finally
-            make the jump.Now, I am looking for my first professional role as a
+            make the jump. Now, I am looking for my first professional role as a
             Web Developer and hoping to find a team to build with and learn
             from. I like to bring amazing ideas to life using the tools below.
           </div>
@@ -33,9 +33,9 @@ const About = () => {
             <li className='about-subSectionitem'>Node.js</li>
             <li className='about-subSectionitem'>Express</li>
             <li className='about-subSectionitem'>MySQL/Sequelize</li>
-            <li className='about-subSectionitem'>MongoDb/Mongoose</li>
-            <li className='about-subSectionitem'>GraphQL</li>
-            <li className='about-subSectionitem'>Heroku</li>
+            <li className='about-subSectionitem'>MongoDB/Mongoose</li>
+            <li className='about-subSectionitem'>GraphQL/Apollo</li>
+            <li className='about-subSectionitem'>Heroku/Git/Terminal</li>
             <li className='about-subSectionitem'>Jest</li>
             <li className='about-subSectionitem'>PWA</li>
             <li className='about-subSectionitem'>Agile development</li>
