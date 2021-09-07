@@ -1,84 +1,83 @@
 .about {
-    width: 90%;
-    margin: 150px auto;
-    max-width: 1200px;
-    padding-top: 100px;
+  width: 90%;
+  margin: 150px auto;
+  max-width: 1200px;
+  padding-top: 100px;
 }
-
 
 .about-section {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .section-heading {
-    font-size: 4rem;
-    margin: 10px 0;
-    color: rgb(3 183 133);
-    display: flex;
-    justify-content: center;
+  font-size: 4rem;
+  margin: 10px 0;
+  color: rgb(3 183 133);
+  display: flex;
+  justify-content: center;
 }
 
-.about-text{
-    font-size: 1.7rem;
-    color:#93939f;
-    font-weight: 200;
-    width:100%;
-    text-align:justify;
-    line-height: 2;
+.about-text {
+  font-size: 1.7rem;
+  color: #93939f;
+  font-weight: 200;
+  width: 100%;
+  text-align: justify;
+  line-height: 2;
 }
 
 .about-subSection {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .about-subSection ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    margin: 0;
-    padding: 20px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 0;
+  padding: 20px;
 }
 .about-subSectionitem {
-    position: relative;
-    padding: 0 25px;
-    margin-bottom:10px;
-    font-size: 1.7rem;
-    color:#93939f;
-    font-weight: 200;
+  position: relative;
+  padding: 0 25px;
+  margin-bottom: 10px;
+  font-size: 1.7rem;
+  color: #93939f;
+  font-weight: 200;
 }
 .about-subSectionitem:before {
-    content: "▹";
-    position: absolute;
-    left: 0px;
-    font-size: 1.8rem;
-    color: #e64861;
-    line-height: 20px;
+  content: '▹';
+  position: absolute;
+  left: 0px;
+  font-size: 1.8rem;
+  color: #e64861;
+  line-height: 20px;
 }
-.about-messageHead{
-    font-size: 2.5rem;
-    color: #787887;
+.about-messageHead {
+  font-size: 2.5rem;
+  color: #787887;
 }
 .about-text--light {
-    color:#93939f;;
-    font-size: 1.2rem;
+  color: #93939f;
+  font-size: 1.2rem;
 }
 .about-contact {
-    color: #787887;
+  color: #787887;
 }
 
-@media screen and (max-width:1000px) {
-    .about-text {
-        font-size: 1.3rem;
-    }
-    .about-subSectionitem {
-        font-size: 1.3rem;
-    }
-    .about-subSection ul {
-        list-style: none;
-        display: grid;
-        grid-template-columns: auto auto;
-        margin: 0;
-        padding: 20px;
-    }
+@media screen and (max-width: 1000px) {
+  .about-text {
+    font-size: 1.3rem;
+  }
+  .about-subSectionitem {
+    font-size: 1.3rem;
+  }
+  .about-subSection ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0;
+    padding: 20px;
+  }
 }

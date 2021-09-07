@@ -9,12 +9,14 @@ const About = () => {
       <Fade bottom duration={1000} distance='40px'>
         <div className='about-section'>
           <div className='about-text'>
-            I am a Nurse turned Developer. I have always been passionate about
-            technology. I graduated from Georgia Tech's Full Stack Coding
-            Bootcamp in August 2021 and I'm glad I made the decision to finally
-            make the jump. Now, I am looking for my first professional role as a
-            Web Developer and hoping to find a team to build with and learn
-            from. I like to bring amazing ideas to life using the tools below.
+            I am a Full Stack Web Developer with a Bachelor's Degree and 6+
+            years of professional experience as a Registered Nurse. I have
+            always been passionate about technology. I graduated from Georgia
+            Tech Full Stack Coding Bootcamp in August 2021 and I'm glad I
+            decided to finally make the jump. Now, I am looking for my first
+            professional role as a Web Developer and hoping to find a team to
+            build with and learn from. I like to bring amazing ideas to life
+            using the tools below.
           </div>
         </div>
         <br />
@@ -26,18 +28,18 @@ const About = () => {
             <li className='about-subSectionitem'>Bootstrap</li>
             <li className='about-subSectionitem'>Bulma</li>
             <li className='about-subSectionitem'>Styled Components</li>
-            <li className='about-subSectionitem'>Git</li>
             <li className='about-subSectionitem'>jQuery</li>
             <li className='about-subSectionitem'>JavaScript</li>
             <li className='about-subSectionitem'>React/Redux</li>
-            <li className='about-subSectionitem'>Node.js</li>
-            <li className='about-subSectionitem'>Express</li>
+            <li className='about-subSectionitem'>Node.js/Express.js</li>
             <li className='about-subSectionitem'>MySQL/Sequelize</li>
             <li className='about-subSectionitem'>MongoDB/Mongoose</li>
             <li className='about-subSectionitem'>GraphQL/Apollo</li>
             <li className='about-subSectionitem'>Heroku/Git/Terminal</li>
             <li className='about-subSectionitem'>Jest</li>
             <li className='about-subSectionitem'>PWA</li>
+            <li className='about-subSectionitem'>Data Structures</li>
+            <li className='about-subSectionitem'>Algorithms</li>
             <li className='about-subSectionitem'>Agile development</li>
           </ul>
         </div>

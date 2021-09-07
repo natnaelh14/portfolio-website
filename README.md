@@ -3,7 +3,7 @@
 ## Live Link
 https://natnaeldev.com
 ## Description
-A personal portfolio website built with React. The navbar section has relative links to different sections of the page and resume link. I included  pertinent description about my qualifications in about section. In projects section, I listed six projects I have worked on and provided descriptions and links. The contact form has emailjs intergration with error handling. I appreciate any feedback.
+A personal portfolio website built with React. The navbar section has relative links to different sections of the page and resume link. I included  pertinent description about my qualifications in the about section. In projects section, I listed six projects I have worked on and provided descriptions and links. The contact form has emailjs integration with error handling. I appreciate any feedback.
 ## Table of Contents
 * [Installation](#Installation)
 * [Usage](#Usage)
@@ -18,10 +18,10 @@ To run necessary dependencies, run the following command:
 
 * npm install
 ## Usage
-![alt text](/screenshot-01.png)
-![alt text](/screenshot-02.png)
-![alt text](/screenshot-03.png)
-![alt text](/screenshot-04.png)
+![alt text](/img/screenshot-01.png)
+![alt text](/img/screenshot-02.png)
+![alt text](/img/screenshot-03.png)
+![alt text](/img/screenshot-04.png)
 ## License
 Copyright (C) 2021 Natnael Haile
 
@@ -36,4 +36,5 @@ Copyright (C) 2021 Natnael Haile
 ## Questions
 * If you have any issues, create an issue on the project.
 ## Contact
-* You can contact me directly at haile.natnael@natnaeldev.com. You can also find more of my work at (https://github.com/natnaelh14/)
+* You can contact me directly at haile.natnael@natnaeldev.com. 
+* You can also find more of my work at (https://github.com/natnaelh14/)
