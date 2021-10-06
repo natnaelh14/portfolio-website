@@ -20,3 +20,10 @@
 .experience-button:hover {
     background: rgba(24, 186, 189, 0.1);
   }
+
+  @media screen and (max-width: 1000px) {
+    .experience-button {
+      width: 200px;
+      font-size: 1.2rem;
+    }
+  } 

@@ -160,6 +160,7 @@
 }
 .intro-aboutLink:hover {
   background: rgba(24, 186, 189, 0.1);
+  color: #e64861;
 }
 
 .intro-image {

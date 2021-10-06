@@ -36,18 +36,6 @@ class Education extends Component {
                     </div>
                   </article>
                   <article>
-                    {/* <div
-                      className={`${classes.timeline_icon} ${classes.timeline_icon_4}`}
-                    >
-                      <MdWork />
-                    </div>
-                    <div className={classes.label}>
-                      <h2>Internship</h2>
-                      <p>
-                        Completed one month Internship in React Js with
-                        Internity Foundation
-                      </p>
-                    </div> */}
                     <div className={classes.timeline_entry_inner}>
                       <div
                         className={
