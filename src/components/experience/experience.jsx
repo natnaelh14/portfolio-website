@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './experience.css';
+import Education from './education';
 
 class Experience extends Component {
   constructor() {
@@ -30,7 +31,7 @@ class Experience extends Component {
             Work Experience
           </button>
         </div>
-        <div>{this.state.showMessage && <div>hello world!</div>}</div>
+        <div>{this.state.showMessage && <Education/>}</div>
       </>
     );
   }

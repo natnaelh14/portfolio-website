@@ -35,13 +35,20 @@ color: #aeaeb7;
 }
 .contact-link {
   display: flex;
-  justify-content: center;;
+  justify-content: center;
+}
+.contact-copyright {
+  display: flex;
+  justify-content:center;
+}
+.contact-copyright p {
+  color: #aeaeb7;
 }
 .footer-social {
   padding: 0;
   list-style: none;
   display: flex;
-  margin: 20px 0 40px 0;
+  /* margin: 20px 0 40px 0; */
 }
 .footer-social a {
   font-size: 1.8rem;

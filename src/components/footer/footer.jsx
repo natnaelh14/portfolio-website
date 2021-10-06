@@ -40,6 +40,9 @@ const Footer = () => {
           </a>
         </ul>
       </section>
+      <section className='contact-copyright'>
+        <p>Copyright &copy; 2021 Natnael Haile</p>
+      </section>
     </footer>
   );
 };
