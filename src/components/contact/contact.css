@@ -9,7 +9,6 @@ form {
     justify-content: center;
   }
 
-
 .contact-heading {
   font-size: 4rem;
   margin: 10px 0;
@@ -17,7 +16,6 @@ form {
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
-  padding-top: 100px;
 }
   
   input {
