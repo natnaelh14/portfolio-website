@@ -1,7 +1,7 @@
 import React from 'react';
 import './projects.css';
 import Project from '../project/project';
-import smartMoney from './img/get-money.png';
+import smartMoney from './img/smart-bank.png';
 import EmptyPantry from './img/empty-pantry.png';
 import eCommerce from './img/e-commerce.png';
 import techBlog from './img/tech-blog.png';
@@ -37,28 +37,36 @@ function Projects() {
       label: 'MySQL',
     },
     sequelize: {
-      name: "vscode-icons:file-type-sequelize",
-      label: "Sequelize"
+      name: 'vscode-icons:file-type-sequelize',
+      label: 'Sequelize',
     },
     mongodb: {
       name: 'vscode-icons:file-type-mongo',
-      label: 'Mongodb',
+      label: 'MongoDB',
     },
     graphql: {
       name: 'vscode-icons:file-type-graphql',
       label: 'GraphQL',
     },
     styled: {
-      name:'vscode-icons:file-type-styled',
-      label: 'Styled Components'
+      name: 'vscode-icons:file-type-styled',
+      label: 'Styled Components',
     },
     handlebars: {
-      name: "vscode-icons:file-type-handlebars2",
-      label: "Handlebars"
+      name: 'vscode-icons:file-type-handlebars2',
+      label: 'Handlebars',
+    },
+    redux: {
+      name: 'logos:redux',
+      label: 'Redux',
+    },
+    paypal: {
+      name: 'logos:paypal',
+      label: 'PayPal',
     },
     jquery: {
-      name: 'logos:jquery',
-      label: 'jQuery'
+      name: 'fontisto:jquery',
+      label: 'jQuery',
     },
   };
 
@@ -66,6 +74,24 @@ function Projects() {
     <div className='projects' id='projects'>
       <h1 className='section-heading'>Projects</h1>
       <div className='projects_wrapper'>
+        {/* SpiceLand & Co. */}
+        <Fade bottom duration={1000} distance='40px'>
+          <Project
+            title='SpiceLand & Co.'
+            desc='An e-commerce platform application built with react/redux, express, and MongoDB.'
+            langs={[
+              skillLangs.javascript,
+              skillLangs.react,
+              skillLangs.redux,
+              skillLangs.node,
+              skillLangs.mongodb,
+              skillLangs.paypal,
+            ]}
+            liveLink='https://spice-land.herokuapp.com'
+            githubLink='https://github.com/natnaelh14/ecommerce'
+            imageLink={eCommerce}
+          />
+        </Fade>
         {/* Jboard  */}
         <Fade bottom duration={1000} distance='40px'>
           <Project
@@ -75,7 +101,7 @@ function Projects() {
               skillLangs.styled,
               skillLangs.javascript,
               skillLangs.react,
-              skillLangs.node,              
+              skillLangs.node,
               skillLangs.mongodb,
               skillLangs.graphql,
             ]}
@@ -84,10 +110,10 @@ function Projects() {
             imageLink={jboard}
           />
         </Fade>
-        {/* Get Money Smart  */}
+        {/* Smart Bank  */}
         <Fade bottom duration={1000} distance='40px'>
           <Project
-            title='Get Money Smart'
+            title='Smart Bank'
             desc='A full stack application that simulates the functionality of a mobile bank for educational purposes.'
             langs={[
               skillLangs.css,
@@ -96,10 +122,9 @@ function Projects() {
               skillLangs.node,
               skillLangs.mysql,
               skillLangs.sequelize,
-              
             ]}
-            liveLink='https://polar-river-76787.herokuapp.com/'
-            githubLink='https://github.com/mlward639/Get_Money_Smart'
+            liveLink='https://smart-bank-bank-app.herokuapp.com/'
+            githubLink='https://github.com/natnaelh14/Get_Money_Smart'
             imageLink={smartMoney}
           />
         </Fade>
@@ -108,21 +133,10 @@ function Projects() {
           <Project
             title='Empty Pantry'
             desc='An application that lets users find recipes using ingredients they have on hand'
-            langs={[skillLangs.html, skillLangs.css, skillLangs.javascript]}
+            langs={[skillLangs.html, skillLangs.css, skillLangs.javascript, skillLangs.jquery]}
             liveLink='https://natnaelh14.github.io/empty-pantry/'
             githubLink='https://github.com/natnaelh14/empty-pantry'
             imageLink={EmptyPantry}
-          />
-        </Fade>
-        {/* E-Commerce Back-End */}
-        <Fade bottom duration={1000} distance='40px'>
-          <Project
-            title='E-Commerce Back-End'
-            desc='An application that provides employee management system.'
-            langs={[skillLangs.node, skillLangs.mysql]}
-            liveLink=''
-            githubLink='https://github.com/natnaelh14/e-commerce-back-end'
-            imageLink={eCommerce}
           />
         </Fade>
         {/* Tech Blog */}
