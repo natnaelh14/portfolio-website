@@ -41,7 +41,7 @@ const Footer = () => {
         </ul>
       </section>
       <section className='contact-copyright'>
-        <p>Copyright &copy; 2021 Natnael Haile</p>
+        <p>Copyright &copy; 2021 Natnael Haile. All Rights Reserved.</p>
       </section>
     </footer>
   );
