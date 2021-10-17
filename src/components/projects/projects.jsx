@@ -78,7 +78,7 @@ function Projects() {
         <Fade bottom duration={1000} distance='40px'>
           <Project
             title='SpiceLand & Co.'
-            desc='An e-commerce platform application built with react/redux, express, and MongoDB.'
+            desc='A full-stack e-commerce application that provides an easy platform to sell and buy spices.'
             langs={[
               skillLangs.javascript,
               skillLangs.react,
