@@ -22,7 +22,10 @@ class Work extends Component {
                         Northside Hospital <span>Aug 2015 - Mar 2020</span>
                       </h2>
                       <p>
-                      Served a leadership role in providing the highest quality of patient care and precepting new nurses.
+                      Effectively supervised a  team of 12-16 nursing staff and implemented several performance improvement activities. 
+                      </p>
+                      <p>
+                      Served a leadership role by providing the highest quality of patient care and by precepting new nurses.
                       </p>
                     </div>
                   </article>
