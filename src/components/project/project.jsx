@@ -1,37 +1,68 @@
-import React from "react";
-import "./project.css";
-import { FaLink, FaGithub } from "react-icons/fa";
+import React, { useState } from 'react';
+import './project.css';
+import { FaLink, FaGithub } from 'react-icons/fa';
 import { Icon } from '@iconify/react';
-import { Tooltip } from "@chakra-ui/react"
+import { Tooltip } from '@chakra-ui/react';
+import Modal from '../Modal/Modal';
 
 const Project = ({ title, desc, langs, liveLink, githubLink, imageLink }) => {
+  const [show, setShow] = useState(false);
+
+  const showHandler = () => {
+    setShow(!show)
+  }
+
   return (
-    <div className="project">
-      <div className="project-title">
+    <div className='project'>
+      <div className='project-title'>
         <h2>{title}</h2>
       </div>
-      <a href={liveLink} target="_blank" rel="noopener noreferrer" ><img className="project-image" src={imageLink} style={{ width: "300px", height: "250px" }} alt="project"/></a>
-      <br/>
-      <div className="project-langs">
+      <a href={liveLink} target='_blank' rel='noopener noreferrer'>
+        <img
+          className='project-image'
+          src={imageLink}
+          style={{ width: '300px', height: '250px' }}
+          alt='project'
+        />
+      </a>
+      <br />
+      <div className='project-langs'>
         {langs.map((lang, index) => (
-          <Tooltip key={index} label={lang.label} aria-label="A tooltip" fontSize="md" color="white" >
-            <span className="project-lang"><Icon icon={lang.name} height = '40px' width = '40px'/></span>
+          <Tooltip
+            key={index}
+            label={lang.label}
+            aria-label='A tooltip'
+            fontSize='md'
+            color='white'
+          >
+            <span className='project-lang'>
+              <Icon icon={lang.name} height='40px' width='40px' />
+            </span>
           </Tooltip>
         ))}
       </div>
-      <div className="project-links">
+      <div className='project-links'>
         {liveLink && (
-          <a href={liveLink} target="_blank" rel="noopener noreferrer" >
+          <a href={liveLink} target='_blank' rel='noopener noreferrer'>
             <FaLink />
           </a>
         )}
-        <a href={githubLink} target="_blank" rel="noopener noreferrer" >
+        <a href={githubLink} target='_blank' rel='noopener noreferrer'>
           <FaGithub />
         </a>
       </div>
-      <div className="project-detail">
-        <p className="project-desc">{desc}</p>
+      <div className='project-detail'>
+        <p className='project-desc'>{desc}</p>
       </div>
+      <button
+        class='toggle-button'
+        id='centered-toggle-button'
+        onClick={showHandler}
+      >
+        {' '}
+        show Modal{' '}
+      </button>
+      <Modal onClose={showHandler} show={show} description={desc} />
     </div>
   );
 };
