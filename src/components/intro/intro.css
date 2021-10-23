@@ -139,7 +139,7 @@
   font-family: sans-serif;
 }
 .intro-text {
-  margin: 0;
+  margin-bottom: 50px;
   font-size: 1.7rem;
   color: rgb(3 183 133);
   font-weight: 600;

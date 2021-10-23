@@ -91,7 +91,7 @@ export default class Contact extends Component {
         </h1>
         <Fade bottom duration={1000} distance="40px">
           <form onSubmit={(e) => this.formSubmit(e)}>
-            <label>Full Name</label>
+            <label className='required'>Full Name</label>
             <input
               onChange={this.handleChange.bind(this, "name")}
               value={this.state.name}
@@ -100,7 +100,7 @@ export default class Contact extends Component {
               name="full-name"
               type="text"
             />
-            <label>E-mail Address</label>
+            <label className='required'>E-mail Address</label>
             <input
               onChange={this.handleChange.bind(this, "email")}
               value={this.state.email}
@@ -109,7 +109,7 @@ export default class Contact extends Component {
               name="email"
               type="email"
             />
-            <label>Subject</label>
+            <label className='required'>Subject</label>
             <input
               onChange={this.handleChange.bind(this, "subject")}
               value={this.state.subject}
@@ -118,7 +118,7 @@ export default class Contact extends Component {
               name="subject"
               type="text"
             />
-            <label>Message</label>
+            <label className='required' >Message</label>
             <textarea
               onChange={this.handleChange.bind(this, "message")}
               value={this.state.message}

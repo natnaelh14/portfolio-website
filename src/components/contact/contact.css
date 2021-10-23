@@ -97,6 +97,11 @@ form {
     margin-top: 30px;
   }
 
+  .required:after {
+    content:" *";
+    color: #da7282;
+  }
+
   @media screen and (max-width: 1000px) {
     form {
         margin:50px;

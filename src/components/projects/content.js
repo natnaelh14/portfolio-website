@@ -8,11 +8,11 @@ const projectContent = {
   ],
   emptyPantry: [
     'Search for meal based meal type, diet preference & ingredient name',
-    'calculate calorie for daily intake',
+    'Calculate calorie for daily intake',
   ],
   jboard: [
     'Add/Update/Delete company information',
-    'upload resume',
+    'Upload resume',
     'Drag and Drop companies based interview stage',
   ],
   quizApp: [

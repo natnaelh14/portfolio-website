@@ -44,8 +44,8 @@ export const Form = ({
         <p>{description}</p>
       </div>
       <div className='modal-content'>
+        <label>Features:</label>
         <ul>
-          <label>Features:</label>
           {content.map((sen, i) => (
             <li key={i} className='modal-content-item'>{sen}</li>
           ))}
