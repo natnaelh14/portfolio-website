@@ -102,6 +102,12 @@ class Project extends Component {
             closeModal={this.closeModal}
             onKeyDown={this.onKeyDown}
             onClickOutside={this.onClickOutside}
+            description={desc}
+            title={title}
+            imageLink={imageLink}
+            liveLink={liveLink}
+            githubLink={githubLink}
+            langs={langs}
           />
         ) : null}
       </div>

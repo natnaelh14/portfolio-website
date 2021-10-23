@@ -17,7 +17,7 @@
     width: 100%;
     height: 100%;
     padding: 2.5em 1.5em 1.5em 1.5em;
-    background-color: #ffffff;
+    background-color: #18181b;
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
@@ -41,17 +41,17 @@
     right: 0;
     padding: 0.5em;
     line-height: 1;
-    background: #f6f6f7;
+    background: none;
     border: 0;
     box-shadow: 0;
     cursor: pointer;
   }
   
   ._modal-close-icon {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     fill: transparent;
-    stroke: black;
+    stroke: #e64861;
     stroke-linecap: round;
     stroke-width: 2;
   }

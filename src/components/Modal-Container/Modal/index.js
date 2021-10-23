@@ -8,7 +8,13 @@ export const Modal = ({
   onKeyDown,
   modalRef,
   buttonRef,
-  closeModal
+  closeModal,
+  description,
+  title,
+  imageLink,
+  liveLink,
+  githubLink,
+  langs
 }) => {
   return ReactDOM.createPortal(
     <FocusTrap>
@@ -37,7 +43,14 @@ export const Modal = ({
             </svg>
           </button>
           <div className="modal-body">
-            <Form />
+            <Form 
+            description={description} 
+            title={title}
+            imageLink={imageLink}
+            liveLink={liveLink}
+            githubLink={githubLink}
+            langs={langs}
+            />
           </div>
         </div>
       </aside>

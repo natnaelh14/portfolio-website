@@ -1,11 +1,18 @@
-import React from "react";
-import "./form.css";
+import React from 'react';
+import './form.css';
 
-export const Form = () => {
-
+export const Form = ({ description, title, liveLink, imageLink }) => {
   return (
-    <div>
-      <h1 className="text-center title">ADD JOB</h1>
+    <div className='modal-container'>
+      <a href={liveLink} className='modal-image' target='_blank' rel='noopener noreferrer'>
+        <img
+          className='image'
+          src={imageLink}
+          alt='project'
+        />
+      </a>
+      <h1 className='title'>{title}</h1>
+      <p>{description}</p>
     </div>
   );
 };

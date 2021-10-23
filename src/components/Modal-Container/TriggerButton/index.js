@@ -5,7 +5,7 @@ const TriggerButton = ({ triggerText, buttonRef, showModal }) => {
   return (
     <div className="buttonWrapper">
       <button
-        className="btn btn-lg btn-outline-warning text-dark center"
+        className="intro-aboutLink"
         ref={buttonRef}
         onClick={showModal}
       >
