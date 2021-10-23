@@ -1,19 +1,47 @@
 .modal-container {
-    background-color: #1e1e1e;
-    color: #7d7d83;
-    padding: 25px;
+  background-color: #1e1e1e;
+  color: #7d7d83;
+  padding: 25px;
 }
 
 .modal-image {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .image {
-    width: 150px;
-    height: 150px;
+  width: 150px;
+  height: 150px;
 }
 
 .title {
-    text-align: center;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.modal-langs {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 10px 0;
+}
+
+.modal-lang {
+  padding: 10px;
+}
+
+.modal-links {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 10px 0;
+}
+
+.modal-links a {
+  font-size: 2rem;
+  margin: 0 10px;
+  color: #e64861;
+}
+
+.modal-description p {
+    font-size: 1.2rem;
+    text-align:center;
 }

@@ -11,10 +11,10 @@ export const Modal = ({
   closeModal,
   description,
   title,
-  imageLink,
   liveLink,
   githubLink,
-  langs
+  langs,
+  logo
 }) => {
   return ReactDOM.createPortal(
     <FocusTrap>
@@ -46,7 +46,7 @@ export const Modal = ({
             <Form 
             description={description} 
             title={title}
-            imageLink={imageLink}
+            logo={logo}
             liveLink={liveLink}
             githubLink={githubLink}
             langs={langs}

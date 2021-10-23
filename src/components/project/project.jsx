@@ -45,7 +45,7 @@ class Project extends Component {
   };
 
   render() {
-    const { title, desc, langs, liveLink, githubLink, imageLink } = this.props;
+    const { title, desc, langs, liveLink, githubLink, imageLink, logo } = this.props;
 
     return (
       <div className='project'>
@@ -104,10 +104,10 @@ class Project extends Component {
             onClickOutside={this.onClickOutside}
             description={desc}
             title={title}
-            imageLink={imageLink}
             liveLink={liveLink}
             githubLink={githubLink}
             langs={langs}
+            logo={logo}
           />
         ) : null}
       </div>
