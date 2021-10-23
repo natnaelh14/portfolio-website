@@ -13,6 +13,7 @@ import eCommerceLogo from './img/e-commerce-logo.png';
 import techBlogLogo from './img/tech-blog-logo.png';
 import jboardLogo from './img/jboard-logo.png';
 import quizLogo from './img/quiz-app-logo.png';
+import projectContent from './content';
 import { Fade } from 'react-reveal';
 
 function Projects() {
@@ -85,6 +86,7 @@ function Projects() {
           <Project
             title='SpiceLand & Co.'
             desc='A full-stack e-commerce application that provides an easy platform to sell and buy spices.'
+            content={projectContent.eCommerce}
             logo={eCommerceLogo}
             langs={[
               skillLangs.javascript,
@@ -104,6 +106,7 @@ function Projects() {
           <Project
             title='Jboard'
             desc='A full stack application that empowers job seekers with tools to keep track of job applications.'
+            content={projectContent.jboard}
             logo={jboardLogo}
             langs={[
               skillLangs.styled,
@@ -123,6 +126,7 @@ function Projects() {
           <Project
             title='Smart Bank'
             desc='A full stack application that simulates the functionality of a mobile bank for educational purposes.'
+            content={projectContent.smartBank}
             logo={smartMoneyLogo}
             langs={[
               skillLangs.css,
@@ -142,6 +146,7 @@ function Projects() {
           <Project
             title='Empty Pantry'
             desc='An application that lets users find recipes using ingredients they have on hand'
+            content={projectContent.emptyPantry}
             logo={EmptyPantryLogo}
             langs={[skillLangs.html, skillLangs.css, skillLangs.javascript, skillLangs.jquery]}
             liveLink='https://natnaelh14.github.io/empty-pantry/'
@@ -154,6 +159,7 @@ function Projects() {
           <Project
             title='Tech Blog'
             desc=' A blog site that allows users to post and comment with ability to have individual accounts.'
+            content={projectContent.techBlog}
             logo={techBlogLogo}
             langs={[
               skillLangs.css,
@@ -173,6 +179,7 @@ function Projects() {
           <Project
             title='Quiz App'
             desc="A timed quiz app that utilizes local storage to save user's previous tests."
+            content={projectContent.quizApp}
             logo={quizLogo}
             langs={[skillLangs.html, skillLangs.css, skillLangs.javascript]}
             liveLink='https://natnaelh14.github.io/quiz-app/'

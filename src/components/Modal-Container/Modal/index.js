@@ -14,7 +14,8 @@ export const Modal = ({
   liveLink,
   githubLink,
   langs,
-  logo
+  logo,
+  content
 }) => {
   return ReactDOM.createPortal(
     <FocusTrap>
@@ -50,6 +51,7 @@ export const Modal = ({
             liveLink={liveLink}
             githubLink={githubLink}
             langs={langs}
+            content={content}
             />
           </div>
         </div>

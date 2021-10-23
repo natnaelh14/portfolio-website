@@ -9,7 +9,8 @@ export const Form = ({
   liveLink,
   githubLink,
   langs,
-  logo
+  logo,
+  content,
 }) => {
   return (
     <div className='modal-container'>
@@ -23,8 +24,8 @@ export const Form = ({
       </a>
       <h1 className='title'>{title}</h1>
       <div className='modal-langs'>
-        {langs.map((lang) => (
-          <span className='modal-lang'>
+        {langs.map((lang, index) => (
+          <span key={index} className='modal-lang'>
             <Icon icon={lang.name} height='40px' width='40px' />
           </span>
         ))}
@@ -41,6 +42,14 @@ export const Form = ({
       </div>
       <div className='modal-description'>
         <p>{description}</p>
+      </div>
+      <div className='modal-content'>
+        <ul>
+          <label>Features:</label>
+          {content.map((sen, i) => (
+            <li key={i} className='modal-content-item'>{sen}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );

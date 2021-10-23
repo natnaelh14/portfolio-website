@@ -16,7 +16,7 @@
 
 .title {
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 3.2rem;
 }
 
 .modal-langs {
@@ -44,4 +44,26 @@
 .modal-description p {
     font-size: 1.2rem;
     text-align:center;
+}
+
+.modal-content ul {
+  list-style: none;
+  margin: 0;
+}
+
+.modal-content-item {
+  position: relative;
+  padding: 0 25px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.modal-content-item:before {
+  content: '▹';
+  position: absolute;
+  left: 0px;
+  font-size: 1.8rem;
+  color: #e64861;
+  line-height: 20px;
 }
