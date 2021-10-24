@@ -27,7 +27,7 @@
     /* Center the Modal! */
     .modal-area {
       left: 50%;
-      top: 55%;
+      top: 50%;
       height: auto;
       transform: translate(-50%, -50%);
       max-width: 30em;

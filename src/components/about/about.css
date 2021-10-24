@@ -65,12 +65,18 @@
   color: #787887;
 }
 
+@media screen and (max-width: 700px) {
+  .about-subSectionitem {
+    font-size: 0.8rem !important;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .about-text {
     font-size: 1.3rem;
   }
   .about-subSectionitem {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   .about-subSection ul {
     list-style: none;

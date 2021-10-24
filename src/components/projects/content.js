@@ -11,6 +11,7 @@ const projectContent = {
     'Calculate calorie for daily intake',
   ],
   jboard: [
+    'Built with Style Components, React, React Router, Redux, Node, Express GraphQL & MongoDB',
     'Add/Update/Delete company information',
     'Upload resume',
     'Drag and Drop companies based interview stage',

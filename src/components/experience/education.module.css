@@ -1,7 +1,7 @@
 .box {
   margin-top: 50px;
-  margin-left: 250px;
-  margin-right: 300px;
+  margin-left: 150px;
+  margin-right: 200px;
 }
 .head {
   display: inline-block;
@@ -146,6 +146,18 @@ a:hover {
 @media (max-width: 440px) {
   .container {
     padding: 0 42px 0 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .label h2 {
+    font-size: 15px;
+  }
+  .label h2 span {
+    font-size: 10px;
+  }
+  .label p {
+    font-size: 15px;
   }
 }
 
