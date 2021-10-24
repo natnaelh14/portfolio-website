@@ -79,14 +79,24 @@
 }
 
 
+@media screen and (max-width: 700px) {
+  .project {
+      margin: 0px;
+      margin-bottom: 50px;
+    }
+  .project-image {
+    width:200px !important;
+    height:200px !important;
+  }
+  .project-lang .icon {
+    width:20px;
+    height:20px;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .project {
       margin: 0px;
       margin-bottom: 50px;
-      width: 300px;
-    }
-  .project-image {
-    
   }
 }
-
