@@ -5,7 +5,7 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  width: 400px auto;
+  max-width: 400px;
   align-items: center;
   border: 3px solid #69474c;
 }
@@ -83,6 +83,10 @@
   .project {
       margin: 0px;
       margin-bottom: 50px;
+      width: 300px;
     }
+  .project-image {
+    
+  }
 }
 
