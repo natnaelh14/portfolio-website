@@ -1,11 +1,11 @@
 .project {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.8);
   margin: 50px;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  max-width: 400px;
+  /* max-width: 400px; */
   align-items: center;
   border: 3px solid #69474c;
 }
@@ -91,12 +91,5 @@
   .project-lang .icon {
     width:20px;
     height:20px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .project {
-      margin: 0px;
-      margin-bottom: 50px;
   }
 }
