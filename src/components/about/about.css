@@ -67,13 +67,16 @@
 
 @media screen and (max-width: 700px) {
   .about-subSectionitem {
-    font-size: 0.8rem !important;
+    font-size: 0.9rem !important;
+  }
+  .about-text {
+    font-size: 1.1rem;
   }
 }
 
 @media screen and (max-width: 1000px) {
   .about-text {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   .about-subSectionitem {
     font-size: 1rem;

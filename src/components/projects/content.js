@@ -12,6 +12,7 @@ const projectContent = {
   ],
   jboard: [
     'Built with Style Components, React, React Router, Redux, Node, Express GraphQL & MongoDB',
+    'User Authentication/Reset forgotten password',
     'Add/Update/Delete company information',
     'Upload resume',
     'Drag and Drop companies based interview stage',
