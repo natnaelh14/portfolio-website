@@ -26,7 +26,7 @@ export const Form = ({
       <div className='modal-langs'>
         {langs.map((lang, index) => (
           <span key={index} className='modal-lang'>
-            <Icon icon={lang.name} height='40px' width='40px' />
+            <Icon className='modal-icon' icon={lang.name} height='40px' width='40px' />
           </span>
         ))}
       </div>

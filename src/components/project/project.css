@@ -80,8 +80,12 @@
 
 
 @media screen and (max-width: 700px) {
+  .project-desc {
+    font-size: 1rem;
+  }
   .project {
-      margin: 0px;
+      margin: 0px ;
+      padding: 0px;
       margin-bottom: 50px;
     }
   .project-image {
@@ -89,7 +93,7 @@
     height:200px !important;
   }
   .project-lang .icon {
-    width:20px;
-    height:20px;
+    width:25px;
+    height:25px;
   }
 }
