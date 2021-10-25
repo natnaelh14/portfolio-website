@@ -111,10 +111,13 @@ form {
 
   @media screen and (max-width: 700px) {
     form {
-      margin:50px;
+      margin:25px;
       padding:25px;
     } 
     .contact-copyright p {
       font-size: 0.7rem;
+    }
+    button[type="submit"] {
+      font-size: 10px;
     }
   }
