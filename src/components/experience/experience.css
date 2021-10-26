@@ -27,3 +27,13 @@
       font-size: 1.2rem;
     }
   } 
+
+  @media screen and (max-width: 700px) {
+    .experience-button {
+      font-size: 1rem;
+    }
+    .button-container {
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+  }

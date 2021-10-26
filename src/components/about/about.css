@@ -86,6 +86,9 @@
     display: grid;
     grid-template-columns: auto auto;
     margin: 0;
-    padding: 20px;
+    padding:10px;
+  }
+  .about-subSection {
+    padding-left: 20px;
   }
 }

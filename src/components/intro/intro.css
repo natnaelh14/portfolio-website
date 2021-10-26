@@ -194,6 +194,7 @@
   }
 }
 @media screen and (max-width: 600px) {
+
   .intro-desc {
     margin: 0;
   }
@@ -204,6 +205,6 @@
     font-size: 1.5rem;
   }
   .intro-aboutLink {
-    font-size: 1.2rem;
+    font-size: 1rem !important;
   }
 }
