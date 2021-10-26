@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade';
 const Footer = () => {
   return (
     <footer className='footer'>
-      <Fade>
+      <Fade bottom duration={1000} distance="40px">
         <section className='contact-info'>
           <div>
             <h1>Call</h1>

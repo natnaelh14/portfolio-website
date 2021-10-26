@@ -24,10 +24,16 @@
 
 @media screen and (min-width: 500px) {
   /* Center the Modal! */
+  .modal-body {
+    padding: 0px;
+    height: 100%;
+  }
   .modal-area {
     left: 50%;
     top: 50%;
-    height: auto;
+    height: 80%;
+    margin-top: 25px;
+    margin-bottom: 25px;;
     transform: translate(-50%, -50%);
     max-width: 30em;
     max-height: calc(100% - 1em);
@@ -79,7 +85,6 @@
   .modal-container {
     padding: 0px;
     height: 100%;
-  
   }
   .modal-body {
     height: auto;

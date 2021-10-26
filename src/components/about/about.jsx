@@ -12,12 +12,11 @@ const About = () => {
           <div className='about-text'>
             I am a Full Stack Web Developer with a Bachelor's Degree and 6+
             years of professional experience as a Registered Nurse. I have
-            always been passionate about technology. I graduated from Georgia
-            Tech Full Stack Coding Bootcamp in August 2021 and I'm glad I
-            decided to finally make the jump. Now, I am looking for my first
-            professional role as a Web Developer and hoping to find a team to
-            build with and learn from. I like to bring amazing ideas to life
-            using the tools below.
+            always been passionate about technology. I started coding a year ago
+            and I'm glad I decided to finally make the jump. Now, I am looking
+            for my first professional role as a Web Developer and hoping to find
+            a team to build with and learn from. I like to bring amazing ideas
+            to life using the tools below.
           </div>
         </div>
         <br />

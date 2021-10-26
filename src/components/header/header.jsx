@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./header.css";
 import { HiMenuAlt3, HiOutlineX } from "react-icons/hi";
 import LogoImage from "./logo.png";
-import Resume from "./resume.pdf";
+import Resume from "./tech-resume.pdf";
 
 const Header = () => {
   const [showNav, SetshowNav] = useState(false);
