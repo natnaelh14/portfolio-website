@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './about.css';
 import { Fade } from 'react-reveal';
 
 const About = () => {
+  const [show, Setshow] = useState({ type: 'front-end' });
   return (
     <div className='about' id='about'>
       <h1 className='section-heading'>About</h1>
@@ -21,7 +22,74 @@ const About = () => {
         </div>
         <br />
         <br />
-        <div className='about-subSection'>
+        <div className='about__sideParent'>
+          <div className='about__buttons'>
+            <button
+              className={
+                show.type === 'front-end'
+                  ? 'about__button about__button--active'
+                  : 'about__button'
+              }
+              onClick={() => Setshow({ type: 'front-end' })}
+            >
+              Front-End
+            </button>
+            <button
+              className={
+                show.type === 'back-end'
+                  ? 'about__button about__button--active'
+                  : 'about__button'
+              }
+              onClick={() => Setshow({ type: 'back-end' })}
+            >
+              Back-End
+            </button>
+            <button
+              className={
+                show.type === 'other-tech'
+                  ? 'about__button about__button--active'
+                  : 'about__button'
+              }
+              onClick={() => Setshow({ type: 'other-tech' })}
+            >
+              Other Tech
+            </button>
+          </div>
+          {show.type === 'front-end' && (
+            <div className='about-subSection'>
+              <ul>
+                <li className='about-subSectionitem'>Business</li>
+                <li className='about-subSectionitem'>Playing Guitar</li>
+                <li className='about-subSectionitem'>Mindfulness</li>
+                <li className='about-subSectionitem'>Singing</li>
+                <li className='about-subSectionitem'>Web</li>
+              </ul>
+            </div>
+          )}
+          {show.type === 'back-end' && (
+            <div className='about-subSection'>
+              <ul>
+                <li className='about-subSectionitem'>Business</li>
+                <li className='about-subSectionitem'>Playing Guitar</li>
+                <li className='about-subSectionitem'>Mindfulness</li>
+                <li className='about-subSectionitem'>Singing</li>
+                <li className='about-subSectionitem'>Web</li>
+              </ul>
+            </div>
+          )}
+          {show.type === 'other-tech' && (
+            <div className='about-subSection'>
+              <ul>
+                <li className='about-subSectionitem'>Business</li>
+                <li className='about-subSectionitem'>Playing Guitar</li>
+                <li className='about-subSectionitem'>Mindfulness</li>
+                <li className='about-subSectionitem'>Singing</li>
+                <li className='about-subSectionitem'>Web</li>
+              </ul>
+            </div>
+          )}
+        </div>
+        {/* <div className='about-subSection'>
           <ul>
             <li className='about-subSectionitem'>HTML5</li>
             <li className='about-subSectionitem'>CSS3</li>
@@ -45,7 +113,7 @@ const About = () => {
             <li className='about-subSectionitem'>GitHub Actions/Mocha</li>
             <li className='about-subSectionitem'>CICD</li>
           </ul>
-        </div>
+        </div> */}
       </Fade>
     </div>
   );
