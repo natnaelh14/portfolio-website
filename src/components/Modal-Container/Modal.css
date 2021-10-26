@@ -78,6 +78,11 @@
 @media screen and (max-width: 700px) {
   .modal-container {
     padding: 0px;
+    height: 100%;
+  
+  }
+  .modal-body {
+    height: auto;
   }
   .modal-cover {
     width: 85%;
