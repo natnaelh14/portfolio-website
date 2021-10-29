@@ -62,8 +62,10 @@ const About = () => {
                 <li className='about-subSectionitem'>Bootstrap</li>
                 <li className='about-subSectionitem'>Handlebars.js</li>
                 <li className='about-subSectionitem'>Styled Components</li>
-                <li className='about-subSectionitem'>JavaScript/jQuery</li>
-                <li className='about-subSectionitem'>React/Redux</li>
+                <li className='about-subSectionitem'>JavaScript</li>
+                <li className='about-subSectionitem'>jQuery</li>
+                <li className='about-subSectionitem'>React</li>
+                <li className='about-subSectionitem'>Redux</li>
                 <li className='about-subSectionitem'>TypeScript</li>
                 <li className='about-subSectionitem'>PWA</li>
                 <li className='about-subSectionitem'>Styled Components</li>
@@ -73,18 +75,20 @@ const About = () => {
           {show.type === 'back-end' && (
             <div className='about-subSection'>
               <ul>
-                <li className='about-subSectionitem'>Node.js/Express.js</li>
-                <li className='about-subSectionitem'>MySQL/Sequelize</li>
-                <li className='about-subSectionitem'>MongoDB/Mongoose</li>
+                <li className='about-subSectionitem'>Node.js</li>
+                <li className='about-subSectionitem'>Express.js</li>
+                <li className='about-subSectionitem'>MySQL</li>
+                <li className='about-subSectionitem'>Sequelize</li>
+                <li className='about-subSectionitem'>MongoDB</li>
+                <li className='about-subSectionitem'>Mongoose</li>
                 <li className='about-subSectionitem'>GraphQL/Apollo</li>
-                <li className='about-subSectionitem'>Postman</li>
               </ul>
             </div>
           )}
           {show.type === 'other-tech' && (
             <div className='about-subSection'>
               <ul>
-                <li className='about-subSectionitem'>Heroku/Git/Terminal</li>
+                <li className='about-subSectionitem'>Git/Terminal</li>
                 <li className='about-subSectionitem'>Agile development</li>
                 <li className='about-subSectionitem'>Data Structures</li>
                 <li className='about-subSectionitem'>Algorithms</li>
@@ -92,35 +96,12 @@ const About = () => {
                 <li className='about-subSectionitem'>GitHub Actions</li>
                 <li className='about-subSectionitem'>Mocha</li>
                 <li className='about-subSectionitem'>Jest</li>
+                <li className='about-subSectionitem'>Heroku</li>
+                <li className='about-subSectionitem'>Postman</li>
               </ul>
             </div>
           )}
         </div>
-        {/* <div className='about-subSection'>
-          <ul>
-            <li className='about-subSectionitem'>HTML5</li>
-            <li className='about-subSectionitem'>CSS3</li>
-            <li className='about-subSectionitem'>Bootstrap</li>
-            <li className='about-subSectionitem'>Bulma</li>
-            <li className='about-subSectionitem'>Handlebars.js</li>
-            <li className='about-subSectionitem'>Styled Components</li>
-            <li className='about-subSectionitem'>JavaScript/jQuery</li>
-            <li className='about-subSectionitem'>React/Redux</li>
-            <li className='about-subSectionitem'>TypeScript</li>
-            <li className='about-subSectionitem'>Node.js/Express.js</li>
-            <li className='about-subSectionitem'>MySQL/Sequelize</li>
-            <li className='about-subSectionitem'>MongoDB/Mongoose</li>
-            <li className='about-subSectionitem'>GraphQL/Apollo</li>
-            <li className='about-subSectionitem'>Heroku/Git/Terminal</li>
-            <li className='about-subSectionitem'>PWA</li>
-            <li className='about-subSectionitem'>Data Structures</li>
-            <li className='about-subSectionitem'>Algorithms</li>
-            <li className='about-subSectionitem'>Agile development</li>
-            <li className='about-subSectionitem'>Jest</li>
-            <li className='about-subSectionitem'>GitHub Actions/Mocha</li>
-            <li className='about-subSectionitem'>CICD</li>
-          </ul>
-        </div> */}
       </Fade>
     </div>
   );
