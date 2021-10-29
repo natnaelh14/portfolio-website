@@ -1,11 +1,11 @@
 const projectContent = {
   eCommerce: [
     'Built with React, React router, React-Bootstrap, Redux, Node, Express, JWT authentication & MongoDB',
-    'User Accounts and Profiles',
+    'User Accounts and Profile',
     'Full-featured shopping cart with PayPal & credit/debit payments',
     'Product rating & review system',
     'Admin area to manage customers, products & orders',
-    'Product search, carousel, & pagination',
+    'Product search, Carousel, & Pagination',
   ],
   emptyPantry: [
     'Built with HTML, CSS, Bulma, Bootstrap, jQuery & JavaScript',
@@ -36,7 +36,8 @@ const projectContent = {
     'User Accounts and Profiles',
     'Open checking, savings, and credit card account',
     'Simulate bank deposits and credit card charges',
-    'Transfer money between bank accounts',
+    'Transfer money between accounts',
+    'Make a wire transfer to another user\'s account',
     'Make payment on a credit card balance',
     'Tooltips and educational modals with descriptive information about finance',
   ],
