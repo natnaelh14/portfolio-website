@@ -41,7 +41,7 @@
 .about-subSectionitem {
   position: relative;
   padding: 0 25px;
-  margin-bottom: 10px;
+  margin: 10px;
   font-size: 1.4rem;
   color: #93939f;
   font-weight: 200;
@@ -114,6 +114,7 @@
   }
   .about-subSectionitem {
     font-size: 1rem;
+    margin: 5px;
   }
   .about-subSection ul {
     list-style: none;
