@@ -85,7 +85,7 @@ function Projects() {
         <Fade bottom duration={1000} distance='40px'>
           <Project
             title='SpiceLand & Co.'
-            desc='A full-stack e-commerce application that provides an easy platform to sell and buy spices.'
+            desc='A full stack e-commerce application that provides an easy platform to sell and buy spices.'
             content={projectContent.eCommerce}
             logo={eCommerceLogo}
             langs={[
