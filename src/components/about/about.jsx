@@ -60,15 +60,16 @@ const About = () => {
                 <li className='about-subSectionitem'>HTML5</li>
                 <li className='about-subSectionitem'>CSS3</li>
                 <li className='about-subSectionitem'>Bootstrap</li>
-                <li className='about-subSectionitem'>Handlebars.js</li>
                 <li className='about-subSectionitem'>Styled Components</li>
+                <li className='about-subSectionitem'>Material UI</li>
+                <li className='about-subSectionitem'>Bulma</li>
+                <li className='about-subSectionitem'>Handlebars.js</li>
                 <li className='about-subSectionitem'>JavaScript</li>
                 <li className='about-subSectionitem'>jQuery</li>
                 <li className='about-subSectionitem'>React</li>
                 <li className='about-subSectionitem'>Redux</li>
                 <li className='about-subSectionitem'>TypeScript</li>
                 <li className='about-subSectionitem'>PWA</li>
-                <li className='about-subSectionitem'>Styled Components</li>
               </ul>
             </div>
           )}
@@ -98,6 +99,7 @@ const About = () => {
                 <li className='about-subSectionitem'>Jest</li>
                 <li className='about-subSectionitem'>Heroku</li>
                 <li className='about-subSectionitem'>Postman</li>
+                <li className='about-subSectionitem'>Docker</li>
               </ul>
             </div>
           )}

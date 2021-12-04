@@ -18,6 +18,7 @@ const projectContent = {
     'Add/Update/Delete company information',
     'Upload resume',
     'Added Drag and Drop functionality to move companies based on interview stage',
+    'Search Feature using company name'
   ],
   quizApp: [
     'Built with HTML, CSS, jQuery & JavaScript',
