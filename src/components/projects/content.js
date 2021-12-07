@@ -1,4 +1,12 @@
 const projectContent = {
+  cryptoConnect: [
+    'Built with Material-UI, React, Redux, TypeScript, Firebase, GraphQL, MySQL, Sequelize, Docker, Jest, Chai...',
+    'User Authentication with Firebase',
+    'Track CryptoCurrency Holding',
+    'Product rating & review system',
+    'Admin area to manage customers, products & orders',
+    'Product search, Carousel, & Pagination',
+  ],
   eCommerce: [
     'Built with React, React router, React-Bootstrap, Redux, Node, Express, JWT authentication & MongoDB',
     'User Accounts and Profile',
@@ -18,6 +26,7 @@ const projectContent = {
     'Add/Update/Delete company information',
     'Upload resume',
     'Added Drag and Drop functionality to move companies based on interview stage',
+    'Search Feature using company name'
   ],
   quizApp: [
     'Built with HTML, CSS, jQuery & JavaScript',
