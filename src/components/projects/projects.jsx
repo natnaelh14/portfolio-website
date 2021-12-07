@@ -8,7 +8,7 @@ import techBlog from './img/tech-blog.png';
 import jboard from './img/jboard.png';
 import quiz from './img/quiz-app.png';
 import cryptoConnect from './img/crypto-connect.png';
-import cryptoConnectLogo from './logo.svg';
+import cryptoConnectLogo from './img/logo.svg';
 import smartMoneyLogo from './img/smart-bank-logo.png';
 import EmptyPantryLogo from './img/empty-pantry-logo.png';
 import eCommerceLogo from './img/e-commerce-logo.png';
@@ -104,6 +104,10 @@ function Projects() {
       name: 'logos:twitter',
       label: 'Twitter API',
     },
+    crypto: {
+      name: 'logos:bitcoin',
+      label: 'CoinGecko API',
+    },
     jest: {
       name: 'logos:jest',
       label: 'Jest',
@@ -127,7 +131,7 @@ function Projects() {
           <Project
             title='Crypto Connect'
             desc='A full stack social media application based on cryptocurrency.'
-            content={projectContent.eCommerce}
+            content={projectContent.cryptoConnect}
             logo={cryptoConnectLogo}
             langs={[
               skillLangs.styled,
@@ -143,11 +147,12 @@ function Projects() {
               skillLangs.sequelize,
               skillLangs.docker,
               skillLangs.twitter,
+              skillLangs.crypto,
               skillLangs.actions,
               skillLangs.jest,
               skillLangs.chai,
             ]}
-            liveLink='https://spice-land.herokuapp.com'
+            liveLink='http://crypto-connect-app.herokuapp.com'
             githubLink='https://github.com/natnaelh14/social-media-app'
             imageLink={cryptoConnect}
           />
