@@ -1,11 +1,11 @@
 const projectContent = {
   cryptoConnect: [
     'Built with Material-UI, React, Redux, TypeScript, Firebase, GraphQL, MySQL, Sequelize, Docker, Jest, Chai...',
-    'User Authentication with Firebase',
-    'Track CryptoCurrency Holding',
-    'Product rating & review system',
-    'Admin area to manage customers, products & orders',
-    'Product search, Carousel, & Pagination',
+    'User Authentication using Google Firebase.',
+    'Features include personalized user profile, posts, comments, likes, dislikes, messaging, following other users',
+    'Create a cryptocurrency portfolio and share it with friends',
+    'Get real-time crypto pricing and other info',
+    'Ability to use dockerized images for local development',
   ],
   eCommerce: [
     'Built with React, React router, React-Bootstrap, Redux, Node, Express, JWT authentication & MongoDB',
