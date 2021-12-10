@@ -85,8 +85,8 @@ class FeaturedProject extends Component {
                 <Icon
                   className='icon'
                   icon={lang.name}
-                  height='40px'
-                  width='40px'
+                  height='35px'
+                  width='35px'
                 />
               </span>
             </Tooltip>

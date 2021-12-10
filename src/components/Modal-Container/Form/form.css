@@ -83,7 +83,8 @@
 .modal-content-item:before {
   content: '▹';
   position: absolute;
-  left: 0px;
+  left: -8px;
+  /* right: 5px; */
   font-size: 1.8rem;
   color: #e64861;
   line-height: 20px;

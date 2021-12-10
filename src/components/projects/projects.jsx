@@ -157,7 +157,7 @@ function Projects() {
               skillLangs.jest,
               skillLangs.chai,
             ]}
-            liveLink='http://crypto-connect-app.herokuapp.com'
+            liveLink='https://crypto-connect-app.herokuapp.com'
             githubLinkOne='https://github.com/natnaelh14/social-media-app'
             githubLinkTwo='https://github.com/natnaelh14/social-media-api'
             imageLink={cryptoConnect}
