@@ -1,6 +1,7 @@
 import React from 'react';
 import './projects.css';
 import Project from '../project/project';
+import FeaturedProduct from '../FeaturedProject/featured-project';
 import smartMoney from './img/smart-bank.png';
 import EmptyPantry from './img/empty-pantry.png';
 import eCommerce from './img/e-commerce.png';
@@ -120,6 +121,10 @@ function Projects() {
       name: 'logos:github-octocat',
       label: 'Github Actions',
     },
+    blank: {
+      name: '',
+      label: '',
+    }
   };
 
   return (
@@ -128,7 +133,7 @@ function Projects() {
       <div className='project-spotlight'>
         {/* Crypto Connect */}
         <Fade bottom duration={1000} distance='40px'>
-          <Project
+          <FeaturedProduct
             title='Crypto Connect'
             desc='A full stack social media application based on cryptocurrency.'
             content={projectContent.cryptoConnect}
@@ -153,7 +158,8 @@ function Projects() {
               skillLangs.chai,
             ]}
             liveLink='http://crypto-connect-app.herokuapp.com'
-            githubLink='https://github.com/natnaelh14/social-media-app'
+            githubLinkOne='https://github.com/natnaelh14/social-media-app'
+            githubLinkTwo='https://github.com/natnaelh14/social-media-api'
             imageLink={cryptoConnect}
           />
         </Fade>

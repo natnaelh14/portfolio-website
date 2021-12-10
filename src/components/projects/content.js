@@ -1,6 +1,6 @@
 const projectContent = {
   cryptoConnect: [
-    'Built with Material-UI, React, Redux, TypeScript, Firebase, GraphQL, MySQL, Sequelize, Docker, Jest, Chai...',
+    'Built with Material-UI, React, Redux, JavaScript, TypeScript, Firebase, GraphQL, MySQL, Sequelize, Docker, Jest, Chai...',
     'User Authentication using Google Firebase.',
     'Features include personalized user profile, posts, comments, likes, dislikes, messaging, following other users',
     'Create a cryptocurrency portfolio and share it with friends',
@@ -8,7 +8,7 @@ const projectContent = {
     'Ability to use dockerized images for local development',
   ],
   eCommerce: [
-    'Built with React, React router, React-Bootstrap, Redux, Node, Express, JWT authentication & MongoDB',
+    'Built with React, React router, React-Bootstrap, Redux, JavaScript, Node, Express, JWT authentication & MongoDB',
     'User Accounts and Profile',
     'Full-featured shopping cart with PayPal & credit/debit payments',
     'Product rating & review system',
@@ -21,7 +21,7 @@ const projectContent = {
     'Calculate calorie for daily intake',
   ],
   jboard: [
-    'Built with Styled Components, React, React Router, Redux, Node, Express, JWT authentication, GraphQL & MongoDB',
+    'Built with Styled Components, React, React Router, Redux, JavaScript, Node, Express, JWT authentication, GraphQL & MongoDB',
     'User Accounts and Profiles/Reset forgotten password',
     'Add/Update/Delete company information',
     'Upload resume',
@@ -35,7 +35,7 @@ const projectContent = {
     'Highlights page to view past results',
   ],
   techBlog: [
-    'Built with Bulma, Node, Express, MySQL, Sequelize, & Handlebars',
+    'Built with Bulma, JavaScript, Node, Express, MySQL, Sequelize, & Handlebars',
     'User Accounts and Profiles',
     'Add/Update/Delete post.',
     "Comment on other users' posts",
