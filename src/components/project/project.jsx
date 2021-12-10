@@ -71,7 +71,7 @@ class Project extends Component {
               color='white'
             >
               <span className='project-lang'>
-                <Icon  className='icon' icon={lang.name} height='40px' width='40px' />
+                <Icon  className='icon' icon={lang.name} height='35px' width='35px' />
               </span>
             </Tooltip>
           ))}
