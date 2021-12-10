@@ -46,8 +46,10 @@
 }
 
 .modal-description p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 200;
     text-align:justify;
+    line-height: 1.4;
 }
 
 .modal-content ul {
@@ -70,10 +72,12 @@
 
 .modal-content-item {
   position: relative;
-  padding: 0 25px;
+  padding: 5px 15px;
   margin-bottom: 10px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 200;
+  text-align: justify;
+  line-height: 1.4;
 }
 
 .modal-content-item:before {
