@@ -120,10 +120,6 @@ function Projects() {
     actions: {
       name: 'logos:github-octocat',
       label: 'Github Actions',
-    },
-    blank: {
-      name: '',
-      label: '',
     }
   };
 
@@ -276,7 +272,7 @@ function Projects() {
             desc="A timed quiz app that utilizes local storage to save user's previous tests."
             content={projectContent.quizApp}
             logo={quizLogo}
-            langs={[skillLangs.html, skillLangs.css, skillLangs.javascript]}
+            langs={[skillLangs.html, skillLangs.css, skillLangs.bootstrap, skillLangs.bulma, skillLangs.javascript ]}
             liveLink='https://natnaelh14.github.io/quiz-app/'
             githubLink='https://github.com/natnaelh14/quiz-app'
             imageLink={quiz}
