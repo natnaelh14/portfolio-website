@@ -1,10 +1,10 @@
 const projectContent = {
   cryptoConnect: [
-    'Built with Material-UI, React, Redux, JavaScript, TypeScript, Firebase, GraphQL, MySQL, Sequelize, Docker, Jest, Chai...',
-    'User Authentication using Google Firebase.',
-    'Integrated loading animation for all the components',
+    'Built with Material-UI, React, Redux, JavaScript, TypeScript, Firebase, GraphQL, MySQL, Sequelize, Docker, Jest, Chai',
+    'User Authentication using Google Firebase (Google, Github, Twitter)',
     'Features include personalized user profile, posts, comments, likes, dislikes, messaging, following other users',
     'Share Posts, and Tweets',
+    'Integrated loading animation and error handling for all the components',
     'Create a cryptocurrency portfolio and share it with friends',
     'Get real-time crypto pricing, tweets about crypto holdings and other info',
     'Ability to use dockerized images for local development',
@@ -32,14 +32,14 @@ const projectContent = {
   ],
   quizApp: [
     'Built with HTML, CSS, jQuery & JavaScript',
-    '3 min timed IQ test with 10-sec deduction for every question missed.',
-    'Button color change based user\'s answer. ',
+    '3 min timed IQ test with 10-sec deduction for every question missed',
+    'Button color change based user\'s answer',
     'Highlights page to view past results',
   ],
   techBlog: [
     'Built with Bulma, JavaScript, Node, Express, MySQL, Sequelize, & Handlebars',
     'User Accounts and Profiles',
-    'Add/Update/Delete post.',
+    'Add/Update/Delete post',
     "Comment on other users' posts",
   ],
   smartBank: [
