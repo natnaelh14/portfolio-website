@@ -13,9 +13,7 @@ const About = () => {
             I am a Full Stack Web Developer with a Bachelor's Degree and 6+
             years of professional experience as a Registered Nurse. I have
             always been passionate about technology. I started coding a year ago
-            and I'm glad I decided to finally make the jump. Now, I am looking
-            for my first professional role as a Web Developer and hoping to find
-            a team to build with and learn from. I like to bring amazing ideas
+            and I'm glad I decided to finally make the jump. I like to bring amazing ideas
             to life using the tools below.
           </div>
         </div>
@@ -60,16 +58,15 @@ const About = () => {
                 <li className='about-subSectionitem'>HTML5</li>
                 <li className='about-subSectionitem'>CSS3</li>
                 <li className='about-subSectionitem'>Bootstrap</li>
-                <li className='about-subSectionitem'>Styled Components</li>
-                <li className='about-subSectionitem'>Material UI</li>
                 <li className='about-subSectionitem'>Bulma</li>
-                <li className='about-subSectionitem'>Handlebars.js</li>
+                <li className='about-subSectionitem'>Styled Components</li>
+                <li className='about-subSectionitem'>Tailwind</li>
                 <li className='about-subSectionitem'>JavaScript</li>
                 <li className='about-subSectionitem'>jQuery</li>
                 <li className='about-subSectionitem'>React</li>
                 <li className='about-subSectionitem'>Redux</li>
+                <li className='about-subSectionitem'>Next.js</li>
                 <li className='about-subSectionitem'>TypeScript</li>
-                <li className='about-subSectionitem'>PWA</li>
               </ul>
             </div>
           )}
@@ -78,10 +75,10 @@ const About = () => {
               <ul>
                 <li className='about-subSectionitem'>Node.js</li>
                 <li className='about-subSectionitem'>Express.js</li>
+                <li className='about-subSectionitem'>Prisma</li>
                 <li className='about-subSectionitem'>MySQL</li>
-                <li className='about-subSectionitem'>Sequelize</li>
+                <li className='about-subSectionitem'>PostgreSQL</li>
                 <li className='about-subSectionitem'>MongoDB</li>
-                <li className='about-subSectionitem'>Mongoose</li>
                 <li className='about-subSectionitem'>GraphQL/Apollo</li>
               </ul>
             </div>
@@ -95,7 +92,7 @@ const About = () => {
                 <li className='about-subSectionitem'>Algorithms</li>
                 <li className='about-subSectionitem'>CICD</li>
                 <li className='about-subSectionitem'>GitHub Actions</li>
-                <li className='about-subSectionitem'>Mocha</li>
+                <li className='about-subSectionitem'>Google Analytics</li>
                 <li className='about-subSectionitem'>Jest</li>
                 <li className='about-subSectionitem'>Heroku</li>
                 <li className='about-subSectionitem'>Postman</li>

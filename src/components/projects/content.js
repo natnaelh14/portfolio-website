@@ -17,11 +17,6 @@ const projectContent = {
     'Admin area to manage customers, products & orders',
     'Product search, Carousel, & Pagination',
   ],
-  emptyPantry: [
-    'Built with HTML, CSS, Bulma, Bootstrap, jQuery & JavaScript',
-    'Search for meal based meal type, diet preference & ingredient name',
-    'Calculate calorie for daily intake',
-  ],
   jboard: [
     'Built with Styled Components, React, React Router, Redux, JavaScript, Node, Express, JWT authentication, GraphQL & MongoDB',
     'User Accounts and Profiles/Reset forgotten password',
@@ -30,19 +25,7 @@ const projectContent = {
     'Added Drag and Drop functionality to move companies based on interview stage',
     'Search Feature using company name'
   ],
-  quizApp: [
-    'Built with HTML, CSS, jQuery & JavaScript',
-    '3 min timed IQ test with 10-sec deduction for every question missed',
-    'Button color change based user\'s answer',
-    'Highlights page to view past results',
-  ],
-  techBlog: [
-    'Built with Bulma, JavaScript, Node, Express, MySQL, Sequelize, & Handlebars',
-    'User Accounts and Profiles',
-    'Add/Update/Delete post',
-    "Comment on other users' posts",
-  ],
-  smartBank: [
+  roastTime: [
     'Built with HTML, CSS, Bootstrap, CSS-Tooltips, HandleBars.js, JavaScript, Node.js, Express.js, MySQL, Sequelize, Bcrypt & Dotenv',
     'User Accounts and Profiles',
     'Open checking, savings, and credit card account',

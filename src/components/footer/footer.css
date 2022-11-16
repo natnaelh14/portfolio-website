@@ -8,31 +8,12 @@
   justify-content: center;
 }
 
-#email-address a{
-color: #aeaeb7;
-}
-
-#email-address:hover a{
-  color:#e64861;
-  transition: 0.17s;
-}
-
 .footer h1 {
   padding-bottom: 10px;
   border-bottom: 1px solid #da7282;
   color: rgb(3 183 133);
 }
 
-.contact-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  color: #aeaeb7;
-}
-.contact-info div {
-  margin: 25px;
-  text-align: center;
-}
 .contact-link {
   display: flex;
   justify-content: center;
@@ -60,13 +41,4 @@ color: #aeaeb7;
 .footer-social a:hover {
   color: #e64861;
   transform: translateY(-5px);
-}
-
-@media (max-width: 660px){
-	.contact-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #aeaeb7;
-  }
 }
