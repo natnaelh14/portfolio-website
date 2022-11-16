@@ -6,11 +6,6 @@
     text-align: center;
 }
 
-.project-spotlight {
-    display: flex;
-    justify-content: center;
-}
-
 .projects_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;

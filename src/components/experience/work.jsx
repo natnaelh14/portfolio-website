@@ -18,14 +18,27 @@ class Work extends Component {
                       <MdWork />
                     </div>
                     <div className={classes.label}>
+                      <h2>Tide Cleaners (Software Engineer)</h2>
                       <h2>
-                        Northside Hospital <span>Aug 2015 - Mar 2020</span>
+                        <span>Jan 2022 - Present</span>
                       </h2>
+                    </div>
+                  </article>{' '}
+                  <article className={classes.timeline_entry}>
+                    <div
+                      className={`${classes.timeline_icon} ${classes.timeline_icon_4}`}
+                    >
+                      <MdWork />
+                    </div>
+                    <div className={classes.label}>
+                      <h2>Wellstar Hospital (ICU Registered Nurse)</h2>
+                      <h2>
+                        <span>Aug 2019 - 2021</span>
+                      </h2>
+                      <p>Delivered patient care in a dedicated COVID unit.</p>
                       <p>
-                      Effectively supervised a  team of 12-16 nursing staff and implemented several performance improvement activities. 
-                      </p>
-                      <p>
-                      Served a leadership role by providing the highest quality of patient care and by precepting new nurses.
+                        Collaborated with an interdisciplinary team to ensure
+                        the desired patient outcomes.
                       </p>
                     </div>
                   </article>
@@ -36,13 +49,17 @@ class Work extends Component {
                       <MdWork />
                     </div>
                     <div className={classes.label}>
+                      <h2>Northside Hospital (ICU Registered Nurse)</h2>
                       <h2>
-                        Wellstar Hospital <span>Aug 2019 - 2021</span>
+                        <span>Aug 2015 - Mar 2020</span>
                       </h2>
-                      <p>Delivered patient care in a dedicated COVID unit.</p>
                       <p>
-                        Collaborated with an interdisciplinary team to ensure
-                        the desired patient outcomes.
+                        Effectively supervised a team of 12-16 nursing staff and
+                        implemented several performance improvement activities.
+                      </p>
+                      <p>
+                        Served a leadership role by providing the highest
+                        quality of patient care and by precepting new nurses.
                       </p>
                     </div>
                     <div className={classes.timeline_entry_inner}>

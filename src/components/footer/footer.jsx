@@ -7,18 +7,6 @@ const Footer = () => {
   return (
     <footer className='footer'>
       <Fade bottom duration={1000} distance="40px">
-        <section className='contact-info'>
-          <div>
-            <h1>Call</h1>
-            <span href='tel:404-918-1727'>404-918-1727</span>
-          </div>
-          <div id='email-address'>
-            <h1>Email</h1>
-            <a href='mailto:haile.natnael@natnaeldev.com'>
-              haile.natnael@natnaeldev.com
-            </a>
-          </div>
-        </section>
         <section className='contact-link'>
           <ul className='footer-social'>
             <a
