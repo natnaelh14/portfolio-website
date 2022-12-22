@@ -2,8 +2,8 @@
   background-color: #1e1e1e;
   color: #7d7d83;
   padding: 25px;
-  box-shadow:2px 2px 10px 5px #1e1e1e;
-  border:10px solid #1e1e1e;
+  box-shadow: 2px 2px 10px 5px #1e1e1e;
+  border: 10px solid #1e1e1e;
 }
 
 .modal-image {
@@ -19,6 +19,7 @@
 .title {
   text-align: center;
   font-size: 3rem;
+  color: #81817a;
 }
 
 .modal-langs {
@@ -46,10 +47,11 @@
 }
 
 .modal-description p {
-    font-size: 1.3rem;
-    font-weight: 200;
-    text-align:justify;
-    line-height: 1.4;
+  font-size: 1.3rem;
+  font-weight: 200;
+  text-align: justify;
+  line-height: 1.4;
+  color: #bdbdb0;
 }
 
 .modal-content ul {
@@ -65,7 +67,7 @@
   display: block;
   margin-bottom: 13px;
   margin-top: 20px;
-  color: #7d7d83;
+  color: #81817a;
   font-size: 1.5rem;
   font-weight: 800;
 }
@@ -78,6 +80,7 @@
   font-weight: 200;
   text-align: justify;
   line-height: 1.4;
+  color: #bdbdb0;
 }
 
 .modal-content-item:before {

@@ -110,20 +110,20 @@
   font-size: 20px;
   font-weight: 1000;
   margin: 0 0 30px 0;
-  color: #79797e;
+  color: #81817a;
 }
 .label h2 span {
   -ms-filter: alpha(opacity=40);
   filter: alpha(opacity=40);
   font-weight: 0;
-  font-size: 15px;
-  color: #79797e;
+  font-size: 20px;
+  color: #81817a;
 }
 
 .label p {
   font-size: 20px;
   margin-bottom: 1.5em;
-  color: #aeaeb7;
+  color: #bdbdb0;
 }
 
 p > a {
