@@ -45,7 +45,17 @@ class Project extends Component {
   };
 
   render() {
-    const { title, desc, langs, liveLink, githubLink, imageLink, logo, content } = this.props;
+    const {
+      title,
+      desc,
+      langs,
+      liveLink,
+      githubWebLink,
+      githubApiLink,
+      imageLink,
+      logo,
+      content,
+    } = this.props;
 
     return (
       <div className='project'>
@@ -71,7 +81,12 @@ class Project extends Component {
               color='white'
             >
               <span className='project-lang'>
-                <Icon  className='icon' icon={lang.name} height='35px' width='35px' />
+                <Icon
+                  className='icon'
+                  icon={lang.name}
+                  height='35px'
+                  width='35px'
+                />
               </span>
             </Tooltip>
           ))}
@@ -82,7 +97,10 @@ class Project extends Component {
               <FaLink />
             </a>
           )}
-          <a href={githubLink} target='_blank' rel='noopener noreferrer'>
+          <a href={githubWebLink} target='_blank' rel='noopener noreferrer'>
+            <FaGithub />
+          </a>
+          <a href={githubApiLink} target='_blank' rel='noopener noreferrer'>
             <FaGithub />
           </a>
         </div>
@@ -105,7 +123,8 @@ class Project extends Component {
             description={desc}
             title={title}
             liveLink={liveLink}
-            githubLink={githubLink}
+            githubWebLink={githubWebLink}
+            githubApiLink={githubApiLink}
             langs={langs}
             logo={logo}
             content={content}

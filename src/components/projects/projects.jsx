@@ -2,13 +2,9 @@ import React from 'react';
 import './projects.css';
 import Project from '../project/project';
 import roastTime from './img/roast-time.png';
-import eCommerce from './img/e-commerce.png';
-import jboard from './img/jboard.png';
 import cryptoConnect from './img/crypto-connect.png';
 import cryptoConnectLogo from './img/logo.svg';
 import roastTimeLogo from './img/roast-time-logo.png';
-import eCommerceLogo from './img/e-commerce-logo.png';
-import jboardLogo from './img/jboard-logo.png';
 import projectContent from './content';
 import { Fade } from 'react-reveal';
 
@@ -31,8 +27,8 @@ function Projects() {
       label: 'Bulma',
     },
     tailwind: {
-      name: "vscode-icons:file-type-tailwind",
-      label: "Tailwind"
+      name: 'vscode-icons:file-type-tailwind',
+      label: 'Tailwind',
     },
     material: {
       name: 'logos:material-ui',
@@ -59,8 +55,8 @@ function Projects() {
       label: 'Redux',
     },
     nextjs: {
-      name: "file-icons:nextjs",
-      label: "Next.js"
+      name: 'file-icons:nextjs',
+      label: 'Next.js',
     },
     jest: {
       name: 'logos:jest',
@@ -83,12 +79,12 @@ function Projects() {
       label: 'MongoDB',
     },
     postgres: {
-      name: "logos:postgresql",
-      label: "PostgreSQL"
+      name: 'logos:postgresql',
+      label: 'PostgreSQL',
     },
     prisma: {
-      name: "vscode-icons:file-type-light-prisma",
-      label: "Prisma"
+      name: 'vscode-icons:file-type-light-prisma',
+      label: 'Prisma',
     },
     graphql: {
       name: 'vscode-icons:file-type-graphql',
@@ -97,10 +93,6 @@ function Projects() {
     docker: {
       name: 'logos:docker-icon',
       label: 'Docker',
-    },
-    paypal: {
-      name: 'logos:paypal',
-      label: 'PayPal',
     },
     firebase: {
       name: 'logos:firebase',
@@ -119,21 +111,25 @@ function Projects() {
       label: 'Github Actions',
     },
     ga: {
-      name: "logos:google-analytics",
-      label: "Google Analytics"
+      name: 'logos:google-analytics',
+      label: 'Google Analytics',
     },
     prettier: {
-      name: "logos:prettier",
-      label: "Prettier"
-    }
+      name: 'logos:prettier',
+      label: 'Prettier',
+    },
+    eslint: {
+      name: 'logos:eslint',
+      label: 'Eslint',
+    },
   };
 
   return (
     <div className='projects' id='projects'>
       <h1 className='section-heading'>Projects</h1>
       <div className='projects_wrapper'>
-      {/* RoastTime  */}
-      <Fade bottom duration={1000} distance='40px'>
+        {/* RoastTime  */}
+        <Fade bottom duration={1000} distance='40px'>
           <Project
             title='RoastTime'
             desc='A full-stack application that reserves coffee shop table.'
@@ -151,9 +147,11 @@ function Projects() {
               skillLangs.ga,
               skillLangs.actions,
               skillLangs.prettier,
+              skillLangs.eslint,
             ]}
             liveLink='https://roast-time.vercel.app/'
-            githubLink='https://github.com/natnaelh14/roast-time'
+            githubWebLink='https://github.com/natnaelh14/roast-time'
+            githubApiLink='https://github.com/natnaelh14/roast-time-backend'
             imageLink={roastTime}
           />
         </Fade>
@@ -182,52 +180,10 @@ function Projects() {
               skillLangs.actions,
               skillLangs.jest,
             ]}
-            liveLink='https://crypto-connect-app.herokuapp.com'
-            githubLink='https://github.com/natnaelh14/social-media-app'
+            liveLink='https://crypto-connect-ten.vercel.app/'
+            githubWebLink='https://github.com/natnaelh14/social-media-app'
+            githubApiLink='https://github.com/natnaelh14/social-media-api'
             imageLink={cryptoConnect}
-          />
-        </Fade>
-        {/* SpiceLand & Co. */}
-        <Fade bottom duration={1000} distance='40px'>
-          <Project
-            title='SpiceLand & Co.'
-            desc='A full-stack e-commerce application that provides an easy platform to sell and buy spices.'
-            content={projectContent.eCommerce}
-            logo={eCommerceLogo}
-            langs={[
-              skillLangs.bootstrap,
-              skillLangs.javascript,
-              skillLangs.react,
-              skillLangs.redux,
-              skillLangs.node,
-              skillLangs.mongodb,
-              skillLangs.paypal,
-              skillLangs.actions,
-              skillLangs.jest,
-            ]}
-            liveLink='https://spice-land.herokuapp.com'
-            githubLink='https://github.com/natnaelh14/ecommerce'
-            imageLink={eCommerce}
-          />
-        </Fade>
-        {/* Jboard  */}
-        <Fade bottom duration={1000} distance='40px'>
-          <Project
-            title='Jboard'
-            desc='A full-stack application that empowers job seekers with tools to keep track of job applications.'
-            content={projectContent.jboard}
-            logo={jboardLogo}
-            langs={[
-              skillLangs.styled,
-              skillLangs.javascript,
-              skillLangs.react,
-              skillLangs.node,
-              skillLangs.mongodb,
-              skillLangs.graphql,
-            ]}
-            liveLink='https://jboard-app-app.herokuapp.com/'
-            githubLink='https://github.com/natnaelh14/jboard'
-            imageLink={jboard}
           />
         </Fade>
       </div>

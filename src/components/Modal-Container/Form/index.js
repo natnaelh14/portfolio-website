@@ -7,7 +7,8 @@ export const Form = ({
   description,
   title,
   liveLink,
-  githubLink,
+  githubWebLink,
+  githubApiLink,
   langs,
   logo,
   content,
@@ -26,7 +27,12 @@ export const Form = ({
       <div className='modal-langs'>
         {langs.map((lang, index) => (
           <span key={index} className='modal-lang'>
-            <Icon className='modal-icon' icon={lang.name} height='30px' width='30px' />
+            <Icon
+              className='modal-icon'
+              icon={lang.name}
+              height='30px'
+              width='30px'
+            />
           </span>
         ))}
       </div>
@@ -36,7 +42,10 @@ export const Form = ({
             <FaLink />
           </a>
         )}
-        <a href={githubLink} target='_blank' rel='noopener noreferrer'>
+        <a href={githubWebLink} target='_blank' rel='noopener noreferrer'>
+          <FaGithub />
+        </a>
+        <a href={githubApiLink} target='_blank' rel='noopener noreferrer'>
           <FaGithub />
         </a>
       </div>
@@ -47,7 +56,9 @@ export const Form = ({
         <label>Features:</label>
         <ul>
           {content.map((sen, i) => (
-            <li key={i} className='modal-content-item'>{sen}</li>
+            <li key={i} className='modal-content-item'>
+              {sen}
+            </li>
           ))}
         </ul>
       </div>

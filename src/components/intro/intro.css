@@ -21,8 +21,8 @@
 }
 
 .intro-msg {
-  color: rgb(147 147 158);
-  font-size: 1.7rem;
+  color: #81817a;
+  font-size: 1.8rem;
   word-spacing: 0.3em;
   margin: 10px 0;
 }
@@ -194,7 +194,6 @@
   }
 }
 @media screen and (max-width: 600px) {
-
   .intro-desc {
     margin: 0;
   }

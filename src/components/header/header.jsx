@@ -3,6 +3,7 @@ import "./header.css";
 import { HiMenuAlt3, HiOutlineX } from "react-icons/hi";
 import LogoImage from "./logo.png";
 import Resume from "./resume.pdf";
+import SoundBar from "../SoundBar/SoundBar";
 
 const Header = () => {
   const [showNav, SetshowNav] = useState(false);
@@ -12,6 +13,7 @@ const Header = () => {
         <a href="#about">
           <img className="navbar-logo" src={LogoImage} alt="logo" href='#intro' />
         </a>
+        <SoundBar />
         <ul className="navbar-list-desktop">
           <li>
             <a href="#about">About</a>

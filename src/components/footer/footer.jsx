@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade';
 const Footer = () => {
   return (
     <footer className='footer'>
-      <Fade bottom duration={1000} distance="40px">
+      <Fade bottom duration={1000} distance='40px'>
         <section className='contact-link'>
           <ul className='footer-social'>
             <a
@@ -31,16 +31,16 @@ const Footer = () => {
               <GrMail />
             </a>
             <a
-            href='https://twitter.com/natnaelh'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <GrTwitter />
-          </a>
+              href='https://twitter.com/natnaelh'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <GrTwitter />
+            </a>
           </ul>
         </section>
         <section className='contact-copyright'>
-          <p>Copyright &copy; 2021 Natnael Haile. All Rights Reserved.</p>
+          <p>Copyright &copy; 2022 Natnael Haile. All Rights Reserved.</p>
         </section>
       </Fade>
     </footer>

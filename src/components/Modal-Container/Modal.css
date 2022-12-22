@@ -33,7 +33,7 @@
     top: 50%;
     height: 80%;
     margin-top: 25px;
-    margin-bottom: 25px;;
+    margin-bottom: 25px;
     transform: translate(-50%, -50%);
     max-width: 30em;
     max-height: calc(100% - 1em);
@@ -100,14 +100,18 @@
 
   .title {
     font-size: 2rem;
+    color: #81817a;
   }
   .modal-content-item {
     font-size: 1rem;
+    color: #bdbdb0;
   }
   .modal-description p {
     font-size: 1rem;
+    color: #bdbdb0;
   }
   .modal-content label {
     font-size: 1.2rem;
+    color: #81817a;
   }
 }

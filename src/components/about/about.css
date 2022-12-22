@@ -18,7 +18,7 @@
 
 .about-text {
   font-size: 1.7rem;
-  color: #93939f;
+  color: #bdbdb0;
   font-weight: 200;
   width: 100%;
   text-align: justify;
@@ -43,7 +43,7 @@
   padding: 0 25px;
   margin: 10px;
   font-size: 1.4rem;
-  color: #93939f;
+  color: #bdbdb0;
   font-weight: 200;
 }
 .about-subSectionitem:before {

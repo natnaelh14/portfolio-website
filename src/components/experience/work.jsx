@@ -22,6 +22,14 @@ class Work extends Component {
                       <h2>
                         <span>Jan 2022 - Present</span>
                       </h2>
+                      <p>
+                        Designed and developed a client-side application using
+                        NextJS, Typescript, and Tailwind.
+                      </p>
+                      <p>
+                        Maintained ASP.NET core product while debugging and
+                        resolving client and server issues.
+                      </p>
                     </div>
                   </article>{' '}
                   <article className={classes.timeline_entry}>
