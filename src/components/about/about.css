@@ -96,7 +96,7 @@
 
 @media screen and (max-width: 700px) {
   .about-subSectionitem {
-    font-size: 0.9rem !important;
+    font-size: 1rem !important;
   }
   .about-text {
     font-size: 1.1rem;
