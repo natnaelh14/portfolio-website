@@ -122,6 +122,10 @@ function Projects() {
       name: 'logos:eslint',
       label: 'Eslint',
     },
+    contentful: {
+      name: 'logos:contentful',
+      label: 'Contentful',
+    },
   };
 
   return (
@@ -148,6 +152,7 @@ function Projects() {
               skillLangs.actions,
               skillLangs.prettier,
               skillLangs.eslint,
+              skillLangs.contentful,
             ]}
             liveLink='https://roast-time.vercel.app/'
             githubWebLink='https://github.com/natnaelh14/roast-time'

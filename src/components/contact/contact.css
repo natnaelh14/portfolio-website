@@ -54,18 +54,19 @@ textarea[id='message'] {
 
 button[type='submit'] {
   background: #da7282;
-  color: #ffffff;
+  color: white;
   text-transform: uppercase;
   border: none;
   margin-top: 40px;
   padding: 20px;
-  font-size: 14px;
-  font-weight: 100;
+  font-size: 1rem;
+  font-weight: 400;
   letter-spacing: 10px;
 }
 
 button[type='submit']:hover {
   background: #e64861;
+  cursor: pointer;
 }
 
 button[type='submit']:active {
@@ -117,6 +118,6 @@ hr {
     font-size: 0.7rem;
   }
   button[type='submit'] {
-    font-size: 10px;
+    font-size: 0.8rem;
   }
 }

@@ -27,7 +27,11 @@ class Work extends Component {
                         NextJS, Typescript, and Tailwind.
                       </p>
                       <p>
-                        Maintained ASP.NET core product while debugging and
+                        Implemented automation tests to ensure high-quality
+                        software solutions.
+                      </p>
+                      <p>
+                        Maintained an ASP.NET core product while debugging and
                         resolving client and server issues.
                       </p>
                     </div>
@@ -41,9 +45,12 @@ class Work extends Component {
                     <div className={classes.label}>
                       <h2>Wellstar Hospital (ICU Registered Nurse)</h2>
                       <h2>
-                        <span>Aug 2019 - 2021</span>
+                        <span>Aug 2019 - Jan 2022</span>
                       </h2>
-                      <p>Delivered patient care in a dedicated COVID unit.</p>
+                      <p>
+                        Delivered critical patient care in a dedicated COVID
+                        unit.
+                      </p>
                       <p>
                         Collaborated with an interdisciplinary team to ensure
                         the desired patient outcomes.

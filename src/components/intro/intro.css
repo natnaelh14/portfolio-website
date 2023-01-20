@@ -161,6 +161,7 @@
 .intro-aboutLink:hover {
   background: rgba(24, 186, 189, 0.1);
   color: #e64861;
+  cursor: pointer;
 }
 
 .intro-image {
@@ -203,7 +204,7 @@
   .intro-text {
     font-size: 1.5rem;
   }
-  .intro-aboutLink {
-    font-size: 1rem !important;
-  }
+  /* .intro-aboutLink {
+    font-size: 1.4rem !important;
+  } */
 }

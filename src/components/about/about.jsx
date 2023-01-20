@@ -11,12 +11,12 @@ const About = () => {
         <div className='about-section'>
           <div className='about-text'>
             I am a Full-Stack Software Engineer with a Bachelor's Degree and one
-            year of professional development experience. I am proactive team
+            year of professional development experience. I am a proactive team
             player with good adaptability in dynamic environments looking for
-            engaging professional development. I am passionate, detail-oriented,
-            and curious developer using professional and technical skills to
-            solve problems. I like to bring amazing ideas to life using the
-            tools below.
+            engaging professional development. I am a passionate,
+            detail-oriented, and curious developer using professional and
+            technical skills to solve problems. I like to bring unique ideas to
+            life using the tools below.
           </div>
         </div>
         <br />
@@ -95,6 +95,7 @@ const About = () => {
                 <li className='about-subSectionitem'>CICD</li>
                 <li className='about-subSectionitem'>GitHub Actions</li>
                 <li className='about-subSectionitem'>Google Analytics</li>
+                <li className='about-subSectionitem'>Contentful</li>
                 <li className='about-subSectionitem'>Jest</li>
                 <li className='about-subSectionitem'>Postman</li>
                 <li className='about-subSectionitem'>Docker</li>
