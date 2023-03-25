@@ -1,27 +1,25 @@
-@import-normalize;
-
-html,body {
-  margin: 0;
-  overflow-x: hidden;
-  background-color: #18181b;
-  font-family: 'Cardo', serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
+html,
+body {
+	margin: 0;
+	overflow-x: hidden;
+	background-color: #18181b;
+	font-family: "Signika", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	scroll-behavior: smooth;
 }
-::-webkit-scrollbar{
-  width: 10px;
-  background:#242429;
+::-webkit-scrollbar {
+	width: 10px;
+	background: #242429;
 }
-::-webkit-scrollbar-thumb{
-  border-radius:20px;
-  background-color: #303036;
+::-webkit-scrollbar-thumb {
+	border-radius: 20px;
+	background-color: #303036;
 }
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 a {
-  color:white;
-  text-decoration: none;
+	color: white;
+	text-decoration: none;
 }

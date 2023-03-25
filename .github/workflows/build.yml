@@ -1,0 +1,16 @@
+name: portfolio website continuous integration
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  test_pull_request:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 16.17.0
+      - run: npm ci
+      - run: npm run build
