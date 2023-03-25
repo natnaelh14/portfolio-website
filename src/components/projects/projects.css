@@ -1,24 +1,24 @@
 .projects {
-    margin: 10%;
+	margin: 5%;
 }
 
 .section-heading {
-    text-align: center;
+	text-align: center;
 }
 
 .projects_wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
-@media screen and (max-width:1200px) {
-    .projects_wrapper {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-    }
-    .section-heading {
-        text-align: center;
-        padding-bottom: 50px;
-    }
+@media screen and (max-width: 1200px) {
+	.projects_wrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+	.section-heading {
+		text-align: center;
+		padding-bottom: 50px;
+	}
 }
