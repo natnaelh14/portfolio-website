@@ -1,6 +1,6 @@
 import React from "react";
 import { GrLinkedinOption, GrGithub, GrMail, GrTwitter } from "react-icons/gr";
-import "./Footer.css";
+import "./footer.css";
 import Fade from "react-reveal/Fade";
 
 const Footer = () => {

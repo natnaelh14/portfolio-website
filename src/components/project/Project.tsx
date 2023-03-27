@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Project.css";
+import "./project.css";
 import { FaLink, FaGithub } from "react-icons/fa";
 import { Icon } from "@iconify/react";
 import { Tooltip } from "@chakra-ui/react";

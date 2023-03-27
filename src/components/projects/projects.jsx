@@ -1,5 +1,5 @@
 import React from "react";
-import "./Projects.css";
+import "./projects.css";
 import Project from "../Project/Project";
 import roastTime from "./img/roast-time.png";
 import cryptoConnect from "./img/crypto-connect.png";
