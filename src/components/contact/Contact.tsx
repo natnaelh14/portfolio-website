@@ -1,7 +1,7 @@
 import React from "react";
 import { Fade } from "react-reveal";
 import emailjs from "emailjs-com";
-import "./Contact.css";
+import "./contact.css";
 import { useForm } from "react-hook-form";
 
 interface IContactProps {
