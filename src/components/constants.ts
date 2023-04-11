@@ -1,4 +1,9 @@
-export const skillLangs: { [key: string]: { name: string; label: string } } = {
+export const skillLangs: {
+	[key: string]: {
+		name: string;
+		label: string;
+	};
+} = {
 	html: {
 		name: "vscode-icons:file-type-html",
 		label: "HTML",

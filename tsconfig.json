@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"baseUrl": "./src",
+		"baseUrl": "./src/",
 		"target": "ES6",
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"allowJs": true,
@@ -15,9 +15,8 @@
 		"noEmit": true,
 		"jsx": "react-jsx",
 		"forceConsistentCasingInFileNames": true,
-		"noFallthroughCasesInSwitch": true,
-		"typeRoots": ["./src/types"]
+		"noFallthroughCasesInSwitch": true
 	},
-	"include": ["src/**/*"],
+	"include": ["**/*.ts", "**/*.tsx"],
 	"exclude": ["node_modules"]
 }

@@ -3,7 +3,7 @@ import HeroImage from "./hero-image.png";
 import Fade from "react-reveal/Fade";
 import { OutlineLink } from "../Styled-Components/Links";
 
-function Intro() {
+const Intro = () => {
 	return (
 		<div className="intro">
 			<Fade bottom duration={1000} distance="40px">
@@ -24,6 +24,6 @@ function Intro() {
 			</Fade>
 		</div>
 	);
-}
+};
 
 export default Intro;
