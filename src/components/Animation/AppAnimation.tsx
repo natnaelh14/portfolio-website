@@ -1,4 +1,3 @@
-import React from "react";
 import Zoom from "react-reveal/Zoom";
 import "./appAnimation.css";
 import Logo from "images/logo.png";

@@ -1,4 +1,3 @@
-import React from "react";
 import { GrLinkedinOption, GrGithub, GrMail, GrTwitter } from "react-icons/gr";
 import "./footer.css";
 import Fade from "react-reveal/Fade";

@@ -3,11 +3,11 @@
 	"plugins": ["@typescript-eslint", "prettier", "testing-library", "jest-dom"],
 	"extends": [
 		"eslint:recommended",
-		"plugin:prettier/recommended",
-		// "plugin:jsx-a11y/recommended",
 		"plugin:react/recommended",
 		"plugin:react-hooks/recommended",
-		"prettier"
+		// "plugin:jsx-a11y/recommended",
+		"plugin:promise/recommended",
+		"plugin:prettier/recommended"
 	],
 	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
@@ -32,8 +32,27 @@
 		}
 	],
 	"rules": {
-		"no-debugger": "off",
-		"no-console": 0
+		"no-console": "off",
+		"no-nested-ternary": "off",
+		"prettier/prettier": "error",
+		"consistent-return": "off",
+		"import/prefer-default-export": "off",
+		"promise/always-return": "off",
+		"import/no-default-export": "off",
+		"arrow-body-style": "off",
+		"react/display-name": "off",
+		"eslint-comments/no-unlimited-disable": "off",
+		"no-use-before-define": "off",
+		"@typescript-eslint/no-use-before-define": ["error"],
+		"react/react-in-jsx-scope": "off",
+		"no-unused-vars": "off",
+		"import/order": [
+			"off",
+			{
+				"groups": ["external", "builtin", "internal", "sibling", "parent", "index"]
+			}
+		],
+		"import/no-extraneous-dependencies": "off"
 	},
 	"env": {
 		"es6": true,
