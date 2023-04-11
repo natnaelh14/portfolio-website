@@ -1,4 +1,3 @@
-import React from "react";
 import "./projects.css";
 import Project from "../Project/Project";
 import roastTime from "./img/roast-time.png";

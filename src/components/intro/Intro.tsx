@@ -1,4 +1,3 @@
-import React from "react";
 import "./intro.css";
 import HeroImage from "./hero-image.png";
 import Fade from "react-reveal/Fade";

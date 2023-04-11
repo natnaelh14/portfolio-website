@@ -1,4 +1,3 @@
-import React from "react";
 import { FaLink, FaGithub } from "react-icons/fa";
 import { Icon } from "@iconify/react";
 import "./form.css";
