@@ -22,12 +22,14 @@ const App = () => {
 			) : (
 				<>
 					<Header />
-					<Intro />
-					<About />
-					<Experience />
-					<Projects />
-					<Contact />
-					<Footer />
+					<div style={{ marginTop: "100px" }}>
+						<Intro />
+						<About />
+						<Experience />
+						<Projects />
+						<Contact />
+						<Footer />
+					</div>
 				</>
 			)}
 		</>

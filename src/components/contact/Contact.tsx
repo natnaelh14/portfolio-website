@@ -2,26 +2,19 @@ import { Fade } from "react-reveal";
 import emailjs from "emailjs-com";
 import "./contact.css";
 import { useForm } from "react-hook-form";
-import { z, ZodType } from "zod";
+import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 
-interface IContactForm {
-	firstName: string;
-	lastName: string;
-	email: string;
-	subject: string;
-	message: string;
-	serverError: () => void;
-}
-
-const schema: ZodType = z.object({
-	firstName: z.string(),
-	lastName: z.string(),
-	email: z.string().email({ message: "Invalid email address" }),
-	subject: z.string(),
-	message: z.string().min(10, { message: "Must be 10 or more characters long" }),
+const userSchema = z.object({
+	firstName: z.string().nonempty({ message: "Please enter a first name" }),
+	lastName: z.string().nonempty({ message: "Please enter a last name" }),
+	email: z.string().nonempty({ message: "Please enter an email address" }).email({ message: "Invalid email address" }),
+	subject: z.string().nonempty({ message: "Please enter a subject" }),
+	message: z.string().nonempty({ message: "Please enter a message" }),
 	serverError: z.void(),
 });
+
+type User = z.infer<typeof userSchema>;
 
 const Contact = () => {
 	const {
@@ -29,27 +22,32 @@ const Contact = () => {
 		handleSubmit,
 		setError,
 		formState: { errors },
-	} = useForm<IContactForm>({
-		// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call
-		resolver: zodResolver(schema),
+		reset,
+	} = useForm<User>({
+		resolver: zodResolver(userSchema),
 		mode: "onSubmit",
 	});
 
-	const onSubmit = (data: IContactForm) => {
+	const onSubmit = (data: User) => {
 		const templateParams = {
-			from_name: data.firstName + " " + data.lastName,
+			from_name: `${data.firstName}&nbsp;${data.lastName}`,
 			from_email: data.email,
 			to_name: "Natnael Haile",
 			subject: data.subject,
 			message: data.message,
 		};
-		emailjs.send("service_a7u63za", "template_18f6zsf", templateParams, "user_eZV3e0rLSAkwzx3Pvay2V").catch((err) => {
-			console.error("🚀 ~ file: Contact.tsx:47 ~ onSubmit ~ err:", err);
-			setError("serverError", {
-				type: "server",
-				message: "Unable to send message. Please try again.",
+		emailjs
+			.send("service_a7u63za", "template_18f6zsf", templateParams, "user_eZV3e0rLSAkwzx3Pvay2V")
+			.then(() => {
+				reset();
+			})
+			.catch((err) => {
+				console.error("🚀 ~ file: Contact.tsx:47 ~ onSubmit ~ err:", err);
+				setError("serverError", {
+					type: "server",
+					message: "Unable to send message. Please try again.",
+				});
 			});
-		});
 		console.log(templateParams);
 	};
 
@@ -63,32 +61,30 @@ const Contact = () => {
 					<label htmlFor="firstName" className="required">
 						First Name
 					</label>
-					<input {...register("firstName")} />
+					<input {...register("firstName")} style={errors.firstName ? { border: "1px solid red" } : {}} />
 					{errors.firstName && <span style={{ color: "red" }}>{errors.firstName.message}</span>}
 					<label htmlFor="lastName" className="required">
 						Last Name
 					</label>
-					<input {...register("lastName")} />
+					<input {...register("lastName")} style={errors.lastName ? { border: "1px solid red" } : {}} />
 					{errors.lastName && <span style={{ color: "red" }}>{errors.lastName.message}</span>}
 					<label htmlFor="email" className="required">
 						Email
 					</label>
-					<input {...register("email")} />
+					<input {...register("email")} style={errors.email ? { border: "1px solid red" } : {}} />
 					{errors.email && <span style={{ color: "red" }}>{errors.email.message}</span>}
 					<label htmlFor="subject" className="required">
 						Subject
 					</label>
-					<input {...register("subject")} />{" "}
+					<input {...register("subject")} style={errors.subject ? { border: "1px solid red" } : {}} />
 					{errors.subject && <span style={{ color: "red" }}>{errors.subject.message}</span>}
 					<label htmlFor="message" className="required">
 						Message
 					</label>
-					<input {...register("message")} />
+					<input {...register("message")} style={errors.message ? { border: "1px solid red" } : {}} />
 					{errors.message && <span style={{ color: "red" }}>{errors.message.message}</span>}
 					<button type="submit">SEND</button>
-					{errors.serverError && (
-						<div className="mt-5 text-center text-red-500">{errors.serverError?.message}</div>
-					)}{" "}
+					{errors.serverError && <div className="mt-5 text-center text-red-500">{errors.serverError?.message}</div>}
 				</form>
 			</Fade>
 		</div>
