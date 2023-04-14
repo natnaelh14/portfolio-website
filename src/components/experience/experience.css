@@ -1,40 +1,41 @@
 .button-container {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 75px;
 }
 .experience-button {
-  color: #e64861;
-  border: 2px solid #e64861;
-  border-radius: 4px;
-  font-size: 1.4rem;
-  font-weight: 400;
-  text-decoration: none;
-  padding: 10px 15px;
-  margin: 2px;
-  width: 250px;
-  text-align: center;
-  display: inline-block;
-  transition: 0.3s;
-  background: #18181b;
+	color: #e64861;
+	border: 2px solid #e64861;
+	border-radius: 4px;
+	font-size: 1.4rem;
+	font-weight: 400;
+	text-decoration: none;
+	padding: 10px 15px;
+	margin: 2px;
+	width: 250px;
+	text-align: center;
+	display: inline-block;
+	transition: 0.3s;
+	background: #18181b;
 }
 .experience-button:hover {
-  background: rgba(24, 186, 189, 0.1);
-  cursor: pointer;
+	background: rgba(24, 186, 189, 0.1);
+	cursor: pointer;
 }
 
 @media screen and (max-width: 1000px) {
-  .experience-button {
-    width: 200px;
-    font-size: 1.2rem;
-  }
+	.experience-button {
+		width: 200px;
+		font-size: 1.2rem;
+	}
 }
 
 @media screen and (max-width: 700px) {
-  .experience-button {
-    font-size: 1rem;
-  }
-  .button-container {
-    margin-right: 5px;
-    margin-left: 5px;
-  }
+	.experience-button {
+		font-size: 1rem;
+	}
+	.button-container {
+		margin-right: 5px;
+		margin-left: 5px;
+	}
 }

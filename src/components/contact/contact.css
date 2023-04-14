@@ -1,3 +1,7 @@
+.contact {
+	padding-top: 150px;
+}
+
 form {
 	max-width: 500px;
 	margin: 0 auto;
@@ -18,7 +22,8 @@ form {
 	padding-bottom: 50px;
 }
 
-input {
+input,
+textarea {
 	display: block;
 	box-sizing: border-box;
 	width: 100%;
@@ -31,7 +36,8 @@ input {
 	color: white;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
 	outline: none;
 	border: 1px solid #858585;
 }

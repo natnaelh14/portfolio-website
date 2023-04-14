@@ -1,6 +1,6 @@
 import "./header.css";
 import { HiMenuAlt3, HiOutlineX } from "react-icons/hi";
-import LogoImage from "./logo.png";
+import LogoImage from "assets/images/logo.png";
 import Resume from "assets/resume.pdf";
 import SoundBar from "../SoundBar/SoundBar";
 import { OutlineLink, Link } from "../Styled-Components/Links";
@@ -33,33 +33,30 @@ const Header = () => {
 			<Menu>
 				{({ open }) => (
 					<>
-						<span className="navbar-mobile-icon">
-							<Menu.Button>{open ? <HiOutlineX /> : <HiMenuAlt3 />}</Menu.Button>
-						</span>
-						<Menu.Items>
-							<ul className={open ? "navbar-list-mobile navbar-list-mobileShow" : "navbar-list-mobile"}>
-								<Menu.Item>
-									<li>
-										<a href="#about">About</a>
-									</li>
-								</Menu.Item>
-								<Menu.Item>
-									<li>
-										<a href="#projects">Projects</a>
-									</li>
-								</Menu.Item>
-								<Menu.Item>
-									<li>
-										{/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
-										<a href={Resume}>Resume</a>
-									</li>
-								</Menu.Item>
-								<Menu.Item>
-									<li>
-										<a href="#contact">Contact</a>
-									</li>
-								</Menu.Item>
-							</ul>
+						<div className="navbar-mobile-icon">
+							<Menu.Button as={"span"}>{open ? <HiOutlineX /> : <HiMenuAlt3 />}</Menu.Button>
+						</div>
+						<Menu.Items
+							as={"div"}
+							className={
+								open ? "navbar-list-mobile navbar-list-mobileShow" : "navbar-list-mobile navbar-list-mobileShow"
+							}
+						>
+							<Menu.Item>
+								<a href="#about">About</a>
+							</Menu.Item>
+							<Menu.Item>
+								<a href="#projects">Projects</a>
+							</Menu.Item>
+							<Menu.Item>
+								{/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
+								<a href={Resume} target="_blank" rel="noopener noreferrer">
+									Resume
+								</a>
+							</Menu.Item>
+							<Menu.Item>
+								<a href="#contact">Contact</a>
+							</Menu.Item>
 						</Menu.Items>
 					</>
 				)}

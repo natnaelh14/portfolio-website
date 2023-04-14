@@ -4,6 +4,7 @@ import "./contact.css";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import toast, { Toaster } from "react-hot-toast";
 
 const userSchema = z.object({
 	firstName: z.string().nonempty({ message: "Please enter a first name" }),
@@ -17,11 +18,20 @@ const userSchema = z.object({
 type User = z.infer<typeof userSchema>;
 
 const Contact = () => {
+	const successNotify = () =>
+		toast("Your message has been sent!", {
+			icon: "🔥",
+			style: {
+				borderRadius: "10px",
+				background: "#333",
+				color: "#fff",
+			},
+		});
 	const {
 		register,
 		handleSubmit,
 		setError,
-		formState: { errors },
+		formState: { errors, isSubmitting },
 		reset,
 	} = useForm<User>({
 		resolver: zodResolver(userSchema),
@@ -40,6 +50,7 @@ const Contact = () => {
 			.send("service_a7u63za", "template_18f6zsf", templateParams, "user_eZV3e0rLSAkwzx3Pvay2V")
 			.then(() => {
 				reset();
+				successNotify();
 			})
 			.catch((err) => {
 				console.error("🚀 ~ file: Contact.tsx:47 ~ onSubmit ~ err:", err);
@@ -52,10 +63,9 @@ const Contact = () => {
 	};
 
 	return (
-		<div>
-			<h1 className="contact-heading" id="contact">
-				Contact
-			</h1>
+		<div className="contact" id="contact">
+			<h1 className="contact-heading">Contact</h1>
+			<Toaster position="top-center" reverseOrder={false} />
 			<Fade bottom duration={1000} distance="40px">
 				<form onSubmit={handleSubmit(onSubmit)}>
 					<label htmlFor="firstName" className="required">
@@ -81,9 +91,9 @@ const Contact = () => {
 					<label htmlFor="message" className="required">
 						Message
 					</label>
-					<input {...register("message")} style={errors.message ? { border: "1px solid red" } : {}} />
+					<textarea {...register("message")} style={errors.message ? { border: "1px solid red" } : {}} />
 					{errors.message && <span style={{ color: "red" }}>{errors.message.message}</span>}
-					<button type="submit">SEND</button>
+					<button type="submit">{isSubmitting ? "SENDING" : "SEND"}</button>
 					{errors.serverError && <div className="mt-5 text-center text-red-500">{errors.serverError?.message}</div>}
 				</form>
 			</Fade>

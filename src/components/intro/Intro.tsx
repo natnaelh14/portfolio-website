@@ -1,5 +1,5 @@
 import "./intro.css";
-import HeroImage from "./hero-image.png";
+import HeroImage from "assets/images/hero-image.png";
 import Fade from "react-reveal/Fade";
 import { OutlineLink } from "../Styled-Components/Links";
 
