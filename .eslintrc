@@ -28,6 +28,10 @@
 			"parserOptions": {
 				"tsconfigRootDir": ".",
 				"project": ["./tsconfig.json"]
+			},
+			"rules": {
+				"@typescript-eslint/no-use-before-define": ["error"],
+				"@typescript-eslint/explicit-module-boundary-types": "off"
 			}
 		}
 	],
@@ -43,7 +47,6 @@
 		"react/display-name": "off",
 		"eslint-comments/no-unlimited-disable": "off",
 		"no-use-before-define": "off",
-		"@typescript-eslint/no-use-before-define": ["error"],
 		"react/react-in-jsx-scope": "off",
 		"no-unused-vars": "off",
 		"import/order": [

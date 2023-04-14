@@ -1,11 +1,11 @@
 import "./intro.css";
-import HeroImage from "./hero-image.png";
+import HeroImage from "assets/images/hero-image.png";
 import Fade from "react-reveal/Fade";
 import { OutlineLink } from "../Styled-Components/Links";
 
 const Intro = () => {
 	return (
-		<div className="intro">
+		<div className="intro" id="intro">
 			<Fade bottom duration={1000} distance="40px">
 				<div className="intro-image-mobile">
 					<img className="hero-image-mobile" src={HeroImage} alt="hero" />

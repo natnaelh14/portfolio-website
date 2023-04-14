@@ -1,3 +1,7 @@
+.contact {
+	padding-top: 150px;
+}
+
 form {
 	max-width: 500px;
 	margin: 0 auto;
@@ -18,15 +22,24 @@ form {
 	padding-bottom: 50px;
 }
 
-input {
+input,
+textarea {
 	display: block;
 	box-sizing: border-box;
 	width: 100%;
 	border-radius: 4px;
-	border: 1px solid white;
+	border: 1px solid #464444;
 	padding: 10px 15px;
 	margin-bottom: 10px;
 	font-size: 14px;
+	background-color: #292929;
+	color: white;
+}
+
+input:focus,
+textarea:focus {
+	outline: none;
+	border: 1px solid #858585;
 }
 
 label {

@@ -1,129 +1,131 @@
 .about {
-  width: 90%;
-  margin: 150px auto;
-  max-width: 1200px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
+	padding-top: 150px;
 }
 
 .about-section {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 .section-heading {
-  font-size: 4rem;
-  margin: 10px 0;
-  color: rgb(3 183 133);
-  display: flex;
-  justify-content: center;
+	font-size: 4rem;
+	margin: 10px 0;
+	color: rgb(3 183 133);
+	display: flex;
+	justify-content: center;
 }
 
 .about-text {
-  font-size: 1.7rem;
-  color: #bdbdb0;
-  font-weight: 200;
-  width: 100%;
-  text-align: justify;
-  line-height: 2;
-  text-indent: 100px;
+	font-size: 1.7rem;
+	color: #bdbdb0;
+	font-weight: 200;
+	width: 100%;
+	text-align: justify;
+	line-height: 2;
+	text-indent: 100px;
 }
 
 .about-subSection {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .about-subSection ul {
-  list-style: none;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  margin: 0;
-  padding: 20px;
+	list-style: none;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	margin: 0;
+	padding: 20px;
 }
 .about-subSectionitem {
-  position: relative;
-  padding: 0 25px;
-  margin: 10px;
-  font-size: 1.4rem;
-  color: #bdbdb0;
-  font-weight: 200;
+	position: relative;
+	padding: 0 25px;
+	margin: 10px;
+	font-size: 1.4rem;
+	color: #bdbdb0;
+	font-weight: 200;
 }
 .about-subSectionitem:before {
-  content: '▹';
-  position: absolute;
-  left: 0px;
-  font-size: 1.8rem;
-  color: #e64861;
-  line-height: 20px;
+	content: "▹";
+	position: absolute;
+	left: 0px;
+	font-size: 1.8rem;
+	color: #e64861;
+	line-height: 20px;
 }
 .about-messageHead {
-  font-size: 2.5rem;
-  color: #787887;
+	font-size: 2.5rem;
+	color: #787887;
 }
 .about-text--light {
-  color: #93939f;
-  font-size: 1.2rem;
+	color: #93939f;
+	font-size: 1.2rem;
 }
 .about-contact {
-  color: #787887;
+	color: #787887;
 }
 
 /* Test */
 .about__buttons {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 .about__button {
-  display: inline-block;
-  background-color: transparent;
-  border: none;
-  color: #e64861;
-  font-size: 1.5rem;
-  padding: 10px;
-  transition: 0.3s;
-  cursor: pointer;
-  outline: none;
-  border-radius: 4px;
-  margin: 30px;
-  border-radius: 8px;
+	display: inline-block;
+	background-color: transparent;
+	border: none;
+	color: #e64861;
+	font-size: 1.5rem;
+	padding: 10px;
+	transition: 0.3s;
+	cursor: pointer;
+	outline: none;
+	border-radius: 4px;
+	margin: 30px;
+	border-radius: 8px;
 }
 .about__button--active {
-  background: rgba(24, 186, 189, 0.1);
+	background: rgba(24, 186, 189, 0.1);
 }
 .about__button:hover {
-  background: rgba(24, 186, 189, 0.1);
+	background: rgba(24, 186, 189, 0.1);
 }
 
 /* Test */
 
 @media screen and (max-width: 700px) {
-  .about-subSectionitem {
-    font-size: 1rem !important;
-  }
-  .about-text {
-    font-size: 1.1rem;
-  }
-  .about__button {
-    font-size: 1.1rem;
-    margin: 5px;
-  }
+	.about-subSectionitem {
+		font-size: 1rem !important;
+	}
+	.about-text {
+		font-size: 1.1rem;
+	}
+	.about__button {
+		font-size: 1.1rem;
+		margin: 5px;
+	}
 }
 
 @media screen and (max-width: 1000px) {
-  .about-text {
-    font-size: 1.1rem;
-    text-indent: 50px;
-  }
-  .about-subSectionitem {
-    font-size: 1rem;
-    margin: 5px;
-  }
-  .about-subSection ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: auto auto;
-    margin: 0;
-    padding: 10px;
-  }
-  .about-subSection {
-    padding-left: 20px;
-  }
+	.about-text {
+		font-size: 1.1rem;
+		text-indent: 50px;
+	}
+	.about-subSectionitem {
+		font-size: 1rem;
+		margin: 5px;
+	}
+	.about-subSection ul {
+		list-style: none;
+		display: grid;
+		grid-template-columns: auto auto;
+		margin: 0;
+		padding: 10px;
+	}
+	.about-subSection {
+		padding-left: 20px;
+	}
 }

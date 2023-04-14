@@ -1,10 +1,7 @@
 import "./projects.css";
 import Project from "../Project/Project";
-import roastTime from "./img/roast-time.png";
-import cryptoConnect from "./img/crypto-connect.png";
-import cryptoConnectLogo from "./img/logo.svg";
-import roastTimeLogo from "./img/roast-time-logo.png";
-import projectContent from "./content";
+import roastTime from "assets/images/roast-time.png";
+import cryptoConnect from "assets/images/crypto-connect.png";
 import { Fade } from "react-reveal";
 import { skillLangs } from "components/constants";
 
@@ -18,8 +15,6 @@ const Projects = () => {
 					<Project
 						title="RoastTime"
 						desc="A full-stack application that reserves coffee shop table."
-						content={projectContent.roastTime}
-						logo={roastTimeLogo}
 						langs={[
 							skillLangs.tailwind,
 							skillLangs.javascript,
@@ -49,8 +44,6 @@ const Projects = () => {
 					<Project
 						title="Crypto Connect"
 						desc="A full-stack social media application based on cryptocurrency."
-						content={projectContent.cryptoConnect}
-						logo={cryptoConnectLogo}
 						langs={[
 							skillLangs.styled,
 							skillLangs.material,

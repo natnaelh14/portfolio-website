@@ -3,7 +3,7 @@ import "./About.css";
 import { Fade } from "react-reveal";
 
 const About = () => {
-	const [show, Setshow] = useState({ type: "front-end" });
+	const [show, setShow] = useState({ type: "front-end" });
 	return (
 		<div className="about" id="about">
 			<h1 className="section-heading">About</h1>
@@ -22,19 +22,19 @@ const About = () => {
 					<div className="about__buttons">
 						<button
 							className={show.type === "front-end" ? "about__button about__button--active" : "about__button"}
-							onClick={() => Setshow({ type: "front-end" })}
+							onClick={() => setShow({ type: "front-end" })}
 						>
 							Front-End
 						</button>
 						<button
 							className={show.type === "back-end" ? "about__button about__button--active" : "about__button"}
-							onClick={() => Setshow({ type: "back-end" })}
+							onClick={() => setShow({ type: "back-end" })}
 						>
 							Back-End
 						</button>
 						<button
 							className={show.type === "other-tech" ? "about__button about__button--active" : "about__button"}
-							onClick={() => Setshow({ type: "other-tech" })}
+							onClick={() => setShow({ type: "other-tech" })}
 						>
 							Other Tech
 						</button>

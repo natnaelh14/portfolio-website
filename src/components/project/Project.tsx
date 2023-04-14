@@ -1,9 +1,7 @@
-import React, { Component } from "react";
 import "./project.css";
 import { FaLink, FaGithub } from "react-icons/fa";
 import { Icon } from "@iconify/react";
 import { Tooltip } from "@chakra-ui/react";
-import "../Modal-Container/Modal.css";
 
 interface IFormProps {
 	desc: string;
@@ -12,22 +10,13 @@ interface IFormProps {
 	imageLink: string;
 	githubWebLink: string;
 	githubApiLink: string;
-	langs: { name: string }[];
-	logo: string;
-	content: string[];
+	langs: {
+		label: string;
+		name: string;
+	}[];
 }
 
-const Project = ({
-	title,
-	desc,
-	langs,
-	liveLink,
-	githubWebLink,
-	githubApiLink,
-	imageLink,
-	logo,
-	content,
-}: IFormProps) => {
+const Project = ({ title, desc, langs, liveLink, githubWebLink, githubApiLink, imageLink }: IFormProps) => {
 	return (
 		<div className="project">
 			<div className="project-title">
@@ -37,18 +26,18 @@ const Project = ({
 				<img className="project-image" src={imageLink} style={{ width: "450px", height: "400px" }} alt="project" />
 			</a>
 			<br />
-			{/* <div className="project-langs">
+			<div className="project-langs">
 				{langs &&
-					// eslint-disable-next-line
 					langs.map((lang, index) => (
-						// eslint-disable-next-line
+						// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+						// @ts-ignore-next-line
 						<Tooltip key={index} label={lang?.label || ""} aria-label="A tooltip" fontSize="md" color="white">
 							<span className="project-lang">
 								<Icon className="icon" icon={lang.name} height="35px" width="35px" />
 							</span>
 						</Tooltip>
 					))}
-			</div> */}
+			</div>
 			<div className="project-links">
 				{liveLink && (
 					<a href={liveLink} target="_blank" rel="noopener noreferrer">
@@ -65,25 +54,6 @@ const Project = ({
 			<div className="project-detail">
 				<p className="project-desc">{desc}</p>
 			</div>
-			{/* <TriggerButton showModal={this.showModal} buttonRef={(n) => (this.TriggerButton = n)} triggerText="More Info" />
-				{this.state.isShown ? (
-					<Modal
-						onSubmit={this.props.onSubmit}
-						modalRef={(n) => (this.modal = n)}
-						buttonRef={(n) => (this.closeButton = n)}
-						closeModal={this.closeModal}
-						onKeyDown={this.onKeyDown}
-						onClickOutside={this.onClickOutside}
-						description={desc}
-						title={title}
-						liveLink={liveLink}
-						githubWebLink={githubWebLink}
-						githubApiLink={githubApiLink}
-						langs={langs}
-						logo={logo}
-						content={content}
-					/>
-				) : null} */}
 		</div>
 	);
 };
