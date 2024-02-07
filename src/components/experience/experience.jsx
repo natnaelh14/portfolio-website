@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Experience.css";
+import "./experience.css";
 import Education from "./education";
 import Work from "./work";
 import { Fade } from "react-reveal";

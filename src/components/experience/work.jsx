@@ -20,8 +20,15 @@ class Work extends Component {
 											<h2>
 												<span>Jan 2022 - Present</span>
 											</h2>
-											<p>Designed and developed a client-side application using NextJS, Typescript, and Tailwind.</p>
-											<p>Implemented automation tests to ensure high-quality software solutions.</p>
+											<p>
+												Led the architecture, design, and development of two full-stack applications using NextJS,
+												Nodejs, Typescript, and Tailwind.
+											</p>
+											<p>
+												Oversaw the health of the system, addressed performance issues, and enhanced application
+												efficiency by employing techniques on both the server and client sides.
+											</p>
+											<p>Implemented unit and automation tests to ensure high-quality software solutions.</p>
 											<p>Maintained an ASP.NET core product while debugging and resolving client and server issues.</p>
 										</div>
 									</article>{" "}
