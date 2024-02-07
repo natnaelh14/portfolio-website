@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./About.css";
+import "./about.css";
 import { Fade } from "react-reveal";
 
 const About = () => {
@@ -10,7 +10,7 @@ const About = () => {
 			<Fade bottom duration={1000} distance="40px">
 				<div className="about-section">
 					<div className="about-text">
-						I am a Full-Stack Software Engineer with a Bachelor&apos;s Degree and one year of professional development
+						I am a Full-Stack Software Engineer with a Bachelor&apos;s Degree and two years of professional development
 						experience. I am a proactive team player with good adaptability in dynamic environments looking for engaging
 						professional development. I am a passionate, detail-oriented, and curious developer using professional and
 						technical skills to solve problems. I like to bring unique ideas to life using the tools below.
