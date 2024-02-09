@@ -1,6 +1,6 @@
-import Zoom from "react-reveal/Zoom";
+import { Zoom } from "react-awesome-reveal";
 import "./appAnimation.css";
-import Logo from "assets/images/logo.png";
+import Logo from "~/assets/images/logo.png";
 
 const AppAnimation = () => {
 	return (

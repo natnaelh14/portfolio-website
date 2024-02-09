@@ -1,10 +1,10 @@
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import emailjs from "emailjs-com";
-import "./contact.css";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import toast, { Toaster } from "react-hot-toast";
+import "./contact.css";
 
 const userSchema = z.object({
 	firstName: z.string().nonempty({ message: "Please enter a first name" }),

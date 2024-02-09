@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import Education from "~/components/Experience/Education";
+import Work from "~/components/Experience/Work";
+import { Fade } from "react-awesome-reveal";
 import "./experience.css";
-import Education from "./education";
-import Work from "./work";
-import { Fade } from "react-reveal";
 
 const Experience = () => {
 	const [workMessage, setWorkMessage] = useState(false);
@@ -37,7 +37,7 @@ const Experience = () => {
 					Work Experience
 				</button>
 			</div>
-			<Fade bottom duration={1000} distance="40px">
+			<Fade cascade>
 				<div>{educationMessage && <Education />}</div>
 				<div>{workMessage && <Work />}</div>
 			</Fade>

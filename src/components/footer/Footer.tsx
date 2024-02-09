@@ -1,11 +1,11 @@
 import { GrLinkedinOption, GrGithub, GrMail, GrTwitter } from "react-icons/gr";
+import { Fade } from "react-awesome-reveal";
 import "./footer.css";
-import Fade from "react-reveal/Fade";
 
 const Footer = () => {
 	return (
 		<footer className="footer">
-			<Fade bottom duration={1000} distance="40px">
+			<Fade cascade>
 				<section className="contact-link">
 					<ul className="footer-social">
 						<a href="https://www.linkedin.com/in/natnael-haile-b146b41bb/" target="_blank" rel="noopener noreferrer">
