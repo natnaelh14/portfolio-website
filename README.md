@@ -1,40 +1,30 @@
-## Portfolio Website
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-## Live Link
-https://natnaeldev.com
-## Description
-A personal portfolio website built with React. The navbar section has relative links to different sections of the page and resume link. I included  pertinent description about my qualifications in the about section. In projects section, I listed six projects I have worked on and provided descriptions and links. The contact form has emailjs integration with error handling. I appreciate any feedback.
-## Table of Contents
-* [Installation](#Installation)
-* [Usage](#Usage)
-* [License](#License)
-* [Contributing](#Contribution)
-* [Tests](#Tests)
-* [Questions](#Questions)
-* [Contact](#Contact)
-## Installation
+# React + TypeScript + Vite
 
-To run necessary dependencies, run the following command:
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-* npm install
-## Usage
-![alt text](/img/screenshot-01.png)
-![alt text](/img/screenshot-02.png)
-![alt text](/img/screenshot-03.png)
-![alt text](/img/screenshot-04.png)
-## License
-Copyright (C) 2021 Natnael Haile
+Currently, two official plugins are available:
 
-* Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-      The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-* For more information: (https://opensource.org/licenses/MIT)
-## Contributing
-* N/A
-## Tests
-* npm test
-## Questions
-* If you have any issues, create an issue on the project.
-## Contact
-* You can contact me directly at haile.natnael@natnaeldev.com. 
-* You can also find more of my work at (https://github.com/natnaelh14/)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+
+- Configure the top-level `parserOptions` property like this:
+
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+  },
+}
+```
+
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list

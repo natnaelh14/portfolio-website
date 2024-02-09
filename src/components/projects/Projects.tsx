@@ -1,9 +1,9 @@
 import "./projects.css";
 import Project from "../Project/Project";
-import roastTime from "assets/images/roast-time.png";
-import cryptoConnect from "assets/images/crypto-connect.png";
-import { Fade } from "react-reveal";
-import { skillLangs } from "components/constants";
+import roastTime from "~/assets/images/roast-time.png";
+import cryptoConnect from "~/assets/images/crypto-connect.png";
+import { Fade } from "react-awesome-reveal";
+import { skillLangs } from "~/components/constants";
 
 const Projects = () => {
 	return (
@@ -11,7 +11,7 @@ const Projects = () => {
 			<h1 className="section-heading">Projects</h1>
 			<div className="projects_wrapper">
 				{/* RoastTime  */}
-				<Fade bottom duration={1000} distance="40px">
+				<Fade cascade>
 					<Project
 						title="RoastTime"
 						desc="A full-stack application that reserves coffee shop table."
@@ -40,7 +40,7 @@ const Projects = () => {
 					/>
 				</Fade>
 				{/* Crypto Connect */}
-				<Fade bottom duration={1000} distance="40px">
+				<Fade cascade>
 					<Project
 						title="Crypto Connect"
 						desc="A full-stack social media application based on cryptocurrency."

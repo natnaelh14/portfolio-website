@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./about.css";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const About = () => {
 	const [show, setShow] = useState({ type: "front-end" });
 	return (
 		<div className="about" id="about">
 			<h1 className="section-heading">About</h1>
-			<Fade bottom duration={1000} distance="40px">
+			<Fade cascade>
 				<div className="about-section">
 					<div className="about-text">
 						I am a Full-Stack Software Engineer with a Bachelor&apos;s Degree and two years of professional development

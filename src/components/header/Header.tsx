@@ -1,7 +1,7 @@
 import "./header.css";
 import { HiMenuAlt3, HiOutlineX } from "react-icons/hi";
-import LogoImage from "assets/images/logo.png";
-import Resume from "assets/resume.pdf";
+import LogoImage from "~/assets/images/logo.png";
+import Resume from "~/assets/resume.pdf";
 import SoundBar from "../SoundBar/SoundBar";
 import { OutlineLink, Link } from "../Styled-Components/Links";
 import { Menu } from "@headlessui/react";

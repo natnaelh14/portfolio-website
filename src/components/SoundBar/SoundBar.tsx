@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import styled, { keyframes } from "styled-components";
 
 import music from "../../assets/audio/u-said-it-v13-1167.mp3";
