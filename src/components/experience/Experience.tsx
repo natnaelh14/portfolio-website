@@ -24,7 +24,7 @@ const Experience = () => {
 	};
 
 	return (
-		<>
+		<Fade>
 			<div className="button-container">
 				<button
 					style={{ backgroundColor: educationButton }}
@@ -37,11 +37,9 @@ const Experience = () => {
 					Work Experience
 				</button>
 			</div>
-			<Fade cascade>
-				<div>{educationMessage && <Education />}</div>
-				<div>{workMessage && <Work />}</div>
-			</Fade>
-		</>
+			<div>{educationMessage && <Education />}</div>
+			<div>{workMessage && <Work />}</div>
+		</Fade>
 	);
 };
 

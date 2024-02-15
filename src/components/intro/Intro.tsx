@@ -5,8 +5,8 @@ import "./intro.css";
 
 const Intro = () => {
 	return (
-		<div className="intro" id="intro">
-			<Fade cascade>
+		<Fade>
+			<div className="intro" id="intro">
 				<div className="intro-image-mobile">
 					<img className="hero-image-mobile" src={HeroImage} alt="hero" />
 				</div>
@@ -21,8 +21,8 @@ const Intro = () => {
 				<div className="intro-image">
 					<img className="hero-image" src={HeroImage} alt="hero" />
 				</div>
-			</Fade>
-		</div>
+			</div>
+		</Fade>
 	);
 };
 
