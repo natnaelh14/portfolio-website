@@ -11,7 +11,7 @@ const Projects = () => {
 			<h1 className="section-heading">Projects</h1>
 			<div className="projects_wrapper">
 				{/* RoastTime  */}
-				<Fade cascade>
+				<Fade>
 					<Project
 						title="RoastTime"
 						desc="A full-stack application that reserves coffee shop table."
@@ -40,7 +40,7 @@ const Projects = () => {
 					/>
 				</Fade>
 				{/* Crypto Connect */}
-				<Fade cascade>
+				<Fade>
 					<Project
 						title="Crypto Connect"
 						desc="A full-stack social media application based on cryptocurrency."

@@ -16,7 +16,6 @@
 	fill: transparent;
 	stroke-width: 6;
 	stroke: #e74761;
-	fill: transparent;
 	stroke-dasharray: 805;
 	stroke-dashoffset: 805;
 	stroke-linecap: round;
@@ -26,8 +25,10 @@
 .app__loaderImageParent {
 	width: 90px;
 	position: absolute;
-	top: 10%;
+	/* top: 10%; */
+	bottom: 20%;
 	left: 6%;
+	margin-bottom: 25px;
 }
 .app__loaderImage {
 	width: 100%;
