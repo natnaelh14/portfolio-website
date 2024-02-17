@@ -32,6 +32,7 @@
 		"react-scripts": "4.0.3",
 		"react-show-more-text": "^1.5.0",
 		"reactstrap": "^8.10.0",
+		"typewriter-effect": "^2.21.0",
 		"vite-tsconfig-paths": "^4.3.1",
 		"zod": "^3.22.4"
 	},
