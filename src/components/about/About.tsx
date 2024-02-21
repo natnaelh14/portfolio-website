@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./about.css";
 import { Fade } from "react-awesome-reveal";
+import { frontEndTech, backEndTech, otherTech } from "~/constants";
 
 const About = () => {
 	const [show, setShow] = useState({ type: "front-end" });
@@ -42,48 +43,33 @@ const About = () => {
 					{show.type === "front-end" && (
 						<div className="about-subSection">
 							<ul>
-								<li className="about-subSectionitem">HTML5</li>
-								<li className="about-subSectionitem">CSS3</li>
-								<li className="about-subSectionitem">Bootstrap</li>
-								<li className="about-subSectionitem">Bulma</li>
-								<li className="about-subSectionitem">Styled Components</li>
-								<li className="about-subSectionitem">Tailwind</li>
-								<li className="about-subSectionitem">JavaScript</li>
-								<li className="about-subSectionitem">jQuery</li>
-								<li className="about-subSectionitem">React</li>
-								<li className="about-subSectionitem">Redux</li>
-								<li className="about-subSectionitem">Next.js</li>
-								<li className="about-subSectionitem">TypeScript</li>
+								{frontEndTech.map((tech, index) => (
+									<li key={index} className="about-subSectionitem">
+										{tech}
+									</li>
+								))}
 							</ul>
 						</div>
 					)}
 					{show.type === "back-end" && (
 						<div className="about-subSection">
 							<ul>
-								<li className="about-subSectionitem">Node.js</li>
-								<li className="about-subSectionitem">Express.js</li>
-								<li className="about-subSectionitem">Prisma</li>
-								<li className="about-subSectionitem">MySQL</li>
-								<li className="about-subSectionitem">PostgreSQL</li>
-								<li className="about-subSectionitem">MongoDB</li>
-								<li className="about-subSectionitem">GraphQL/Apollo</li>
+								{backEndTech.map((tech, index) => (
+									<li key={index} className="about-subSectionitem">
+										{tech}
+									</li>
+								))}
 							</ul>
 						</div>
 					)}
 					{show.type === "other-tech" && (
 						<div className="about-subSection">
 							<ul>
-								<li className="about-subSectionitem">Git/Terminal</li>
-								<li className="about-subSectionitem">Agile development</li>
-								<li className="about-subSectionitem">Data Structures</li>
-								<li className="about-subSectionitem">Algorithms</li>
-								<li className="about-subSectionitem">CICD</li>
-								<li className="about-subSectionitem">GitHub Actions</li>
-								<li className="about-subSectionitem">Google Analytics</li>
-								<li className="about-subSectionitem">Contentful</li>
-								<li className="about-subSectionitem">Jest</li>
-								<li className="about-subSectionitem">Postman</li>
-								<li className="about-subSectionitem">Docker</li>
+								{otherTech.map((tech, index) => (
+									<li key={index} className="about-subSectionitem">
+										{tech}
+									</li>
+								))}
 							</ul>
 						</div>
 					)}
