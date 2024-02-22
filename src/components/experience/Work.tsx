@@ -1,6 +1,7 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import classes from "./education.module.css";
 import { MdWork } from "react-icons/md";
+import { experience } from "~/constants";
 
 class Work extends Component {
 	render() {
@@ -11,62 +12,27 @@ class Work extends Component {
 						<div className={classes.row}>
 							<div className={classes.row_md_12}>
 								<div className={classes.timeline_centered}>
-									<article className={classes.timeline_entry}>
-										<div className={`${classes.timeline_icon} ${classes.timeline_icon_4}`}>
-											<MdWork />
-										</div>
-										<div className={classes.label}>
-											<h2>Tide Cleaners (Software Engineer)</h2>
-											<h2>
-												<span>Jan 2022 - Present</span>
-											</h2>
-											<p>
-												Led the architecture, design, and development of two full-stack applications using NextJS,
-												Nodejs, Typescript, and Tailwind.
-											</p>
-											<p>
-												Oversaw the health of the system, addressed performance issues, and enhanced application
-												efficiency by employing techniques on both the server and client sides.
-											</p>
-											<p>Implemented unit and automation tests to ensure high-quality software solutions.</p>
-											<p>Maintained an ASP.NET core product while debugging and resolving client and server issues.</p>
-										</div>
-									</article>{" "}
-									<article className={classes.timeline_entry}>
-										<div className={`${classes.timeline_icon} ${classes.timeline_icon_4}`}>
-											<MdWork />
-										</div>
-										<div className={classes.label}>
-											<h2>Wellstar Hospital (ICU Registered Nurse)</h2>
-											<h2>
-												<span>Aug 2019 - Jan 2022</span>
-											</h2>
-											<p>Delivered critical patient care in a dedicated COVID unit.</p>
-											<p>Collaborated with an interdisciplinary team to ensure the desired patient outcomes.</p>
-										</div>
-									</article>
-									<article className={classes.timeline_entry}>
-										<div className={`${classes.timeline_icon} ${classes.timeline_icon_4}`}>
-											<MdWork />
-										</div>
-										<div className={classes.label}>
-											<h2>Northside Hospital (ICU Registered Nurse)</h2>
-											<h2>
-												<span>Aug 2015 - Mar 2020</span>
-											</h2>
-											<p>
-												Effectively supervised a team of 12-16 nursing staff and implemented several performance
-												improvement activities.
-											</p>
-											<p>
-												Served a leadership role by providing the highest quality of patient care and by precepting new
-												nurses.
-											</p>
-										</div>
-										<div className={classes.timeline_entry_inner}>
-											<div className={classes.timeline_icon_3 || classes.color_none}></div>
-										</div>
-									</article>
+									{experience.map((exp) => (
+										<article className={classes.timeline_entry} key={exp.title}>
+											<div className={`${classes.timeline_icon} ${classes.timeline_icon_4}`}>
+												<MdWork />
+											</div>
+											<div className={classes.label}>
+												<h2>
+													{exp.title} ({exp.company})
+												</h2>
+												<h2>
+													<span>{exp.date}</span>
+												</h2>
+												{exp.description.map((desc, i) => (
+													<p key={i}>{desc}</p>
+												))}
+											</div>
+										</article>
+									))}
+									<div className={classes.timeline_entry_inner}>
+										<div className={classes.timeline_icon_3 || classes.color_none}></div>
+									</div>
 								</div>
 							</div>
 						</div>
