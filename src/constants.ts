@@ -35,3 +35,16 @@ export const otherTech = [
 	"Docker",
 	"AWS",
 ] as const;
+
+export const education = [
+	{
+		school: "Graceland University",
+		degree: "Bachelor of Science in Nursing",
+		graduation: "2014",
+	},
+	{
+		school: "Georgia Institute of Technology",
+		degree: "Full-Stack Web Development Certificate",
+		graduation: "2021",
+	} ,
+] as const;
