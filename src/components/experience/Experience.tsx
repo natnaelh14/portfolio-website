@@ -24,7 +24,7 @@ const Experience = () => {
 	};
 
 	return (
-		<Fade>
+		<Fade triggerOnce>
 			<div className="button-container">
 				<button
 					style={{ backgroundColor: educationButton }}

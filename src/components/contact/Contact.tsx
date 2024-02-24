@@ -66,7 +66,7 @@ const Contact = () => {
 		<div className="contact" id="contact">
 			<h1 className="contact-heading">Contact</h1>
 			<Toaster position="top-center" reverseOrder={false} />
-			<Fade bottom duration={1000} distance="40px">
+			<Fade triggerOnce>
 				<form onSubmit={handleSubmit(onSubmit)}>
 					<label htmlFor="firstName" className="required">
 						First Name
