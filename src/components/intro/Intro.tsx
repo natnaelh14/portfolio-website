@@ -6,7 +6,7 @@ import "./intro.css";
 
 const Intro = () => {
 	return (
-		<Fade>
+		<Fade triggerOnce>
 			<div className="intro" id="intro">
 				<div className="intro-image-mobile">
 					<img className="hero-image-mobile" src={HeroImage} alt="hero" />

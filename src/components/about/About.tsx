@@ -8,7 +8,7 @@ const About = () => {
 	return (
 		<div className="about" id="about">
 			<h1 className="section-heading">About</h1>
-			<Fade>
+			<Fade triggerOnce>
 				<div className="about-section">
 					<div className="about-text">
 						I am a Full-Stack Software Engineer with a Bachelor&apos;s Degree and two years of professional development
