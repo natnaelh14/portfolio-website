@@ -24,9 +24,7 @@ class Work extends Component {
 												<h2>
 													<span>{exp.date}</span>
 												</h2>
-												{exp.description.map((desc, i) => (
-													<p key={i}>{desc}</p>
-												))}
+												{exp.description?.map((desc, i) => <p key={i}>{desc}</p>)}
 											</div>
 										</article>
 									))}

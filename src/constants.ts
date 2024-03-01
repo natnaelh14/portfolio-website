@@ -65,18 +65,10 @@ export const experience = [
 		title: "ICU Registered Nurse",
 		company: "Wellstar Hospital",
 		date: "Aug 2019 - Jan 2022",
-		description: [
-			"Delivered critical patient care in a dedicated COVID unit.",
-			"Collaborated with an interdisciplinary team to ensure the desired patient outcomes.",
-		],
 	},
 	{
 		title: "ICU Registered Nurse",
 		company: "Northside Hospital",
 		date: "Aug 2015 - Mar 2020",
-		description: [
-			"Effectively supervised a team of 12-16 nursing staff and implemented several performance improvement activities.",
-			"Served a leadership role by providing the highest quality of patient care and by precepting new nurses.",
-		],
 	},
-] as const;
+];
