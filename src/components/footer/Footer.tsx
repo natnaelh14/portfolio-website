@@ -23,7 +23,7 @@ const Footer = () => {
 					</ul>
 				</section>
 				<section className="contact-copyright">
-					<p>Copyright &copy; 2023 Natnael Haile. All Rights Reserved.</p>
+					<p>Copyright &copy; {new Date().getFullYear()} Natnael Haile. All Rights Reserved.</p>
 				</section>
 			</Fade>
 		</footer>
