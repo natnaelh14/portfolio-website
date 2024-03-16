@@ -7,11 +7,11 @@ import toast, { Toaster } from "react-hot-toast";
 import "./contact.css";
 
 const userSchema = z.object({
-	firstName: z.string().nonempty({ message: "Please enter a first name" }),
-	lastName: z.string().nonempty({ message: "Please enter a last name" }),
-	email: z.string().nonempty({ message: "Please enter an email address" }).email({ message: "Invalid email address" }),
-	subject: z.string().nonempty({ message: "Please enter a subject" }),
-	message: z.string().nonempty({ message: "Please enter a message" }),
+	firstName: z.string().min(1, { message: "Please enter a first name" }),
+	lastName: z.string().min(1, { message: "Please enter a last name" }),
+	email: z.string().min(1, { message: "Please enter an email address" }).email({ message: "Invalid email address" }),
+	subject: z.string().min(1, { message: "Please enter a subject" }),
+	message: z.string().min(1, { message: "Please enter a message" }),
 	serverError: z.void(),
 });
 
@@ -47,19 +47,17 @@ const Contact = () => {
 			message: data.message,
 		};
 		emailjs
-			.send("service_a7u63za", "template_18f6zsf", templateParams, "user_eZV3e0rLSAkwzx3Pvay2V")
+			.send("service_9iw249h", "template_18f6zsf", templateParams, "user_eZV3e0rLSAkwzx3Pvay2V")
 			.then(() => {
 				reset();
 				successNotify();
 			})
-			.catch((err) => {
-				console.error("🚀 ~ file: Contact.tsx:47 ~ onSubmit ~ err:", err);
+			.catch((e) => {
 				setError("serverError", {
 					type: "server",
 					message: "Unable to send message. Please try again.",
 				});
 			});
-		console.log(templateParams);
 	};
 
 	return (
