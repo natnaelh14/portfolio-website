@@ -27,13 +27,6 @@
 	word-spacing: 0.3em;
 	margin: 10px 0;
 }
-.intro-msg-two {
-	-webkit-animation: color-change 6s infinite;
-	-moz-animation: color-change 6s infinite;
-	-o-animation: color-change 6s infinite;
-	-ms-animation: color-change 6s infinite;
-	animation: color-change 6s infinite;
-}
 
 @-webkit-keyframes color-change {
 	0% {

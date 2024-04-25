@@ -2,6 +2,7 @@ import HeroImage from "~/assets/images/hero-image.png";
 import { Fade } from "react-awesome-reveal";
 import { OutlineLink } from "~/components/Styled-Components/Links";
 import Typewriter from "typewriter-effect";
+import { roles } from "~/constants";
 import "./intro.css";
 
 const Intro = () => {
@@ -14,18 +15,17 @@ const Intro = () => {
 				<div className="intro-desc">
 					<p className="intro-msg">Hey, my name is</p>
 					<h1 className="intro-head">Natnael Haile.</h1>
-					<h1 className="intro-text text-yellow-300">
+					<h1 className="intro-text">
 						<Typewriter
 							options={{
-								strings: ["Full-Stack Software Developer", "Java Developer", "MERN Stack Developer"],
+								strings: roles,
 								autoStart: true,
 								loop: true,
 								deleteSpeed: 50,
 							}}
 						/>
-						{/* Full Stack<span className="intro-msg-two"> Software Developer</span> */}
 					</h1>
-					<OutlineLink href="#about">More About Me</OutlineLink>
+					<OutlineLink href="#about" >More About Me</OutlineLink>
 				</div>
 				<div className="intro-image">
 					<img className="hero-image" src={HeroImage} alt="hero" />

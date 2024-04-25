@@ -13,7 +13,6 @@ export const frontEndTech = [
 
 export const backEndTech = [
 	"Node/Express.js",
-	"Java",
 	"Spring Boot",
 	"Prisma",
 	"MySQL",
@@ -26,15 +25,23 @@ export const backEndTech = [
 export const otherTech = [
 	"Git/Terminal",
 	"Agile Development",
-	"Algorithms/Data Structures",
+	"DSA",
 	"CI/CD",
 	"GitHub Actions",
 	"Google Analytics",
 	"Contentful",
 	"Jest Testing",
 	"Docker",
-	"AWS",
+	"AWS/Azure",
 ] as const;
+
+export const roles = [
+	"Full-Stack Software Developer",
+	"C#/.Net Developer",
+	"React Developer",
+	"JavaScript Developer",
+	"MERN Stack Developer",
+];
 
 export const education = [
 	{

@@ -65,7 +65,7 @@ const Contact = () => {
 			<h1 className="contact-heading">Contact</h1>
 			<Toaster position="top-center" reverseOrder={false} />
 			<Fade triggerOnce>
-				<form onSubmit={handleSubmit(onSubmit)}>
+				<form onSubmit={handleSubmit(onSubmit)} className="rounded-lg">
 					<label htmlFor="firstName" className="required">
 						First Name
 					</label>
@@ -91,7 +91,9 @@ const Contact = () => {
 					</label>
 					<textarea {...register("message")} style={errors.message ? { border: "1px solid red" } : {}} />
 					{errors.message && <span style={{ color: "red" }}>{errors.message.message}</span>}
-					<button type="submit">{isSubmitting ? "SENDING" : "SEND"}</button>
+					<button type="submit" className="rounded-lg">
+						{isSubmitting ? "SENDING" : "SEND"}
+					</button>
 					{errors.serverError && <div className="mt-5 text-center text-red-500">{errors.serverError?.message}</div>}
 				</form>
 			</Fade>

@@ -4,8 +4,8 @@ import "./footer.css";
 
 const Footer = () => {
 	return (
-		<footer className="footer">
-			<Fade triggerOnce>
+		<Fade triggerOnce>
+			<footer className="footer space-y-5">
 				<section className="contact-link">
 					<ul className="footer-social">
 						<a href="https://www.linkedin.com/in/natnael-haile-b146b41bb/" target="_blank" rel="noopener noreferrer">
@@ -25,8 +25,8 @@ const Footer = () => {
 				<section className="contact-copyright">
 					<p>Copyright &copy; {new Date().getFullYear()} Natnael Haile. All Rights Reserved.</p>
 				</section>
-			</Fade>
-		</footer>
+			</footer>
+		</Fade>
 	);
 };
 
