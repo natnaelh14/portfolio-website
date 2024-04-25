@@ -1,7 +1,7 @@
 import "./project.css";
 import { FaLink, FaGithub } from "react-icons/fa";
 import { Icon } from "@iconify/react";
-import { Tooltip } from "@chakra-ui/react";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "~/components/ui/tooltip";
 
 interface IFormProps {
 	desc: string;
@@ -18,7 +18,7 @@ interface IFormProps {
 
 const Project = ({ title, desc, langs, liveLink, githubWebLink, githubApiLink, imageLink }: IFormProps) => {
 	return (
-		<div className="project">
+		<div className="project rounded-lg">
 			<div className="project-title">
 				<h2>{title}</h2>
 			</div>
@@ -27,16 +27,20 @@ const Project = ({ title, desc, langs, liveLink, githubWebLink, githubApiLink, i
 			</a>
 			<br />
 			<div className="project-langs">
-				{langs &&
-					langs.map((lang, index) => (
-						// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-						// @ts-ignore-next-line
-						<Tooltip key={index} label={lang?.label || ""} aria-label="A tooltip" fontSize="md" color="white">
-							<span className="project-lang">
-								<Icon className="icon" icon={lang.name} height="35px" width="35px" />
-							</span>
+				<TooltipProvider>
+					{langs.map((lang, index) => (
+						<Tooltip key={index}>
+							<TooltipTrigger asChild>
+								<span className="project-lang">
+									<Icon className="icon" icon={lang.name} height="25px" width="25px" />
+								</span>
+							</TooltipTrigger>
+							<TooltipContent className="text-white">
+								<p>{lang?.label}</p>
+							</TooltipContent>
 						</Tooltip>
 					))}
+				</TooltipProvider>
 			</div>
 			<div className="project-links">
 				{liveLink && (
@@ -51,8 +55,8 @@ const Project = ({ title, desc, langs, liveLink, githubWebLink, githubApiLink, i
 					<FaGithub />
 				</a>
 			</div>
-			<div className="project-detail">
-				<p className="project-desc">{desc}</p>
+			<div className="rounded-lg bg-[#242429] p-2.5">
+				<p className="text-base  text-[#bdbdb0] text-[1.2rem] text-center">{desc}</p>
 			</div>
 		</div>
 	);

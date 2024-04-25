@@ -23,7 +23,7 @@ export const OutlineLink = styled.a`
 	font-weight: 400;
 	text-decoration: none;
 	padding: 10px 15px;
-	max-width: 170px;
+	width: fit-content;
 	text-align: center;
 	margin: 40px;
 	transition: 0.3s;
