@@ -25,7 +25,6 @@ export const OutlineLink = styled.a`
 	padding: 10px 15px;
 	width: fit-content;
 	text-align: center;
-	margin: 40px;
 	transition: 0.3s;
 	&:hover {
 		background: rgba(24, 186, 189, 0.1);

@@ -18,13 +18,15 @@ class Work extends Component {
 												<MdWork />
 											</div>
 											<div className={classes.label}>
-												<h2>
-													{exp.title} ({exp.company})
-												</h2>
-												<h2>
+												<div className="lg:flex lg:justify-between mb-5">
+													<h3>
+														{exp.company}, <span className="font-normal">{exp.title}</span>
+													</h3>
 													<span>{exp.date}</span>
-												</h2>
-												{exp.description?.map((desc, i) => <p key={i}>{desc}</p>)}
+												</div>
+												{exp.description?.map((desc, i) => (
+													<p key={i}>{desc}</p>
+												))}
 											</div>
 										</article>
 									))}

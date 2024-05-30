@@ -103,17 +103,17 @@
 
 .label {
 	position: relative;
+	border-radius: 0.5rem;
 	background: #292929;
 	padding: 1.5em;
 	margin-left: 60px;
 }
-.label h2 {
+.label h3 {
 	font-size: 20px;
 	font-weight: 1000;
-	margin: 0 0 30px 0;
 	color: #81817a;
 }
-.label h2 span {
+.label span {
 	-ms-filter: alpha(opacity=40);
 	filter: alpha(opacity=40);
 	font-weight: 0;
