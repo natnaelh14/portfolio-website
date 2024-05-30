@@ -13,7 +13,8 @@ export const frontEndTech = [
 
 export const backEndTech = [
 	"Node/Express.js",
-	"Spring Boot",
+	"C#/.Net",
+	"Entity Framework",
 	"Prisma",
 	"MySQL",
 	"PostgreSQL",
@@ -30,9 +31,9 @@ export const otherTech = [
 	"GitHub Actions",
 	"Google Analytics",
 	"Contentful",
-	"Jest Testing",
+	"Unit Testing",
 	"Docker",
-	"AWS/Azure",
+	"Azure",
 ] as const;
 
 export const roles = [
@@ -69,13 +70,13 @@ export const experience = [
 		],
 	},
 	{
-		title: "ICU Registered Nurse",
+		title: "ICU Nurse",
 		company: "Wellstar Hospital",
-		date: "Aug 2019 - Jan 2022",
+		date: "2019 - 2021",
 	},
 	{
-		title: "ICU Registered Nurse",
+		title: "Oncology Nurse",
 		company: "Northside Hospital",
-		date: "Aug 2015 - Mar 2020",
+		date: "2015 - 2020",
 	},
 ];

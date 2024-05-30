@@ -19,9 +19,10 @@ class Education extends Component {
 													<MdSchool />
 												</div>
 												<div className={classes.label}>
-													<h2>
-														{item.school} <span>{item.graduation}</span>
-													</h2>
+													<div className="lg:flex lg:justify-between mb-5">
+														<h3>{item.school}</h3>
+														<span>{item.graduation}</span>
+													</div>
 													<p>{item.degree}</p>
 												</div>
 											</article>
