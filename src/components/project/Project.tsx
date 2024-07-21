@@ -18,7 +18,7 @@ interface IFormProps {
 
 const Project = ({ title, desc, langs, liveLink, githubWebLink, githubApiLink, imageLink }: IFormProps) => {
 	return (
-		<div className="project rounded-lg">
+		<div className="project rounded-lg ml-auto mr-auto">
 			<div className="project-title">
 				<h2>{title}</h2>
 			</div>

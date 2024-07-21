@@ -52,7 +52,7 @@ const Contact = () => {
 				reset();
 				successNotify();
 			})
-			.catch((e) => {
+			.catch(() => {
 				setError("serverError", {
 					type: "server",
 					message: "Unable to send message. Please try again.",

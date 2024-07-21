@@ -16,9 +16,9 @@ export const backEndTech = [
 	"C#/.Net",
 	"Entity Framework",
 	"Prisma",
+	"MSSQL",
 	"MySQL",
 	"PostgreSQL",
-	"MongoDB",
 	"GraphQL/Apollo",
 	"Postman",
 ] as const;
@@ -54,6 +54,11 @@ export const education = [
 		school: "Georgia Institute of Technology",
 		degree: "Full-Stack Web Development Certificate",
 		graduation: "2021",
+	},
+	{
+		school: "Microsoft",
+		degree: "Microsoft Certified: Azure Fundamentals",
+		graduation: "2024",
 	},
 ] as const;
 

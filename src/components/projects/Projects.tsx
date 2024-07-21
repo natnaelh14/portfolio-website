@@ -40,7 +40,7 @@ const Projects = () => {
 					/>
 				</Fade>
 				{/* Crypto Connect */}
-				<Fade triggerOnce>
+				{/* <Fade triggerOnce>
 					<Project
 						title="Crypto Connect"
 						desc="A full-stack social media application based on cryptocurrency."
@@ -67,7 +67,7 @@ const Projects = () => {
 						githubApiLink="https://github.com/natnaelh14/social-media-api"
 						imageLink={cryptoConnect}
 					/>
-				</Fade>
+				</Fade> */}
 			</div>
 		</div>
 	);

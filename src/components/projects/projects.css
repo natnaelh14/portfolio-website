@@ -9,15 +9,16 @@
 }
 
 .projects_wrapper {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 @media screen and (max-width: 1200px) {
 	.projects_wrapper {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
 	}
 	.section-heading {
 		text-align: center;
