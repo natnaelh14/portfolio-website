@@ -1,7 +1,8 @@
 import { useRef, useState } from "react";
-import styled, { keyframes } from "styled-components";
+import styled, { ExecutionContext, keyframes } from "styled-components";
 
 import music from "../../assets/audio/u-said-it-v13-1167.mp3";
+import { FastOmit } from "styled-components/dist/types";
 
 const Box = styled.div`
 	display: flex;
@@ -35,21 +36,29 @@ const play = keyframes`
     transform:scaleY(1);
 }
 `;
+
 const Line = styled.span`
 	background: ${(props) => props.theme.text};
 	border: 1px solid #e64861 ${(props) => props.theme.body};
 	animation: ${play} 1s ease infinite;
-	animation-play-state: ${(props) => (props.click ? "running" : "paused")};
+	//ts-ignore-next-line
+	animation-play-state: ${(
+		props: ExecutionContext &
+			FastOmit<React.DetailedHTMLProps<React.HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>, never>,
+	) =>
+		// @ts-ignore
+		props.click ? "running" : "paused"};
 	height: 1rem;
 	width: 2px;
 	margin: 0 0.1rem;
 `;
 
 const SoundBar = () => {
-	const ref = useRef(null);
+	const ref = useRef<HTMLAudioElement>(null);
 	const [click, setClick] = useState(false);
 
 	const handleClick = () => {
+		if (!ref.current) return;
 		setClick(!click);
 
 		if (!click) {
