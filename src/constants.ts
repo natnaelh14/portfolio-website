@@ -33,6 +33,7 @@ export const otherTech = [
 	"Contentful",
 	"Unit Testing",
 	"Docker",
+	"Kubernetes",
 	"Azure",
 ] as const;
 
@@ -69,8 +70,9 @@ export const experience = [
 		date: "Jan 2022 - Present",
 		description: [
 			"Led the architecture, design, and development of two full-stack applications using NextJS, Nodejs, Typescript, and Tailwind.",
-			"Oversaw the health of the system, addressed performance issues, and enhanced application efficiency by employing techniques on both the server and client sides.",
-			"Implemented unit and automation tests to ensure high-quality software solutions.",
+			"Oversaw the health of the system, addressed performance issues, and enhanced application efficiency by employing techniques on both the server and client sides, resulting in a 25% reduction in server response time and a 20% improvement in client-side load times.",
+			"Collaborated with product and design team to implement user-centric features, boosting user engagement by 30%.",
+			"Developed unit and automation tests, achieving 90% code coverage to ensure high-quality software solutions.",
 			"Maintained an ASP.NET core product while debugging and resolving client and server issues.",
 		],
 	},
