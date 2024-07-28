@@ -1,7 +1,6 @@
 import "./projects.css";
 import Project from "../Project/Project";
 import roastTime from "~/assets/images/roast-time.png";
-import cryptoConnect from "~/assets/images/crypto-connect.png";
 import { Fade } from "react-awesome-reveal";
 import { skillLangs } from "~/components/constants";
 
