@@ -11,7 +11,7 @@ const About = () => {
 			<Fade triggerOnce>
 				<div className="about-section">
 					<div className="about-text">
-						I am a Full-Stack Software Engineer with a Bachelor's Degree and 2 ½ years of professional development
+						I am a Full-Stack Software Engineer with a Bachelor's Degree and 3 years of professional development
 						experience. Proactive team player with great adaptability in dynamic environments, and proven track record
 						of delivering products. Passionate, detail-oriented, and curious developer leveraging professional and
 						technical skills to solve problems. I like to bring unique ideas to life using the tools below.
