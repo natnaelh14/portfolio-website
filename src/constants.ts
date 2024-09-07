@@ -13,8 +13,6 @@ export const frontEndTech = [
 
 export const backEndTech = [
 	"Node/Express.js",
-	"C#/.Net",
-	"Entity Framework",
 	"Prisma",
 	"MSSQL",
 	"MySQL",
@@ -33,13 +31,11 @@ export const otherTech = [
 	"Contentful",
 	"Unit Testing",
 	"Docker",
-	"Kubernetes",
 	"Azure",
 ] as const;
 
 export const roles = [
 	"Full-Stack Software Developer",
-	"C#/.Net Developer",
 	"React Developer",
 	"JavaScript Developer",
 	"MERN Stack Developer",
